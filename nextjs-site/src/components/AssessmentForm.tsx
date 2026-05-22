@@ -394,7 +394,7 @@ export default function AssessmentForm() {
       setStepIndex((s) =>
         QUESTIONS[s]?.id === questionId ? Math.min(s + 1, QUESTIONS.length) : s
       )
-    }, 250)
+    }, 350)
   }
 
   const toggleMulti = (questionId: string, value: string) => {
@@ -608,16 +608,20 @@ export default function AssessmentForm() {
               </p>
             )}
 
-            {/* Nav buttons (only render Continue for multi or when needed) */}
+            {/* Nav buttons. Back is hidden on the very first question; Continue
+                only renders for multi-select (single-select auto-advances). */}
             <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-3 mt-8">
-              <button
-                type="button"
-                onClick={goBack}
-                disabled={stepIndex === 0}
-                className="inline-flex items-center justify-center min-h-12 px-6 py-3 rounded-lg border-2 border-[rgba(45,62,74,0.18)] text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
-              >
-                <span aria-hidden="true" className="mr-2">&larr;</span> Back
-              </button>
+              {stepIndex > 0 ? (
+                <button
+                  type="button"
+                  onClick={goBack}
+                  className="inline-flex items-center justify-center min-h-12 px-6 py-3 rounded-lg border-2 border-[rgba(45,62,74,0.18)] text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
+                >
+                  <span aria-hidden="true" className="mr-2">&larr;</span> Back
+                </button>
+              ) : (
+                <span aria-hidden="true" />
+              )}
 
               {currentQuestion.type === 'multi' && (
                 <button
