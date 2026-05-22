@@ -107,38 +107,35 @@ export default function OpenHouseForm({ onDark = false }: OpenHouseFormProps) {
       return
     }
 
+    // Honeypot: silently swallow obvious bot submissions
+    if (formData.botcheck) {
+      setSubmitSuccess(true)
+      return
+    }
+
     setIsSubmitting(true)
     setErrors((prev) => ({ ...prev, submit: undefined }))
 
-    try {
-      const payload = {
-        form_type: 'open_house_rsvp',
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        guests: formData.guests,
-        botcheck: formData.botcheck,
-      }
+    const payload = {
+      formType: 'openhouse',
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: `Number of guests: ${formData.guests}`,
+    }
 
-      // Use Content-Type: text/plain to skip the CORS preflight that Apps
-      // Script web apps can't satisfy. The script still parses the body
-      // string as JSON via JSON.parse(e.postData.contents).
-      const res = await fetch(APPS_SCRIPT_WEBHOOK_URL, {
+    try {
+      // Apps Script web apps don't return CORS headers, so we use no-cors.
+      // The response is opaque — no status or body is readable — so we assume
+      // success unless fetch itself throws (network error / blocked request).
+      await fetch(APPS_SCRIPT_WEBHOOK_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'text/plain;charset=utf-8',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(payload),
       })
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`)
-      }
-
-      const result = (await res.json().catch(() => ({}))) as { status?: string }
-      if (result.status && result.status !== 'success' && result.status !== 'ok') {
-        throw new Error(result.status)
-      }
 
       setSubmitSuccess(true)
       setFormData({ name: '', email: '', phone: '', guests: '', botcheck: '' })

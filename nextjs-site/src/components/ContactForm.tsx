@@ -102,47 +102,44 @@ export default function ContactForm() {
       return
     }
 
+    // Honeypot: silently swallow obvious bot submissions
+    if (formData.botcheck) {
+      setIsSuccess(true)
+      return
+    }
+
     setIsSubmitting(true)
     setErrors((prev) => ({ ...prev, submit: '' }))
 
-    try {
-      const payload = {
-        form_type: 'contact',
-        name: `${formData.firstName} ${formData.lastName}`,
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        phone: formData.phone,
-        relationship: formData.relationship,
-        careType: formData.careType,
-        visitDate: formData.visitDate,
-        visitTime: formData.visitTime,
-        message: formData.message,
-        botcheck: formData.botcheck,
-      }
+    const composedMessage = [
+      `Relationship: ${formData.relationship}`,
+      `Care Type: ${formData.careType}`,
+      `Preferred Date: ${formData.visitDate || '(not specified)'}`,
+      `Preferred Time: ${formData.visitTime}`,
+      '',
+      `Message: ${formData.message || '(none)'}`,
+    ].join('\n')
 
-      // Note: Apps Script web apps don't respond to CORS preflight (OPTIONS),
-      // so a POST with Content-Type: application/json gets blocked by the
-      // browser. The standard pattern is to send JSON as the body but with
-      // Content-Type: text/plain — that makes it a "simple" CORS request that
-      // skips preflight. Apps Script reads e.postData.contents as a raw
-      // string regardless of the declared Content-Type.
-      const res = await fetch(APPS_SCRIPT_WEBHOOK_URL, {
+    const payload = {
+      formType: 'contact',
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.phone,
+      message: composedMessage,
+    }
+
+    try {
+      // Apps Script web apps don't return CORS headers, so we use no-cors.
+      // The response is opaque — no status or body is readable — so we assume
+      // success unless fetch itself throws (network error / blocked request).
+      await fetch(APPS_SCRIPT_WEBHOOK_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'text/plain;charset=utf-8',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(payload),
       })
-
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status}`)
-      }
-
-      const result = (await res.json().catch(() => ({}))) as { status?: string }
-      if (result.status && result.status !== 'success' && result.status !== 'ok') {
-        throw new Error(result.status)
-      }
 
       setIsSuccess(true)
       setFormData({
