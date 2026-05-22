@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import GlassCard from '@/components/GlassCard'
 import ContactForm from '@/components/ContactForm'
@@ -368,8 +369,14 @@ export default function Contact() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
               <ScheduleVisitButton surface="on-white" href="#visit-form" />
+              <Link
+                href="/assessment"
+                className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
+              >
+                Take the Free Assessment
+              </Link>
             </div>
           </ScrollReveal>
 

@@ -238,8 +238,14 @@ export default function Home() {
                   You can do both.
                 </p>
 
-                <div className="flex pt-6">
+                <div className="flex flex-col sm:flex-row gap-3 pt-6">
                   <ScheduleVisitButton surface="on-white" />
+                  <Link
+                    href="/assessment"
+                    className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
+                  >
+                    Take the Free Assessment
+                  </Link>
                 </div>
               </div>
             </ScrollReveal>
@@ -695,8 +701,14 @@ export default function Home() {
               You deserve peace of mind. Your parent deserves quality care. Let&rsquo;s take the next step&nbsp;together.
             </p>
 
-            <div className="flex justify-center pt-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 pt-4">
               <ScheduleVisitButton surface="on-white" />
+              <Link
+                href="/assessment"
+                className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
+              >
+                Take the Free Assessment
+              </Link>
             </div>
 
             <div className="pt-10 mt-4 border-t border-terracotta/20">

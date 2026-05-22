@@ -2,7 +2,7 @@
 
 > Current state of the project. First file any Claude session reads after running `git fetch && git log --since="2 weeks ago" --oneline`. Update at the start of every working session. Stale items get removed, not archived (history lives in `SESSION_LOG.md` and the git log).
 
-**Last updated:** 2026-05-08 (afternoon, after email/DNS infra session)
+**Last updated:** 2026-05-22 (after care-assessment questionnaire shipped)
 **Production:** `burienbestcarehome.site` — auto-deploys on push to `master`. **Note:** `.com` domain is owned but NOT live yet. Site stays on `.site` until canonical switch is intentional.
 **Email:** `info@burienbestcarehome.com` (Workspace Group), `becca@burienbestcarehome.com` (primary user). DNS propagating, mail flow expected within ~1 hour.
 
@@ -17,9 +17,9 @@
 
 In rough priority order. Verified against actual code in HEAD.
 
-1. **Form backends.** ContactForm and OpenHouseForm still use `mailto:` handlers. Need Apps Script web app inside the BBCH Workspace that accepts POSTs, writes to a Sheet in the Shared Drive, and emails the right recipient. ContactForm routes to `becca@burienbestcarehome.com`; OpenHouseForm routes to `info@burienbestcarehome.com` (the Group fans out from there).
+1. **Form backends.** ContactForm and OpenHouseForm still use `mailto:` handlers. Need Apps Script web app inside the BBCH Workspace that accepts POSTs, writes to a Sheet in the Shared Drive, and emails the right recipient. ContactForm routes to `becca@burienbestcarehome.com`; OpenHouseForm routes to `info@burienbestcarehome.com` (the Group fans out from there). New `/assessment` form POSTs `formType: 'assessment'` to the same webhook URL and expects the dispatcher to route to an Assessments tab + email Becca.
 2. **Daniela's personal Gmail** — needed to add her as a member/owner of the `info@burienbestcarehome.com` Group. Becca to provide. Until then, Daniela receives BBCH mail by sharing the becca@burienbestcarehome.com login (placeholder).
-3. **Family Guide PDF.** Transitional CTA exists, asset does not. Need PDF in `/public/` and the button wired to it.
+3. **Family Guide PDF.** Transitional CTA exists on the contact page AND the new assessment results card, asset does not. Need PDF in `/public/family-guide.pdf` and the button is already wired to that path.
 4. **Address publish decision.** Contact page currently says "Address available upon request"; footer shows "Burien, WA 98148." Confirm whether to publish full street address before launch (recommended for map pack SEO; Becca leaning yes).
 5. **Google Maps embed.** Tied to #4. Listed as needed in older notes; not currently in the contact page.
 6. **Accessibility audit.** No end-to-end WCAG AA pass yet.

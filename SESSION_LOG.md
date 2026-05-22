@@ -1,5 +1,37 @@
 # Session Log
 
+## Session: May 22, 2026 - Care Assessment Questionnaire
+
+### What Was Built
+New top-of-funnel lead capture: `/assessment`, an interactive 13-question care needs quiz that ends with a personalized recommendation and a webhook submission. Becca had been wanting a "trusted friend walks the family through a hard conversation" entry point that is softer than the Schedule a Visit form. This is that.
+
+### Component / Page Changes
+- `nextjs-site/src/components/AssessmentForm.tsx` (new) — client component. Three acts: Current Situation, Care Needs, Preferences. One question per screen with Framer Motion fade/slide transitions. Single-select questions auto-advance after a 250ms confirmation pause. Multi-select uses a Continue button. Priorities question caps at 3. "None of these" options are mutually exclusive with the rest of the checkbox group. Scoring weights ADLs (Q6, 0–30), dementia (Q7, 0–20), behaviors (Q8, 0–30), supervision (Q9, 0–25), medical needs (Q10, 0–30); 135 max. Results card branches on score: 0–20 home care fit, 21–50 AFH sweet spot (Becca's bullseye), 51–80 residential, 81+ specialized. Honest-when-not-the-fit copy on the home-care end so the page builds trust instead of forcing a CTA.
+- `nextjs-site/src/app/assessment/page.tsx` (new) — server component. Page metadata targets "is it time for assisted living quiz" and adjacent long-tail queries. FAQPage + BreadcrumbList JSON-LD inlined. Hero copy + reassurance card wrap the form.
+- `nextjs-site/src/components/Navigation.tsx` — added "Free Assessment" nav link between Services and Next Steps.
+- `nextjs-site/src/app/page.tsx` — added secondary "Take the Free Assessment" outlined CTA next to Schedule a Visit on the Problem section + Final CTA section.
+- `nextjs-site/src/app/contact/page.tsx` — same secondary CTA next to the visit-form Schedule a Visit.
+- `nextjs-site/src/app/sitemap.ts` — added `/assessment` route with priority 0.9.
+
+### Webhook
+- POSTs to `process.env.NEXT_PUBLIC_APPS_SCRIPT_WEBHOOK_URL` with `formType: 'assessment'`, `name`, `email`, `phone`, and a structured `message` string that includes the score, category, and every answer label. Same `mode: 'no-cors'` pattern as ContactForm. Apps Script will need a small dispatcher update to route `assessment` submissions to the right tab/recipient, but the payload shape matches the existing contract.
+
+### Accessibility / Design
+- Each option is a real button with `role="radio"` or `role="checkbox"` and `aria-checked`. 48px+ touch targets. Visible focus rings using the existing sunshine-deep token.
+- Progress bar is a real `role="progressbar"` with `aria-valuenow`. SR-only live region announces step changes.
+- Glassmorphic card surface, DM Serif Display headlines, Inter body. Sunshine accents on selected state + progress bar. No em dashes anywhere in the copy.
+- Mobile-first: option cards stack full-width, nav buttons collapse to a column on small screens.
+
+### Verification
+- `npm run build` → compiled successfully, 14 static routes including `/assessment`.
+- `npm run lint` → no new warnings or errors in AssessmentForm or assessment/page (pre-existing lint errors in LoadingScreen/ScrollReveal/HeroSection from React 19's stricter rules untouched).
+
+### What's Next
+- Wire the Apps Script dispatcher to recognize `formType: 'assessment'` and route to a new "Assessments" tab in the sheet.
+- Family Guide PDF still missing — the Download button in the results card points at `/family-guide.pdf` which does not exist yet (this is now blocking on two CTAs, not just one).
+
+---
+
 ## Session: April 22, 2026 - Phase C Sunshine Polish
 
 ### What Was Built
