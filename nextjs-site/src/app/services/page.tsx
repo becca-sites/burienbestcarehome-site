@@ -147,7 +147,7 @@ const recoveryCareFeaturesData: FeatureItem[] = [
   {
     title: '24/7 Professional Oversight',
     description:
-      'Trained caregivers watching over them around the clock during the critical recovery period. Always monitored, never alone.',
+      'Trained caregivers awake around the clock during the critical recovery period. Monitoring follows their doctor\'s orders, and help is always close by.',
   },
   {
     title: 'Medication Management',
