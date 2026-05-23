@@ -63,7 +63,7 @@ const memoryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Family Communication',
     description:
-      'You\'ll stay connected with regular updates about their day. We keep you informed and involved in their care.',
+      'Open communication. Visits are welcome. We set up a communication plan based on your family\'s preferences and needs. You stay in the loop on what matters and you choose how involved to be.',
   },
   {
     title: 'Medication Management',
