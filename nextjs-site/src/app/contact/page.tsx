@@ -104,8 +104,8 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12 sm:mb-16">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">Get in Touch</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest leading-tight">
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">Get in Touch</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] leading-tight">
                 Reach Out However Feels&nbsp;Right
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto mt-4">
@@ -117,14 +117,14 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {/* Contact details card */}
             <ScrollReveal delay={0}>
-              <GlassCard variant="white" className="p-8 sm:p-10 h-full flex flex-col">
+              <GlassCard variant="solid" className="p-8 sm:p-10 h-full flex flex-col">
                 <div className="space-y-8 flex-grow">
                   {/* Phone */}
                   <div>
                     <p className="uppercase tracking-widest text-xs font-semibold text-[color:var(--color-slate-soft)] mb-2">Call Us</p>
                     <a
                       href="tel:+12536787089"
-                      className="font-serif text-3xl sm:text-4xl text-forest hover:text-[color:var(--color-sunshine-deep)] transition-colors block leading-tight"
+                      className="font-serif text-3xl sm:text-4xl text-[color:var(--color-ink)] hover:text-[color:var(--color-sunshine-deep)] transition-colors block leading-tight"
                     >
                       (253) 678-7089
                     </a>
@@ -138,7 +138,7 @@ export default function Contact() {
                     <p className="uppercase tracking-widest text-xs font-semibold text-[color:var(--color-slate-soft)] mb-2">Email Us</p>
                     <a
                       href="mailto:info@burienbestcarehome.com"
-                      className="font-serif text-2xl sm:text-3xl text-forest hover:text-[color:var(--color-sunshine-deep)] transition-colors block break-all leading-tight"
+                      className="font-serif text-2xl sm:text-3xl text-[color:var(--color-ink)] hover:text-[color:var(--color-sunshine-deep)] transition-colors block break-all leading-tight"
                     >
                       info@burienbestcarehome.com
                     </a>
@@ -150,7 +150,7 @@ export default function Contact() {
                   {/* Hours */}
                   <div>
                     <p className="uppercase tracking-widest text-xs font-semibold text-[color:var(--color-slate-soft)] mb-2">Care Hours</p>
-                    <p className="font-serif text-2xl sm:text-3xl text-forest leading-tight">
+                    <p className="font-serif text-2xl sm:text-3xl text-[color:var(--color-ink)] leading-tight">
                       24/7 Care
                     </p>
                     <p className="text-ink-soft mt-2">
@@ -172,10 +172,10 @@ export default function Contact() {
 
             {/* Address Section */}
             <ScrollReveal delay={0.1}>
-              <GlassCard variant="white" className="p-6 sm:p-8 h-full flex flex-col">
+              <GlassCard variant="solid" className="p-6 sm:p-8 h-full flex flex-col">
                 <p className="uppercase tracking-widest text-xs font-semibold text-[color:var(--color-slate-soft)] mb-2">Visit Us</p>
                 <address
-                  className="not-italic font-serif text-2xl text-forest leading-tight mb-3"
+                  className="not-italic font-serif text-2xl text-[color:var(--color-ink)] leading-tight mb-3"
                   itemScope
                   itemType="https://schema.org/PostalAddress"
                 >
@@ -211,8 +211,8 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-10">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">Schedule a Visit</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest leading-tight mb-4">
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">Schedule a Visit</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] leading-tight mb-4">
                 Come See Our Home for&nbsp;Yourself
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto leading-relaxed">
@@ -222,7 +222,7 @@ export default function Contact() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <GlassCard variant="white" className="p-6 sm:p-10">
+            <GlassCard variant="solid" className="p-6 sm:p-10">
               <ContactForm />
             </GlassCard>
           </ScrollReveal>
@@ -235,8 +235,8 @@ export default function Contact() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">What to Expect</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest mb-4 leading-tight">
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">What to Expect</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-4 leading-tight">
                 Here&rsquo;s Exactly What Happens When You&nbsp;Visit
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto">
@@ -248,15 +248,15 @@ export default function Contact() {
           <div className="space-y-5">
             {visitSteps.map((step, index) => (
               <ScrollReveal key={index} delay={index * 0.08}>
-                <GlassCard variant="tinted" className="p-6 sm:p-8">
+                <GlassCard variant="solid" className="p-6 sm:p-8">
                   <div className="flex items-start gap-5 sm:gap-6">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-[color:var(--color-sunshine)]/25 border-2 border-[color:var(--color-sunshine)]/40 font-serif text-2xl sm:text-3xl font-normal text-forest shadow-sm">
+                      <div className="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-[color:var(--color-sunshine)]/25 border-2 border-[color:var(--color-sunshine)]/40 font-serif text-2xl sm:text-3xl font-normal text-[color:var(--color-ink)] shadow-sm">
                         {step.number}
                       </div>
                     </div>
                     <div className="flex-grow pt-1">
-                      <h3 className="font-serif text-xl sm:text-2xl text-forest mb-2 leading-tight">
+                      <h3 className="font-serif text-xl sm:text-2xl text-[color:var(--color-ink)] mb-2 leading-tight">
                         {step.title}
                       </h3>
                       <p className="text-base sm:text-lg text-ink-soft leading-relaxed">
@@ -276,8 +276,8 @@ export default function Contact() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">More Support</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest leading-tight">
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">More Support</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] leading-tight">
                 Resources for Families in&nbsp;Transition
               </h2>
             </div>
@@ -285,11 +285,11 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             <ScrollReveal delay={0}>
-              <GlassCard variant="white" className="p-8 h-full flex flex-col">
+              <GlassCard variant="solid" className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                 </div>
-                <h3 className="font-serif text-2xl text-forest mb-3 leading-tight">
+                <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-3 leading-tight">
                   Your Best Season
                 </h3>
                 <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
@@ -307,11 +307,11 @@ export default function Contact() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
-              <GlassCard variant="white" className="p-8 h-full flex flex-col">
+              <GlassCard variant="solid" className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                 </div>
-                <h3 className="font-serif text-2xl text-forest mb-3 leading-tight">
+                <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-3 leading-tight">
                   Your Next Step Home
                 </h3>
                 <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
@@ -329,11 +329,11 @@ export default function Contact() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
-              <GlassCard variant="white" className="p-8 h-full flex flex-col">
+              <GlassCard variant="solid" className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                 </div>
-                <h3 className="font-serif text-2xl text-forest mb-3 leading-tight">
+                <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-3 leading-tight">
                   Washington State DSHS
                 </h3>
                 <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
@@ -357,7 +357,7 @@ export default function Contact() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
-            <h2 className="font-serif text-4xl md:text-5xl text-forest mb-6 leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-6 leading-tight">
               Your Family Deserves&nbsp;<span className="text-[color:var(--color-sunshine-deep)] italic font-semibold">Peace of Mind</span>.
             </h2>
           </ScrollReveal>
@@ -373,7 +373,7 @@ export default function Contact() {
               <ScheduleVisitButton surface="on-white" href="#visit-form" />
               <Link
                 href="/assessment"
-                className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-forest text-forest font-semibold hover:bg-[color:var(--color-sage-light)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
+                className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-[color:var(--color-ink)] text-[color:var(--color-ink)] font-semibold hover:bg-[color:var(--color-fog)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
               >
                 Take the Free Assessment
               </Link>
@@ -381,7 +381,7 @@ export default function Contact() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <p className="text-sm text-forest/60 mt-10">
+            <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
               Licensed &middot; Bonded &middot; Insured &middot; Verified by Washington State&nbsp;DSHS
             </p>
           </ScrollReveal>
