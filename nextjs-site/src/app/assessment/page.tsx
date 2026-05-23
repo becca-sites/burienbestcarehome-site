@@ -41,7 +41,7 @@ const faqItems = [
   {
     question: 'What is the difference between home care and an adult family home?',
     answer:
-      'Home care is part-time help that comes to your loved one in their own house. An adult family home is a small residential care setting, usually six to eight residents, where care is provided around the clock in a real home. Home care is often a great first step when needs are light. Adult family homes are typically the right fit when 24/7 supervision, daily living help, or memory care is needed.',
+      'Home care is part-time help that comes to your loved one in their own house. An adult family home is a small residential care setting, usually with up to eight residents, where care is provided around the clock in a real home. Home care is often a great first step when needs are light. Adult family homes are typically the right fit when 24/7 supervision, daily living help, or memory care is needed.',
   },
   {
     question: 'When should someone with dementia move to memory care?',
