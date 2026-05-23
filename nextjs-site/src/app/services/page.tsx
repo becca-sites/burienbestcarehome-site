@@ -167,7 +167,7 @@ const recoveryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Transition Planning',
     description:
-      'Gradual planning for return home or longer-term care options. No sudden shifts, always thoughtful next steps.',
+      'Gradual planning for return home or longer-term care options, so there are no sudden shifts. Always thoughtful next steps.',
   },
 ]
 
@@ -483,7 +483,7 @@ export default function ServicesPage() {
                     Personalized Care Plans
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
-                    Each care plan is built with you and updated as your parent&rsquo;s needs change. We customize around your parent&rsquo;s story, preferences, and who they&nbsp;are.
+                    Each care plan is built with you and updated as your parent&rsquo;s needs change. We customize around your parent&rsquo;s needs, preferences, and who they&nbsp;are.
                   </p>
                 </GlassCard>
               </ScrollReveal>
