@@ -495,10 +495,10 @@ export default function ServicesPage() {
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
                   <h3 className="text-2xl font-serif font-normal text-[color:var(--color-ink)] mb-4 leading-tight">
-                    True Partnership in Care
+                    Partnership in Care
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
-                    You&rsquo;re not stepping back after intake paperwork. You&rsquo;re making care decisions together with people who genuinely want your parent to&nbsp;thrive.
+                    You&rsquo;re not abandoning your loved one. You&rsquo;re making a thoughtful decision to partner with people who genuinely want them to&nbsp;thrive.
                   </p>
                 </GlassCard>
               </ScrollReveal>
@@ -510,7 +510,7 @@ export default function ServicesPage() {
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
                   <h3 className="text-2xl font-serif font-normal text-[color:var(--color-ink)] mb-4 leading-tight">
-                    Known by Name and Heart
+                    Known by Name
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
                     Your parent is known by name, by story, and by heart. They&rsquo;re a person we genuinely care for, woven into our small home&nbsp;community.
