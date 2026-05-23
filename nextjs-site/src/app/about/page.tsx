@@ -32,15 +32,15 @@ export default function About() {
       image: '/photos/staff/becca-pitts-owner-care-director.webp',
       initials: 'BP',
       name: 'Becca Pitts',
-      role: 'Owner & Care Director',
-      bio: 'Becca founded this home after years walking alongside families in senior care. She has been where you are right now, helping her own family navigate this decision. She knows the exhaustion of trying to find a place that feels like home, not a facility. She built this because she wished it existed for her own family.',
+      role: 'Co-Founder & Real Estate Broker',
+      bio: 'Becca has spent 15 years as a licensed real estate broker in Washington and is a Seniors Real Estate Specialist (SRES), guiding families through the housing transitions that come with aging. She built Burien Best Care Home after navigating senior care for her own family. She knows the exhaustion of looking for a place that feels like home, not a facility. She built this so other families would not have to search the way she did.',
     },
     {
       image: '/photos/staff/dana-t-caregiver.webp',
       initials: 'DT',
       name: 'Daniela Torkelson',
-      role: 'Lead Caregiver',
-      bio: 'Daniela brings a calm steadiness to everything she does. She knows the difference between managing someone and truly seeing them, and that difference shows up in every interaction. Families trust her instincts, and residents feel safer the moment she walks in the room.',
+      role: 'Provider & Resident Manager',
+      bio: 'Daniela was born in Romania, earned degrees in Chemistry and Physics, and moved to the United States in 2007. She has opened more than 40 adult family homes and now oversees 11 across King County. She served on the board of the Adult Family Home Council of Washington State, is a published author, and is mother to eight. She brings deep clinical knowledge and the steadiness of someone who has loved and raised a large family of her own. Residents feel safer the moment she walks in the room.',
     },
   ]
 
@@ -88,7 +88,7 @@ export default function About() {
             A Home Built for Families Who Wanted&nbsp;<span className="text-[color:var(--color-sunshine)] italic">Real</span>&nbsp;Alternatives.
           </h1>
           <p className="text-lg sm:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow">
-            We kept watching families forced to choose between cold institutions and staying home until a crisis. We built Burien Best Care Home to give families a third option. A place with the warmth of home and the professionalism of trained caregivers. Peace of mind, without the&nbsp;distance.
+            A place with the warmth of home and the professionalism of trained caregivers. For your peace of&nbsp;mind.
           </p>
         </div>
       </section>
@@ -98,15 +98,15 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">Our Why</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest leading-tight">
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">Our Why</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] leading-tight">
                 Why This Home Exists
               </h2>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <GlassCard variant="tinted" className="p-8 sm:p-12 lg:p-14">
+            <GlassCard variant="solid" className="p-8 sm:p-12 lg:p-14">
               <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                 <p>
                   We saw families struggling. We watched loved ones fade in large facilities where they were room numbers, not people. We watched families torn between guilt and exhaustion. And we decided to create something&nbsp;different.
@@ -129,7 +129,7 @@ export default function About() {
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">Our Promises</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest leading-tight">
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] leading-tight">
                 What We Promise Your Family
               </h2>
             </div>
@@ -138,11 +138,11 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             {promises.map((promise, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
-                <GlassCard variant="white" className="p-8 sm:p-10 h-full">
+                <GlassCard variant="solid" className="p-8 sm:p-10 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
-                  <h3 className="font-serif text-2xl sm:text-3xl text-forest mb-4 leading-tight">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[color:var(--color-ink)] mb-4 leading-tight">
                     {promise.title}
                   </h3>
                   <p className="text-ink-soft text-lg leading-relaxed">
@@ -160,12 +160,12 @@ export default function About() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <p className="uppercase tracking-widest text-sm font-semibold text-forest mb-3">Our Team</p>
-              <h2 className="font-serif text-4xl md:text-5xl text-forest mb-4 leading-tight">
-                We&rsquo;re Here for&nbsp;You
+              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">Our Team</p>
+              <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-4 leading-tight">
+                We&rsquo;re Walking This Road With&nbsp;You
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto">
-                We&rsquo;re here to help your&nbsp;family.
+                Your&nbsp;team.
               </p>
             </div>
           </ScrollReveal>
@@ -173,7 +173,7 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto items-stretch">
             {teamMembers.map((member, index) => (
               <ScrollReveal key={index} delay={index * 0.15}>
-                <GlassCard variant="white" className="p-8 sm:p-10 text-center h-full flex flex-col">
+                <GlassCard variant="solid" className="p-8 sm:p-10 text-center h-full flex flex-col">
                   {member.image ? (
                     <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[color:var(--color-sunshine)]/40 shadow-inner relative">
                       <Image
@@ -187,12 +187,12 @@ export default function About() {
                   ) : (
                     <div
                       aria-hidden="true"
-                      className="w-28 h-28 rounded-full bg-[color:var(--color-sunshine)]/25 mx-auto mb-5 flex items-center justify-center font-serif text-3xl text-forest border-4 border-[color:var(--color-sunshine)]/40 shadow-inner"
+                      className="w-28 h-28 rounded-full bg-[color:var(--color-sunshine)]/25 mx-auto mb-5 flex items-center justify-center font-serif text-3xl text-[color:var(--color-ink)] border-4 border-[color:var(--color-sunshine)]/40 shadow-inner"
                     >
                       {member.initials}
                     </div>
                   )}
-                  <h3 className="font-serif text-2xl text-forest mb-1">
+                  <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-1">
                     {member.name}
                   </h3>
                   <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">
@@ -214,7 +214,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left">
               <div>
-                <h2 className="font-serif text-4xl md:text-5xl text-forest mb-8">
+                <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-8">
                   A Place Where Families Belong
                 </h2>
                 <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
@@ -250,7 +250,7 @@ export default function About() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-transparent">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
-            <h2 className="font-serif text-4xl md:text-5xl text-forest mb-6 leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-6 leading-tight">
               Come See It for&nbsp;Yourself
             </h2>
           </ScrollReveal>
@@ -268,7 +268,7 @@ export default function About() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <p className="text-sm text-forest/60 mt-10">
+            <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
               Licensed. Bonded. Insured. No surprises, no hidden fees, no excuses.
             </p>
           </ScrollReveal>
