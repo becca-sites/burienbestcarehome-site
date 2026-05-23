@@ -124,7 +124,7 @@ const respiteCareFeaturesData: FeatureItem[] = [
   {
     title: 'Regular Family Updates',
     description:
-      'Stay connected with regular communication about activities, meals, and moments of joy throughout their stay.',
+      'Stay connected with regular communication about activities, meals, and progress throughout their stay.',
   },
   {
     title: 'Smooth Transitions',
