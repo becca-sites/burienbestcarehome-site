@@ -89,9 +89,9 @@ const dailyLivingFeaturesData: FeatureItem[] = [
       'Every pill taken on time, every interaction with doctors coordinated. Your parent\'s health stays on track.',
   },
   {
-    title: 'Nutritious Home-Cooked Meals',
+    title: 'Meals That Feel Like Home',
     description:
-      'Three daily meals and snacks made fresh, tailored to preferences and needs. The comfort of home cooking.',
+      'Three meals and snacks a day, planned around each resident\'s preferences and dietary needs. Real food, served at a real table.',
   },
   {
     title: 'Housekeeping & Laundry',
