@@ -76,7 +76,7 @@ const dailyLivingFeaturesData: FeatureItem[] = [
   {
     title: 'Bathing & Personal Hygiene',
     description:
-      'Your parent stays clean and comfortable, with their dignity preserved. Support delivered with warmth, never shame.',
+      'Your parent stays clean and comfortable, with their dignity preserved. Support delivered with warmth and care.',
   },
   {
     title: 'Dressing & Mobility Support',
