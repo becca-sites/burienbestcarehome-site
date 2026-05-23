@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s | Burien Best Care Home',
   },
   description:
-    'Burien Best Care Home provides compassionate memory care and daily living assistance for seniors. Licensed adult family home in King County, WA with 24/7 care, home-cooked meals, and family-centered care.',
+    'Burien Best Care Home provides compassionate memory care and daily living assistance for seniors. Licensed adult family home in King County, WA with 24/7 care, home-style meals, and family-centered care.',
   keywords: [
     'adult family home Burien',
     'memory care Burien WA',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Burien Best Care Home | Adult Family Home & Memory Care in Burien, WA',
     description:
-      'Burien Best Care Home provides compassionate memory care and daily living assistance for seniors. Licensed adult family home in King County, WA with 24/7 care, home-cooked meals, and family-centered care.',
+      'Burien Best Care Home provides compassionate memory care and daily living assistance for seniors. Licensed adult family home in King County, WA with 24/7 care, home-style meals, and family-centered care.',
     url: 'https://burienbestcarehome.com',
     siteName: 'Burien Best Care Home',
     locale: 'en_US',
