@@ -337,7 +337,7 @@ export default function Home() {
                     A Real Home
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
-                    Only eight residents. Your parent is known by name and treated like family. They&rsquo;re part
+                    With a maximum of only eight residents. Your parent is known by name and treated like family. They&rsquo;re part
                     of a genuine&nbsp;home.
                   </p>
                 </GlassCard>
@@ -365,7 +365,7 @@ export default function Home() {
                     Meals They Enjoy
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
-                    Three home-cooked meals plus snacks, tailored to their preferences. We pay close attention
+                    Three meals plus snacks, tailored to their preferences. We pay close attention
                     to nutrition, every&nbsp;day.
                   </p>
                 </GlassCard>
