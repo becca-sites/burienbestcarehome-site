@@ -557,10 +557,10 @@ export default function Home() {
                     </h3>
                     <div className="text-left space-y-4 text-ink-soft leading-relaxed">
                       <p>
-                        You sleep through the night. You stop holding your breath every time the phone rings. Your parent thrives in a home where they&rsquo;re known, cared for, and genuinely&nbsp;happy.
+                        You sleep through the night. You stop holding your breath every time the phone rings. Your parent thrives in a home where they&rsquo;re known, cared for, and feel&nbsp;comfortable.
                       </p>
                       <p>
-                        You visit for Sunday brunch, not crisis management. The grandkids come by and play with Grandma in the garden. Holidays become cherished family&nbsp;traditions.
+                        You visit for Sunday brunch, not crisis management. The grandkids come by and play with Grandma in the backyard. Holidays become cherished family&nbsp;traditions.
                       </p>
                       <p>
                         Your relationship heals. You&rsquo;re their child again, not their crisis manager. You get your parent back in a different way. You get peace of&nbsp;mind.
