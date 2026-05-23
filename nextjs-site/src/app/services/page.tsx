@@ -96,7 +96,7 @@ const dailyLivingFeaturesData: FeatureItem[] = [
   {
     title: 'Housekeeping & Laundry',
     description:
-      'A clean, comfortable home maintained with care. Your parent wakes up to fresh sheets and tidy spaces.',
+      'A clean, comfortable home maintained with care. Your parent wakes up to fresh, tidy spaces.',
   },
   {
     title: 'Medical Transportation',
