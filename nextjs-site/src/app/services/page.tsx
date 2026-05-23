@@ -51,9 +51,9 @@ const memoryCareFeaturesData: FeatureItem[] = [
       'Caregivers who know your parent\'s story, not just their diagnosis. Care that honors who they were and who they are.',
   },
   {
-    title: 'Safe Home Environment',
+    title: 'Safer by Design',
     description:
-      'A space designed for security, so you can stop worrying about wandering and falls. Peace of mind for your family.',
+      'A home built to lower the risk of wandering and falls. Secured exits, clear walking paths, and awake staff close by when your parent needs a steady hand.',
   },
   {
     title: 'Engaging Activities',
