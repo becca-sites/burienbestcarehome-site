@@ -32,14 +32,14 @@ export default function About() {
       image: '/photos/staff/becca-pitts-owner-care-director.webp',
       initials: 'BP',
       name: 'Becca Pitts',
-      role: 'Co-Founder & Real Estate Broker',
+      role: 'Co-Owner & Real Estate Broker',
       bio: 'Becca has spent 15 years as a licensed real estate broker in Washington and is a Seniors Real Estate Specialist (SRES), guiding families through the housing transitions that come with aging. She built Burien Best Care Home after navigating senior care for her own family. She knows the exhaustion of looking for a place that feels like home, not a facility. She built this so other families would not have to search the way she did.',
     },
     {
       image: '/photos/staff/dana-t-caregiver.webp',
       initials: 'DT',
       name: 'Daniela Torkelson',
-      role: 'Provider & Resident Manager',
+      role: 'Co-Owner, Provider & Resident Manager',
       bio: 'Daniela was born in Romania, earned degrees in Chemistry and Physics, and moved to the United States in 2007. She has opened more than 40 adult family homes and now oversees 11 across King County. She served on the board of the Adult Family Home Council of Washington State, is a published author, and is mother to eight. She brings deep clinical knowledge and the steadiness of someone who has loved and raised a large family of her own. Residents feel safer the moment she walks in the room.',
     },
   ]
