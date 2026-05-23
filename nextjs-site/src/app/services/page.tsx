@@ -177,7 +177,7 @@ function FeatureGrid({ features, surface: _surface }: { features: FeatureItem[];
   // Unified card treatment matching homepage GlassCard variant="solid"
   const cardClass = 'p-6 sm:p-7 bg-bone rounded-xl border border-cream/40 shadow-sm h-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-[color:var(--color-sunshine)]/40'
   const accentClass = 'bg-[color:var(--color-sunshine)]'
-  const titleClass = 'text-forest'
+  const titleClass = 'text-[color:var(--color-ink)]'
   const bodyClass = 'text-ink-soft'
 
   return (
@@ -220,7 +220,7 @@ function ServiceSection({
   const _onTerracotta = surface === 'terracotta'
   const sectionBg = 'bg-transparent'
   const eyebrow = 'text-[color:var(--color-sunshine-deep)]'
-  const heading = 'text-forest'
+  const heading = 'text-[color:var(--color-ink)]'
   const subheading = 'text-ink-soft'
   const body = 'text-ink-soft'
   const buttonSurface = 'on-white'
@@ -373,7 +373,7 @@ export default function ServicesPage() {
       {/* Services Intro Section */}
       <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
         <ScrollReveal className="max-w-3xl mx-auto">
-          <GlassCard variant="tinted" className="p-8 sm:p-10">
+          <GlassCard variant="solid" className="p-8 sm:p-10">
             <p className="text-center text-ink-soft leading-relaxed text-lg sm:text-xl">
               We don&rsquo;t believe in one-size-fits-all care. In our home, we have the time and attention to truly know your parent. Their morning preferences, their favorite music, the stories that make them smile. This is what personalized care looks&nbsp;like.
             </p>
@@ -467,7 +467,7 @@ export default function ServicesPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">The Difference</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-normal text-forest leading-tight">
+              <h2 className="text-4xl md:text-5xl font-serif font-normal text-[color:var(--color-ink)] leading-tight">
                 Why Families Choose a Home&nbsp;Over a&nbsp;Facility
               </h2>
             </div>
@@ -475,11 +475,11 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
               {/* Card 1: Personalized */}
               <ScrollReveal delay={0.6} direction="up">
-                <GlassCard variant="white" className="p-8 h-full">
+                <GlassCard variant="solid" className="p-8 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
-                  <h3 className="text-2xl font-serif font-normal text-forest mb-4 leading-tight">
+                  <h3 className="text-2xl font-serif font-normal text-[color:var(--color-ink)] mb-4 leading-tight">
                     Personalized Care Plans
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
@@ -490,11 +490,11 @@ export default function ServicesPage() {
 
               {/* Card 2: Partners */}
               <ScrollReveal delay={0.7} direction="up">
-                <GlassCard variant="white" className="p-8 h-full">
+                <GlassCard variant="solid" className="p-8 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
-                  <h3 className="text-2xl font-serif font-normal text-forest mb-4 leading-tight">
+                  <h3 className="text-2xl font-serif font-normal text-[color:var(--color-ink)] mb-4 leading-tight">
                     True Partnership in Care
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
@@ -505,11 +505,11 @@ export default function ServicesPage() {
 
               {/* Card 3: Known by heart */}
               <ScrollReveal delay={0.8} direction="up">
-                <GlassCard variant="white" className="p-8 h-full">
+                <GlassCard variant="solid" className="p-8 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                   </div>
-                  <h3 className="text-2xl font-serif font-normal text-forest mb-4 leading-tight">
+                  <h3 className="text-2xl font-serif font-normal text-[color:var(--color-ink)] mb-4 leading-tight">
                     Known by Name and Heart
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
@@ -526,7 +526,7 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
         <ScrollReveal delay={0.9} className="w-full">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-serif font-normal text-forest mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-serif font-normal text-[color:var(--color-ink)] mb-6 leading-tight">
               Your Parent Deserves Care&nbsp;That Feels Like&nbsp;<span className="text-[color:var(--color-sunshine-deep)] italic font-semibold">Home</span>.
             </h2>
             <p className="text-lg sm:text-xl text-ink-soft leading-relaxed mb-10">
@@ -535,7 +535,7 @@ export default function ServicesPage() {
             <div className="flex justify-center">
               <ScheduleVisitButton surface="on-white" />
             </div>
-            <p className="text-sm text-forest/60 mt-10">
+            <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
               Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King&nbsp;County.
             </p>
           </div>
