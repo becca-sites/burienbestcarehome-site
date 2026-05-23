@@ -86,7 +86,7 @@ const dailyLivingFeaturesData: FeatureItem[] = [
   {
     title: 'Medication Management',
     description:
-      'Every pill taken on time, every interaction with doctors coordinated. Your parent\'s health stays on track.',
+      'Every dose tracked, every change coordinated with their doctors. One less worry on your plate.',
   },
   {
     title: 'Meals That Feel Like Home',
