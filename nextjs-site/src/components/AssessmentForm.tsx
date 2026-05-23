@@ -918,7 +918,7 @@ function ResultsCard({ result, firstName }: { result: ScoreResult; firstName: st
             <ul className="space-y-2 text-ink-soft leading-relaxed">
               <li className="flex gap-3">
                 <span aria-hidden="true" className="text-[color:var(--color-sunshine-deep)] font-bold">&middot;</span>
-                <span>Small home, up to 6 residents, so your loved one is known by name.</span>
+                <span>Small home, up to 8 residents, so your loved one is known by name.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden="true" className="text-[color:var(--color-sunshine-deep)] font-bold">&middot;</span>
