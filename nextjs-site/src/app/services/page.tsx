@@ -134,7 +134,7 @@ const respiteCareFeaturesData: FeatureItem[] = [
   {
     title: 'No Long-Term Commitment',
     description:
-      'Flexible arrangement, no binding contracts or ongoing obligations. Pure flexibility, pure relief.',
+      'Flexible arrangement, no binding contracts or ongoing obligations. We will flex to the needs of your family and your loved one.',
   },
 ]
 
