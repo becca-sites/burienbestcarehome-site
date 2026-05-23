@@ -142,7 +142,7 @@ const recoveryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Hospital Coordination',
     description:
-      'Seamless communication with discharge planners and physicians. We know exactly what your parent needs to recover.',
+      'Seamless communication with discharge planners and physicians. We are equipped to handle your loved one\'s recovery with the time, attention, and steady care that healing actually requires.',
   },
   {
     title: '24/7 Professional Oversight',
