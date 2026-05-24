@@ -55,7 +55,7 @@ export default function Home() {
     {
       question: 'What happens during the first week?',
       answer:
-        'We have a detailed transition plan for every new resident. Day one focuses on getting comfortable with the space and meeting the team. Days 2-3 introduce routines and activities. Days 4-7 deepen connections and adjustment. We provide daily updates to family members and work closely with your loved one to ensure a supported adjustment period. We understand that moving to a new home is significant, and we treat it with care and attention.',
+        'We have a thoughtful transition plan for every new resident. Day one focuses on getting comfortable with the space and meeting the team. The first week introduces routines, activities, and deeper adjustment. Every transition looks a little different. Some go quickly. Others take longer, with more bumps along the way. We will stay in close communication with you throughout, and together we will do our best to make the road as smooth as possible. Moving to a new home is significant, and we treat it with care and attention.',
     },
     {
       question: 'Is Burien Best Care Home licensed?',
