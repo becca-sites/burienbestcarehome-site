@@ -7,7 +7,7 @@ import GlassCard from '@/components/GlassCard'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Honest writing for families navigating senior care in King County — practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home.',
+    'Honest writing for families navigating senior care in King County: practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home.',
   alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Blog | Burien Best Care Home',
