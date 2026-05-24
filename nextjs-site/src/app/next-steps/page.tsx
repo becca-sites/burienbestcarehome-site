@@ -198,7 +198,7 @@ export default function NextSteps() {
               About Cost
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-[color:var(--color-ink)] leading-tight mb-6">
-              We&rsquo;ll tell you the number before you ask twice.
+              What you can expect to pay.
             </h2>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-4">
               Monthly care typically runs <span className="text-ink font-semibold">$6,500 to $9,500</span>, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
