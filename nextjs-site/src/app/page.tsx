@@ -614,7 +614,7 @@ export default function Home() {
                   <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[color:var(--color-sunshine)]/40 shadow-inner relative">
                     <Image
                       src="/photos/staff/becca-pitts-owner-care-director.webp"
-                      alt="Portrait of Becca Pitts, Owner and Care Director of Burien Best Care Home"
+                      alt="Portrait of Becca Pitts, Co-Owner & Real Estate Broker at Burien Best Care Home"
                       fill
                       sizes="112px"
                       className="object-cover"
@@ -623,7 +623,7 @@ export default function Home() {
                   <h3 className="font-serif text-2xl font-normal text-forest mb-1">
                     Becca Pitts
                   </h3>
-                  <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">Owner &amp; Care Director</p>
+                  <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">Co-Owner &amp; Real Estate Broker</p>
                   <p className="text-ink-soft leading-relaxed flex-grow">
                     Becca founded Burien Best Care Home out of a deep passion for providing genuine, dignified care for seniors. When you visit, Becca will listen to your story and help you find the right solution for your&nbsp;family.
                   </p>
@@ -636,7 +636,7 @@ export default function Home() {
                   <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[color:var(--color-sunshine)]/40 shadow-inner relative">
                     <Image
                       src="/photos/staff/dana-t-caregiver.webp"
-                      alt="Portrait of Daniela Torkelson, Lead Caregiver at Burien Best Care Home"
+                      alt="Portrait of Daniela Torkelson, Co-Owner, Provider & Resident Manager at Burien Best Care Home"
                       fill
                       sizes="112px"
                       className="object-cover"
@@ -645,7 +645,7 @@ export default function Home() {
                   <h3 className="font-serif text-2xl font-normal text-forest mb-1">
                     Daniela Torkelson
                   </h3>
-                  <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">Lead Caregiver</p>
+                  <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">Co-Owner, Provider &amp; Resident Manager</p>
                   <p className="text-ink-soft leading-relaxed flex-grow">
                     Daniela is the warm, steady presence our residents rely on every day. She believes care is about more than tasks. It&rsquo;s about knowing each person&rsquo;s story and honoring who they&nbsp;are.
                   </p>
