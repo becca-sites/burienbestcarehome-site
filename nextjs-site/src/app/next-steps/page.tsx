@@ -27,7 +27,7 @@ const steps = [
     n: '01',
     title: 'Tour the home & meet the team',
     body:
-      'Walk through the house. Meet the caregivers. Sit in the living room. Look at the garden. Ask every question on your list and the ones you haven’t thought of yet. If it isn’t the right fit, we’ll say so and help you figure out what is.',
+      'Meet the caregivers, walk through the house, look at the backyard, and get all of your questions answered. Even the ones you haven’t thought of yet. If it’s the right fit, fantastic. If it’s not, we might have resources to share that would suit your needs better.',
     duration: '60–90 min',
   },
   {
