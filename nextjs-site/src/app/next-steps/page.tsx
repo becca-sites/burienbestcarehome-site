@@ -75,14 +75,14 @@ const faqs = [
       'We expect care needs to change over time. That’s what an adult family home is built for. As your parent’s needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
   },
   {
-    question: 'Can family visit almost anytime?',
+    question: 'Can family visit anytime?',
     answer:
       'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 8 a.m. to 8 p.m., to keep the rhythm of the home.',
   },
   {
     question: 'What happens if it isn’t the right fit?',
     answer:
-      'Sometimes a family visits and it’s clear, for them or for us, that another setting would serve their parent better. We’ll tell you honestly, and we’ll help you find the right home. No one benefits from forcing a fit that isn’t there.',
+      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right.',
   },
 ]
 
