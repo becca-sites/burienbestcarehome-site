@@ -27,7 +27,7 @@ const steps = [
     n: '01',
     title: 'Tour the home & meet the team',
     body:
-      'Walk through the house. Meet Becca and the caregivers. Sit in the living room. Look at the garden. Ask every question on your list and the ones you haven’t thought of yet. There is no sales pitch. If it isn’t the right fit, we’ll say so and help you figure out what is.',
+      'Walk through the house. Meet the caregivers. Sit in the living room. Look at the garden. Ask every question on your list and the ones you haven’t thought of yet. If it isn’t the right fit, we’ll say so and help you figure out what is.',
     duration: '60–90 min',
   },
   {
