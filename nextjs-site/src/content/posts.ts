@@ -28,7 +28,7 @@ export const posts: Post[] = [
     slug: 'welcome-to-the-burien-best-care-home-blog',
     title: 'Welcome to the Burien Best Care Home blog',
     description:
-      'A kickoff post about what we plan to publish here — practical, no-BS writing for families navigating senior care in King County.',
+      'A kickoff post about what we plan to publish here. Practical, no-BS writing for families navigating senior care in King County.',
     date: '2026-04-23',
     author: 'Becca Pitts',
     readingTime: '3 min',
@@ -50,10 +50,10 @@ export const posts: Post[] = [
       {
         type: 'ul',
         items: [
-          'How to tell when it\u2019s time — the quiet signs most families miss until an emergency forces their hand.',
+          'How to tell when it\u2019s time. The quiet signs most families miss until an emergency forces their hand.',
           'What "adult family home" actually means in Washington State, and how it\u2019s different from assisted living, memory care facilities, and nursing homes.',
           'How much senior care really costs in King County, and which payment options actually cover what.',
-          'How to talk to a parent with dementia about a move — without breaking their trust or your own heart.',
+          'How to talk to a parent with dementia about a move without breaking their trust or your own heart.',
           'What to look for when you tour any senior home, anywhere. Not just ours.',
         ],
       },
@@ -75,7 +75,7 @@ export const posts: Post[] = [
       { type: 'h2', text: 'Start here if you\u2019re in decision mode' },
       {
         type: 'p',
-        text: 'If you\u2019re actively trying to figure out what to do for your parent right now, the most useful thing we can offer is a real conversation. You can schedule a visit to our home in Burien — no sales pitch, no pressure, just a tour and a cup of coffee. If that isn\u2019t where you are yet, keep reading. More posts coming soon.',
+        text: 'If you\u2019re actively trying to figure out what to do for your parent right now, the most useful thing we can offer is a real conversation. You can schedule a visit to our home in Burien. No sales pitch, no pressure, just a tour and a cup of coffee. If that isn\u2019t where you are yet, keep reading. More posts coming soon.',
       },
     ],
   },
