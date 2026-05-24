@@ -67,7 +67,7 @@ const faqs = [
   {
     question: 'How fast can my parent move in?',
     answer:
-      'When we have an open room, the timeline from first visit to move-in is usually 1–3 weeks, long enough to build a real care plan, coordinate medical records, and give your parent time to say goodbye to their current home without rushing them. If you’re in a hospital-discharge situation, we can often accelerate that to a matter of days.',
+      'When we have an open room, the timeline from first visit to move-in is usually 1–3 weeks, long enough to build a real care plan, coordinate medical records, and avoid rushing them through the transition. If you’re in a hospital-discharge situation, we can often accelerate that to a matter of days. In urgent cases we can do a same-day move-in, though that isn’t our preference.',
   },
   {
     question: 'What if my parent’s needs change over time?',
