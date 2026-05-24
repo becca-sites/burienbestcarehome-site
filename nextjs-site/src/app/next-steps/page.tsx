@@ -41,14 +41,14 @@ const steps = [
     n: '03',
     title: 'Prepare for move-in',
     body:
-      'We help you think through what to bring, how to talk to your parent about the transition, and what the first week might look like. We’ll coordinate with their current doctor, pharmacy, and care team to make sure everything is set up before their arrival. We handle the logistics so you can focus on your family.',
+      'We help you think through what to bring, how to talk to your parent about the transition, and what the first week might look like. We’ll coordinate with their current doctor, pharmacy, case manager, and social worker to make sure everything is set up before their arrival. We handle the logistics so you can focus on your family.',
     duration: '1–2 weeks of prep',
   },
   {
     n: '04',
     title: 'Settle in and stay connected',
     body:
-      'The first days matter. We go slow, introduce routines gently, and check in with you often. You’re welcome any time — for Sunday dinner, birthdays, or just because. Your parent is home. You’re still their family.',
+      'First days matter, so we go slow, introduce routines gently, and check in with you often. You’re welcome any time. For Sunday dinner, birthdays, or just because. Your parent is home. You’re still their family.',
     duration: 'Lifetime of care',
   },
 ]
