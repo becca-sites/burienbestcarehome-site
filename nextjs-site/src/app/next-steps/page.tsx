@@ -48,7 +48,7 @@ const steps = [
     n: '04',
     title: 'Settle in and stay connected',
     body:
-      'First days matter, so we go slow, introduce routines gently, and check in with you often. You’re welcome any time. For Sunday dinner, birthdays, or just because. Your parent is home. You’re still their family.',
+      'First days matter, so we go slow, introduce routines gently, and check in with you often. You’re welcome any time. For Sunday dinner, birthdays, or just because. If you plan to share a meal with us, we’ll need to know in advance so we can plan appropriately. Your parent is home. You stay involved as much as you want to be.',
     duration: 'Lifetime of care',
   },
 ]
@@ -57,7 +57,7 @@ const faqs = [
   {
     question: 'How much does it cost?',
     answer:
-      'Monthly care at Burien Best Care Home ranges from roughly $6,500 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We quote every family a specific number after the care plan conversation — no hidden fees, no surprise add-ons, and no pressure to commit on the spot.',
+      'Monthly care at Burien Best Care Home ranges from roughly $6,500 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We quote every family a specific number after the care plan conversation. No hidden fees, no surprise add-ons, and no pressure to commit on the spot.',
   },
   {
     question: 'Does Medicaid or long-term care insurance cover this?',
@@ -67,12 +67,12 @@ const faqs = [
   {
     question: 'How fast can my parent move in?',
     answer:
-      'When we have an open room, the timeline from first visit to move-in is usually 1–3 weeks — long enough to build a real care plan, coordinate medical records, and give your parent time to say goodbye to their current home without rushing them. If you’re in a hospital-discharge situation, we can often accelerate that to a matter of days.',
+      'When we have an open room, the timeline from first visit to move-in is usually 1–3 weeks, long enough to build a real care plan, coordinate medical records, and give your parent time to say goodbye to their current home without rushing them. If you’re in a hospital-discharge situation, we can often accelerate that to a matter of days.',
   },
   {
     question: 'What if my parent’s needs change over time?',
     answer:
-      'That’s what an adult family home is built for. We adjust the care plan as your parent’s needs evolve — more help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
+      'That’s what an adult family home is built for. We adjust the care plan as your parent’s needs evolve. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
   },
   {
     question: 'Can family visit anytime?',
@@ -82,7 +82,7 @@ const faqs = [
   {
     question: 'What happens if it isn’t the right fit?',
     answer:
-      'Sometimes a family visits and it’s clear — for them or for us — that another setting would serve their parent better. We’ll tell you honestly, and we’ll help you find the right home. No one benefits from forcing a fit that isn’t there.',
+      'Sometimes a family visits and it’s clear, for them or for us, that another setting would serve their parent better. We’ll tell you honestly, and we’ll help you find the right home. No one benefits from forcing a fit that isn’t there.',
   },
 ]
 
