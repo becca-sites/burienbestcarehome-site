@@ -72,12 +72,12 @@ const faqs = [
   {
     question: 'What if my parent’s needs change over time?',
     answer:
-      'That’s what an adult family home is built for. We adjust the care plan as your parent’s needs evolve. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
+      'We expect care needs to change over time. That’s what an adult family home is built for. As your parent’s needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
   },
   {
-    question: 'Can family visit anytime?',
+    question: 'Can family visit almost anytime?',
     answer:
-      'Yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. We don’t keep visiting hours. We keep a home.',
+      'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 8 a.m. to 8 p.m., to keep the rhythm of the home.',
   },
   {
     question: 'What happens if it isn’t the right fit?',
