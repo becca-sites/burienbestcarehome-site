@@ -57,7 +57,7 @@ const faqs = [
   {
     question: 'How much does it cost?',
     answer:
-      'Monthly care at Burien Best Care Home ranges from roughly $6,500 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We quote every family a specific number after the care plan conversation. No hidden fees, no surprise add-ons, and no pressure to commit on the spot.',
+      'Monthly care at Burien Best Care Home ranges from roughly $5,000 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We quote every family a specific number after the care plan conversation. No hidden fees, no surprise add-ons, and no pressure to commit on the spot.',
   },
   {
     question: 'Does Medicaid or long-term care insurance cover this?',
@@ -201,7 +201,7 @@ export default function NextSteps() {
               What you can expect to pay.
             </h2>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-4">
-              Monthly care typically runs <span className="text-ink font-semibold">$6,500 to $9,500</span>, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
+              Monthly care typically runs <span className="text-ink font-semibold">$5,000 to $9,500</span>, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
             </p>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-10">
               We quote every family a specific number after the care plan conversation. No hidden fees. No surprise add-ons. No pressure to commit on the spot.
