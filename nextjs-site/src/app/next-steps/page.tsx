@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'Does Medicaid or long-term care insurance cover this?',
     answer:
-      'We accept private pay, long-term care insurance, and some VA benefits. We are not a Medicaid-contracted facility today, though we can connect you with local adult family homes that are if that’s the right path for your family. If you have LTC insurance, we’ll help you work through the claim process with your carrier.',
+      'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we’ll help you work through the claim process with your carrier.',
   },
   {
     question: 'How fast can my parent move in?',
