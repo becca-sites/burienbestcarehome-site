@@ -34,7 +34,7 @@ const steps = [
     n: '02',
     title: 'Build the care plan together',
     body:
-      'We sit down with you and your parent to map out the details: medications, meals, daily rhythm, mobility needs, sleep schedule, the foods they love, the music they hate. We write a plan that fits their life, not a template that fits ours.',
+      'We sit down with you and, if appropriate, your loved one to map out the details: medications, meals, daily rhythm, mobility needs, sleep schedule, the foods they love, the music they hate. We write a plan that fits their life.',
     duration: '1 conversation, ongoing adjustments',
   },
   {
