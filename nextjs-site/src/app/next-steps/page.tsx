@@ -164,7 +164,7 @@ export default function NextSteps() {
                 From first visit to &ldquo;they&rsquo;re home.&rdquo;
               </h2>
               <p className="mt-5 text-base md:text-lg text-ink-soft max-w-2xl mx-auto">
-                Four steps. No rushed deposits, no high-pressure sales. Just a real process that respects your parent and your family.
+                Four steps taken at your pace.
               </p>
             </div>
           </ScrollReveal>
