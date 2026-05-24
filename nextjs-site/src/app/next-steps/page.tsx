@@ -204,7 +204,7 @@ export default function NextSteps() {
               Monthly care typically runs <span className="text-ink font-semibold">$5,000 to $9,500</span>, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
             </p>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-10">
-              We will quote your family a specific number after our care plan conversation, once we understand your loved one’s current care requirements and needs.
+              We’ll provide your family a care quote after our care plan conversation, once we understand your loved one’s current care requirements and needs.
             </p>
             <ScheduleVisitButton surface="on-white" />
           </ScrollReveal>
