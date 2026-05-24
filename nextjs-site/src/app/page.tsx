@@ -38,9 +38,9 @@ export default function Home() {
         'This is one of the biggest differences between Burien Best Care Home and larger facilities. We care for a maximum of eight residents. That means your parent isn\'t competing for staff attention with dozens of others. Our small size allows for genuine relationships and individualized care that simply isn\'t possible in larger settings.',
     },
     {
-      question: 'Can we visit anytime?',
+      question: 'Can we visit almost any time?',
       answer:
-        'Absolutely. Family visits are always welcome at Burien Best Care Home. We encourage family involvement in your loved one\'s care and daily activities. Visit whenever works best for your schedule. Early morning, afternoon, evening, weekends - you\'re always welcome. Your presence matters, and we love seeing families connected and engaged.',
+        'Almost any time, yes. Family visits are warmly welcomed at Burien Best Care Home, and we encourage family involvement in your loved one\'s care and daily activities. Our visiting hours run loosely from 8 a.m. to 8 p.m. so we can respect the routines of our residents. Within that window, visit whenever works best for your schedule. Your presence matters, and we love seeing families connected and engaged.',
     },
     {
       question: 'What types of care do you provide?',
