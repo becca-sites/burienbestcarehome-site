@@ -536,7 +536,7 @@ export default function ServicesPage() {
               <ScheduleVisitButton surface="on-white" />
             </div>
             <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
-              Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King and surrounding&nbsp;counties.
+              Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King County and surrounding&nbsp;areas.
             </p>
           </div>
         </ScrollReveal>
