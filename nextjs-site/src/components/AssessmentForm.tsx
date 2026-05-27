@@ -204,8 +204,8 @@ const QUESTIONS: Question[] = [
     title: 'What matters most to you in a care setting?',
     subtitle: 'Pick up to three that feel most important.',
     options: [
-      { value: 'home-like', label: 'Small, home-like environment' },
-      { value: 'one-on-one', label: 'Personalized, one-on-one attention' },
+      { value: 'home-like', label: 'Small home-like environment' },
+      { value: 'one-on-one', label: 'Personalized one-on-one attention' },
       { value: 'memory-care', label: 'Memory care expertise' },
       { value: 'location', label: 'Location close to family' },
       { value: 'affordability', label: 'Affordability' },
