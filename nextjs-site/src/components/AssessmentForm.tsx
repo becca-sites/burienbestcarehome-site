@@ -159,7 +159,7 @@ const QUESTIONS: Question[] = [
       { value: 'sundowning', label: 'Sundowning, agitation in the evening' },
       { value: 'recognition', label: 'Difficulty recognizing family members' },
       { value: 'refusal-bathe', label: 'Refusing to bathe' },
-      { value: 'refusal-eat', label: 'Refusing to eat or drink' },
+      { value: 'refusal-eat', label: 'Refusing or having trouble eating or drinking' },
       { value: 'refusal-meds', label: 'Refusing medication' },
       { value: 'confusion', label: 'Confusion about time or place' },
       { value: 'none', label: 'None of these' },
