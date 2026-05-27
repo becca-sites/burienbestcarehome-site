@@ -412,7 +412,7 @@ export default function ServicesPage() {
         }
         paragraphs={[
           'Needing help with bathing, dressing, or meals doesn\'t mean losing who you are. Your parent can still make choices. Still have preferences. Still maintain the self-respect that comes with dignity.',
-          'Every interaction is designed to preserve independence while ensuring safety. We move at your parent\'s pace. We ask permission before helping. We treat every moment as if someone you love is watching (because someone is: you).',
+          'Interactions are designed to preserve independence while ensuring safety. We move at your parent\'s pace. We ask permission before helping.',
         ]}
         features={dailyLivingFeaturesData}
         delay={0.2}
