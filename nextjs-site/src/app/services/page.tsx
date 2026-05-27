@@ -453,8 +453,8 @@ export default function ServicesPage() {
           </>
         }
         paragraphs={[
-          'Coming home from the hospital is supposed to be good news. But you\'re terrified. What if they fall? What if they don\'t take their medications right? What if something goes wrong and you can\'t handle it? These fears are real, and they\'re valid.',
-          'Our post-hospital recovery program gives your family the breathing room you need. Your parent gets 24/7 professional oversight from caregivers trained in recovery support. Medications coordinated. Progress monitored. Doctors kept informed. You get to focus on being their child again, not their nurse.',
+          'Coming home from the hospital is supposed to be good news. But you\'re terrified. What if they fall? What if they don\'t take their medications right? What if something goes wrong and you can\'t handle it? These fears are real, and they\'re valid. And even if you wanted to take this on yourself, life rarely makes room for it. Between work, family, and everything else you carry, post-hospital recovery can quickly become a full-time job.',
+          'Our post-hospital recovery program gives your family the breathing room you need. Your parent gets 24/7 professional oversight from caregivers trained in recovery support. We coordinate medications, monitor progress, and keep doctors informed. You get to focus on being their child again, not their nurse.',
         ]}
         features={recoveryCareFeaturesData}
         delay={0.4}
