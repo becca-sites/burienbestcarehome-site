@@ -47,11 +47,11 @@ export default function About() {
   const promises = [
     {
       title: 'Your Parent\u2019s Dignity First',
-      description: 'We never rush, never talk down, never treat care as a checklist. Your parent is not a task. They are a person with a lifetime of stories and wisdom.',
+      description: 'We never rush, never talk down, never treat care as a checklist. Your parent is not a task. They are a person with a lifetime of stories and wisdom to share.',
     },
     {
       title: 'We Keep You Informed',
-      description: 'Open communication. Visits are welcome. We set up a communication plan based on your family\u2019s preferences and needs. You stay in the loop on what matters and you choose how involved to be.',
+      description: 'Open communication and visits are welcome. We set up a communication plan based on your family\u2019s preferences and needs. You stay in the loop on what matters and you choose how involved to be.',
     },
     {
       title: 'Small by Design',
@@ -88,7 +88,7 @@ export default function About() {
             A Home Built for Families Who Wanted&nbsp;<span className="text-[color:var(--color-sunshine)] italic">Real</span>&nbsp;Alternatives.
           </h1>
           <p className="text-lg sm:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow">
-            A place with the warmth of home and the professionalism of trained caregivers. For your peace of&nbsp;mind.
+            The warmth of home, the professionalism of trained caregivers, and the peace of mind your family&nbsp;deserves.
           </p>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function About() {
             <GlassCard variant="solid" className="p-8 sm:p-12 lg:p-14">
               <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                 <p>
-                  We watched families struggle and loved ones fade in large facilities where they were room numbers, not people. We watched families torn between guilt and exhaustion, and decided to create something different: a home where residents are treated like family, where caregivers know every person&rsquo;s story, and where families find the peace of mind they have been searching&nbsp;for.
+                  We watched families struggle and loved ones fade in large facilities where they were room numbers, not people. We watched families torn between guilt and exhaustion, and decided to create something different. A home where residents are treated like family, where caregivers know every person&rsquo;s story, and where families find the peace of mind they have been searching&nbsp;for.
                 </p>
                 <p>
                   You are looking for peace of mind, and a place where someone who genuinely knows your parent can carry the responsibility of their care with the same love you&nbsp;would.
