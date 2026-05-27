@@ -58,7 +58,7 @@ export default function Contact() {
       number: 5,
       title: 'You Decide in Your Own Time',
       description:
-        'If everything feels right, we can talk next steps at your pace. Take time to think. Ask us more questions. We understand this is one of the biggest decisions you\u2019ll ever make.',
+        'If everything feels right, we can talk next steps at your pace. Take the time you need to think, ask more questions, and talk it through with your family. We understand this is a significant decision.',
     },
   ]
 
@@ -312,7 +312,7 @@ export default function Contact() {
                   Your Next Step Home
                 </h3>
                 <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
-                  A guide to understanding adult family homes and finding the right fit for your loved one&rsquo;s&nbsp;needs.
+                  As a Seniors Real Estate Specialist (SRES), Becca helps families sell a home to make adult family home care financially&nbsp;possible.
                 </p>
                 <a
                   href="https://www.yournextstephome.com"
@@ -361,7 +361,7 @@ export default function Contact() {
 
           <ScrollReveal delay={0.1}>
             <p className="text-lg sm:text-xl text-ink-soft mb-10 leading-relaxed">
-              You have been carrying this decision alone long enough. Let us walk this road with&nbsp;you.
+              You\u2019ve been carrying this decision alone long enough. Let us walk this road with&nbsp;you.
             </p>
           </ScrollReveal>
 
