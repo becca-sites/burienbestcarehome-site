@@ -90,8 +90,6 @@ export default function Contact() {
             className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight drop-shadow-lg"
           >
             The First Step Is the&nbsp;<span className="text-[color:var(--color-sunshine)] italic">Hardest</span>.
-            <br />
-            We&rsquo;ll Make It Easy.
           </h1>
           <p className="text-lg sm:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow">
             A real conversation about what your parent needs and how we can&nbsp;help.
@@ -109,7 +107,7 @@ export default function Contact() {
                 Reach Out However Feels&nbsp;Right
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto mt-4">
-                Call or email to schedule a visit. We look forward to meeting you and your family.
+                Call or email to schedule a visit. We look forward to meeting you and your&nbsp;family.
               </p>
             </div>
           </ScrollReveal>
@@ -216,7 +214,7 @@ export default function Contact() {
                 Come See Our Home for&nbsp;Yourself
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto leading-relaxed">
-                Tour the home, meet our team, and see how your parent could live here. We will answer every question honestly, even the hard&nbsp;ones.
+                Tour the home, meet our team, and see how your parent could live here.
               </p>
             </div>
           </ScrollReveal>
