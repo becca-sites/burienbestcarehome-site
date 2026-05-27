@@ -43,7 +43,7 @@ const memoryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Consistent Daily Routines',
     description:
-      'Less confusion. More comfort. Predictable days that reduce anxiety and help your parent feel secure.',
+      'Predictable days that reduce confusion, ease anxiety, and help your parent feel secure.',
   },
   {
     title: 'Person-Centered Dementia Care',
