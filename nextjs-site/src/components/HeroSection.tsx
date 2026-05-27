@@ -77,7 +77,7 @@ export default function HeroSection() {
             className="text-[color:var(--color-slate-soft)] text-[11px] sm:text-xs lg:text-sm font-semibold uppercase tracking-[0.18em] mb-5 text-center text-balance max-w-[34ch] mx-auto"
             variants={itemVariants}
           >
-            For families in Burien, Kent, Renton &amp; across King County
+            For families in Burien, Kent, Renton &amp; across King County and surrounding areas
           </motion.p>
 
           {/* Headline — "safety" highlighted in brand sage; intentional break for breathing room */}
@@ -98,7 +98,7 @@ export default function HeroSection() {
           >
             You&rsquo;ve noticed the changes. Your parent needs more help than living alone can safely provide.
             Burien Best Care Home is a licensed adult family home where seniors receive 24/7 personalized support
-            with daily living: meals, medication, bathing, dressing, and&nbsp;more.
+            with daily living, including meals, medication, bathing, dressing, and&nbsp;more.
             Whether your loved one needs light assistance or around-the-clock care, we&rsquo;re&nbsp;here.
           </motion.p>
 
