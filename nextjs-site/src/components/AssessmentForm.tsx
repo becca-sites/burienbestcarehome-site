@@ -231,21 +231,6 @@ const QUESTIONS: Question[] = [
       { value: 'combination', label: 'Combination' },
     ],
   },
-  {
-    id: 'area',
-    step: 13,
-    act: 3,
-    type: 'single',
-    title: 'In what area does your loved one currently live?',
-    options: [
-      { value: 'burien', label: 'Burien, White Center, Normandy Park' },
-      { value: 'tukwila', label: 'Tukwila, SeaTac, Des Moines' },
-      { value: 'renton-kent', label: 'Renton, Kent' },
-      { value: 'federal-way', label: 'Federal Way, Auburn' },
-      { value: 'west-seattle', label: 'West Seattle' },
-      { value: 'other', label: 'Other' },
-    ],
-  },
 ]
 
 const TOTAL_STEPS = QUESTIONS.length + 1 // +1 for the contact info step
@@ -495,7 +480,6 @@ export default function AssessmentForm() {
       `Q11 Medical: ${labelsFor('medical', multi.medical ?? []).join(', ') || '(none selected)'}`,
       `Q12 Priorities: ${labelsFor('priorities', multi.priorities ?? []).join(', ') || '(none selected)'}`,
       `Q13 Payment: ${labelFor('payment', single.payment ?? '')}`,
-      `Q14 Area: ${labelFor('area', single.area ?? '')}`,
       `Best time: ${contact.bestTime}`,
     ]
     return lines.join('\n')
