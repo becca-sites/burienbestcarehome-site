@@ -239,7 +239,7 @@ export default function NextSteps() {
               Start with a visit. <span className="text-sunshine-deep italic">That&rsquo;s it.</span>
             </h2>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-8 max-w-xl mx-auto">
-              There&rsquo;s no form to fill out first, no checklist to complete, no commitment implied. Just a tour, a conversation, and a chance to see if we&rsquo;re the right home for your parent.
+              Just a tour, a conversation, and a chance to see if we&rsquo;re the right home for your parent.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <ScheduleVisitButton surface="on-white" />
