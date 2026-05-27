@@ -153,7 +153,7 @@ const QUESTIONS: Question[] = [
     act: 2,
     type: 'multi',
     title: 'Have you noticed any of these behaviors?',
-    subtitle: 'Select any that apply. This is just for us to understand the picture.',
+    subtitle: 'Select any that apply.',
     options: [
       { value: 'wandering', label: 'Wandering or getting lost' },
       { value: 'sundowning', label: 'Sundowning, agitation in the evening' },
