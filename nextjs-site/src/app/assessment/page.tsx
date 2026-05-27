@@ -142,7 +142,7 @@ export default function AssessmentPage() {
             Would rather just talk to someone?
           </h2>
           <p className="text-ink-soft text-base sm:text-lg leading-relaxed mb-6">
-            Call Becca directly. No script, no qualifying questions. She will listen, and help you figure out the next right step for your family.
+            Call us directly. We will listen and help you figure out the next right step for your family.
           </p>
           <a
             href="tel:+12536787089"
