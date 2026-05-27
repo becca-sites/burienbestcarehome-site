@@ -364,7 +364,7 @@ export default function ServicesPage() {
               Care That Treats Your Parent as a&nbsp;<span className="text-[color:var(--color-sunshine)] italic">Person</span>.
             </h1>
             <p className="text-lg md:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto">
-              Every care plan starts with one question: what does your parent need to feel safe, happy, and at&nbsp;home?
+              Every care plan starts with one question. What does your parent need to feel safe, happy, and at&nbsp;home?
             </p>
           </div>
         </ScrollReveal>
@@ -375,7 +375,7 @@ export default function ServicesPage() {
         <ScrollReveal className="max-w-3xl mx-auto">
           <GlassCard variant="solid" className="p-8 sm:p-10">
             <p className="text-center text-ink-soft leading-relaxed text-lg sm:text-xl">
-              We don&rsquo;t believe in one-size-fits-all care. In our home, we have the time and attention to truly know your parent. Their morning preferences, their favorite music, the stories that make them smile. This is what personalized care looks&nbsp;like.
+              We don&rsquo;t believe in one-size-fits-all care. We take the time to know your parent. Their morning preferences, their favorite music, the stories that make them smile. This is what personalized care looks&nbsp;like.
             </p>
           </GlassCard>
         </ScrollReveal>
@@ -394,7 +394,7 @@ export default function ServicesPage() {
         }
         paragraphs={[
           'Your parent is more than their diagnosis. Even with memory loss, they remember the warmth of your touch. They feel the difference between someone going through the motions and someone who truly cares. Our memory care program is built on that truth.',
-          'We don\u2019t just manage symptoms. We preserve dignity. We maintain routines that feel familiar. We play music they grew up with, encourage activities that spark joy, and speak to them the way they deserve to be spoken to. And we make sure you know what\u2019s happening every single day.',
+          'We don\u2019t just manage symptoms, we preserve dignity. We maintain routines that feel familiar. We play music they grew up with, encourage activities that bring joy, and speak to them the way they deserve to be spoken to.',
         ]}
         features={memoryCareFeaturesData}
         delay={0.1}
