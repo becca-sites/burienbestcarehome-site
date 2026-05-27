@@ -369,8 +369,14 @@ export default function AssessmentForm() {
   const currentQuestion = !isContactStep ? QUESTIONS[stepIndex] : null
   const progressPct = Math.round(((stepIndex + 1) / TOTAL_STEPS) * 100)
 
-  // Scroll focus to top of card on step change (helps mobile)
+  // Scroll focus to top of card on step CHANGE (helps mobile),
+  // but skip the initial mount so visitors can read the intro section first.
+  const isInitialMount = useRef(true)
   useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
     cardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [stepIndex])
 
