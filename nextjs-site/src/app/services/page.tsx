@@ -431,8 +431,8 @@ export default function ServicesPage() {
           </>
         }
         paragraphs={[
-          'You\u2019ve been doing this for months. Maybe years. You love your parent fiercely, but you\u2019re exhausted. Burnt out. Running on empty. And you feel guilty about needing a break, when the truth is: needing rest doesn\u2019t make you a bad child. It makes you human.',
-          'Our respite care gives you permission to breathe while your parent receives the same attentive, personalized care they\'d get in any other stay. No rushing. No shortcuts. Just professional care from people who understand what your parent needs.',
+          'You\u2019ve been doing this for months. Maybe years. You love your parent fiercely, but you\u2019re exhausted. Burnt out. Running on empty. You feel guilty about needing a break, when the truth is: needing rest doesn\u2019t make you a bad child. It makes you human.',
+          'Our respite care gives you permission to breathe while your parent receives the personalized care you\u2019ve been providing, just in a different setting, with professional care from people who understand what your parent needs.',
         ]}
         features={respiteCareFeaturesData}
         delay={0.3}
