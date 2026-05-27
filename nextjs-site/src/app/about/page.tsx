@@ -55,7 +55,7 @@ export default function About() {
     },
     {
       title: 'Small by Design',
-      description: 'An adult family home with up to eight residents. The smaller the home, the more attention each person receives. Quality over quantity, every day.',
+      description: 'An adult family home with up to eight residents allows for more attention to each one. We choose quality over quantity, every day.',
     },
   ]
 
