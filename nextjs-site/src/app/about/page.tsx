@@ -132,7 +132,7 @@ export default function About() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {promises.map((promise, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <GlassCard variant="solid" className="p-8 sm:p-10 h-full">
@@ -216,13 +216,13 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                   <p>
-                    Our door is always open. For morning coffee. For dinner. For no reason at all. Your parent&rsquo;s home is your home. Your pace is yours.
+                    Our door is open for morning coffee, for dinner, or for no reason at all. Your parent&rsquo;s home is your home, and your pace is yours.
                   </p>
                   <p>
-                    We keep families informed about what matters. We welcome your visits and your questions. You decide how involved you want to be. There is no right amount. We meet you where you&nbsp;are.
+                    We keep families informed about what matters, and we welcome your visits and questions. You decide how involved you want to be. There is no right amount, and we meet you where you&nbsp;are.
                   </p>
                   <p>
-                    Your parent is not just being cared for. Your parent is being loved. And you are never an intrusion. You belong&nbsp;here.
+                    Your parent isn&rsquo;t just being cared for. They are being loved. You are never an intrusion, and you belong&nbsp;here.
                   </p>
                 </div>
               </div>
@@ -264,11 +264,6 @@ export default function About() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.3}>
-            <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
-              Licensed. Bonded. Insured. No surprises, no hidden fees, no excuses.
-            </p>
-          </ScrollReveal>
         </div>
       </section>
 
