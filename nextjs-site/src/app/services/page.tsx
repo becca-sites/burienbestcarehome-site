@@ -91,7 +91,7 @@ const dailyLivingFeaturesData: FeatureItem[] = [
   {
     title: 'Meals That Feel Like Home',
     description:
-      'Three meals and snacks a day, planned around each resident\'s preferences and dietary needs. Real food, served at a real table.',
+      'Three meals a day plus, of course, snacks. We plan around each resident\'s preferences and dietary needs. Real food, served at a real table.',
   },
   {
     title: 'Housekeeping & Laundry',
