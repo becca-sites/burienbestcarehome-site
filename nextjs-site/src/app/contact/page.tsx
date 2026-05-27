@@ -32,7 +32,7 @@ export default function Contact() {
   const visitSteps = [
     {
       number: 1,
-      title: 'You Reach Out, We Respond',
+      title: 'You Reach Out',
       description:
         'You call or email, and we\u2019ll get back to you within 24 hours. We\u2019ll listen to what matters most to your family and find a time that works for you.',
     },
