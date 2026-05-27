@@ -115,14 +115,14 @@ export default function AssessmentPage() {
             id="assessment-hero-headline"
             className="font-serif text-3xl sm:text-4xl md:text-5xl text-forest leading-[1.15] mb-5"
           >
-            Is It Time for{' '}
+            Is it time for{' '}
             <span className="italic text-[color:var(--color-slate)] underline decoration-2 underline-offset-4 decoration-[color:var(--color-sunshine-deep)]">
-              Care
+              care
             </span>
-            ? Let&rsquo;s Figure It Out Together.
+            ? This free assessment will help you&nbsp;decide.
           </h1>
           <p className="text-ink-soft text-lg sm:text-xl leading-relaxed mb-3">
-            Thirteen short questions, which will take about three minutes and will end with a personalized recommendation.
+            Fourteen short questions, which will take about three minutes and will end with a personalized recommendation.
           </p>
           <p className="text-ink-soft text-base sm:text-lg leading-relaxed">
             Think about each question and be sure to answer as openly and honestly as possible for the most useful results.
