@@ -81,7 +81,7 @@ const dailyLivingFeaturesData: FeatureItem[] = [
   {
     title: 'Dressing & Mobility Support',
     description:
-      'Help choosing clothes they love and moving safely throughout the home. Independence maintained, risk reduced.',
+      'Help choosing clothes they love and moving safely throughout the home. Independence maintained and risk reduced.',
   },
   {
     title: 'Medication Management',
