@@ -513,7 +513,7 @@ export default function ServicesPage() {
                     Known by Name
                   </h3>
                   <p className="text-ink-soft leading-relaxed">
-                    Your parent is known by name, by story, and by heart. They&rsquo;re a person we genuinely care for, woven into our small home&nbsp;community.
+                    Your parent is known by name. We take time to learn their preferences, their stories, and what makes them feel at home with&nbsp;us.
                   </p>
                 </GlassCard>
               </ScrollReveal>
@@ -536,7 +536,7 @@ export default function ServicesPage() {
               <ScheduleVisitButton surface="on-white" />
             </div>
             <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
-              Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King&nbsp;County.
+              Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King and surrounding&nbsp;counties.
             </p>
           </div>
         </ScrollReveal>
