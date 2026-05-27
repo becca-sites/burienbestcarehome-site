@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold mb-4 text-sage-light">About Us</h2>
             <p className="text-cream/95 leading-relaxed text-sm">
-              A licensed adult family home in Burien, WA providing 24/7 personalized support with memory care, daily living, respite care, and post-hospital recovery for seniors across King County.
+              A licensed adult family home in Burien, WA providing 24/7 personalized support with memory care, daily living, respite care, and post-hospital recovery for seniors across King County and surrounding areas.
             </p>
           </div>
 
@@ -87,7 +87,6 @@ export default function Footer() {
               <div>
                 <p className="font-medium text-sage-light-light">Office Hours</p>
                 <p>Monday - Friday: 9am - 5pm</p>
-                <p>Saturday - Sunday: 10am - 4pm</p>
               </div>
               <div>
                 <p className="font-medium text-sage-light-light">Care Services</p>
@@ -95,7 +94,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-sage-light-light">Visits Welcome</p>
-                <p>Anytime</p>
+                <p>Roughly 8am &ndash; 8pm</p>
               </div>
             </div>
           </div>
