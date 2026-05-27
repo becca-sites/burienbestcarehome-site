@@ -233,9 +233,8 @@ export default function Contact() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <p className="uppercase tracking-widest text-sm font-semibold text-[color:var(--color-slate-soft)] mb-3">What to Expect</p>
               <h2 className="font-serif text-4xl md:text-5xl text-[color:var(--color-ink)] mb-4 leading-tight">
-                Here&rsquo;s Exactly What Happens When You&nbsp;Visit
+                Here&rsquo;s what to&nbsp;expect.
               </h2>
               <p className="text-lg text-ink-soft max-w-2xl mx-auto">
                 We know this feels big. Here&rsquo;s what the experience looks like, step by&nbsp;step.
