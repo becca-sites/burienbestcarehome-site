@@ -129,7 +129,7 @@ const respiteCareFeaturesData: FeatureItem[] = [
   {
     title: 'Smooth Transitions',
     description:
-      'Support for both your parent and your family during arrival and departure. We make it easy on everyone.',
+      'Support for both your parent and your family during arrival and departure. We do our best to make the transition smooth for everyone.',
   },
   {
     title: 'No Long-Term Commitment',
