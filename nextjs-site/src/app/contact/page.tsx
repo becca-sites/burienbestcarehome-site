@@ -40,19 +40,19 @@ export default function Contact() {
       number: 2,
       title: 'We Schedule Your Visit',
       description:
-        'We\u2019ll work around your schedule. No rush, no pressure. You\u2019ll get all the details you need and answers to any questions before you arrive.',
+        'We\u2019ll work around your schedule. You\u2019ll get all the details you need and answers to any questions before you arrive.',
     },
     {
       number: 3,
       title: 'You Tour the Home and Meet Our Team',
       description:
-        'You\u2019ll see the living spaces, meet the people who\u2019ll care for your parent, and ask anything you want. We\u2019ll talk you through how we do things here and what a typical day looks like.',
+        'You\u2019ll see the living spaces, meet the people who\u2019ll care for your parent, and ask anything you want. We\u2019ll talk you through how we do things and what a typical day looks like.',
     },
     {
       number: 4,
       title: 'We Talk About What Matters Most',
       description:
-        'We\u2019ll sit down and get to know your parent and your family. We\u2019ll listen more than we talk. If we\u2019re the right fit, we\u2019ll be honest about that. If we\u2019re not, we\u2019ll help you find the right place.',
+        'We\u2019ll sit down and get to know your parent and your family. If we\u2019re the right fit, we\u2019ll talk through next steps together. If we\u2019re not, we\u2019ll help you find a setting that better suits your loved one\u2019s needs.',
     },
     {
       number: 5,
