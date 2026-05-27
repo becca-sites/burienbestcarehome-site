@@ -658,7 +658,7 @@ export default function AssessmentForm() {
               Where should we send your results?
             </h2>
             <p className="text-ink-soft text-base sm:text-lg mb-8 leading-relaxed">
-              We will email you a personalized summary and follow up to talk through what we saw.
+              We will email you a personalized summary.
             </p>
 
             <form onSubmit={handleSubmit} noValidate className="space-y-6">
@@ -748,7 +748,7 @@ export default function AssessmentForm() {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-forest font-semibold mb-2">
-                    Phone (Optional)
+                    Phone
                   </label>
                   <input
                     type="tel"
