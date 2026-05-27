@@ -625,7 +625,7 @@ export default function Home() {
                   </h3>
                   <p className="text-[color:var(--color-sunshine-deep)] font-semibold uppercase tracking-wide text-sm mb-4">Co-Owner &amp; Real Estate Broker</p>
                   <p className="text-ink-soft leading-relaxed flex-grow">
-                    Becca founded Burien Best Care Home out of a deep passion for providing genuine, dignified care for seniors. When you visit, Becca will listen to your story and help you find the right solution for your&nbsp;family.
+                    Becca joined up with Burien Best Care Home out of a deep passion for providing genuine, dignified care for seniors. When you visit, Becca will listen to your story and help you find the right solution for your&nbsp;family.
                   </p>
                 </GlassCard>
               </ScrollReveal>
