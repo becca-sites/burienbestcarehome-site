@@ -122,10 +122,10 @@ export default function AssessmentPage() {
             ? Let&rsquo;s Figure It Out Together.
           </h1>
           <p className="text-ink-soft text-lg sm:text-xl leading-relaxed mb-3">
-            Thirteen short questions take about three minutes and end with a personalized recommendation.
+            Thirteen short questions, which will take about three minutes and will end with a personalized recommendation.
           </p>
           <p className="text-ink-soft text-base sm:text-lg leading-relaxed">
-            Honest answers will give you the most useful result.
+            Think about each question and be sure to answer as openly and honestly as possible for the most useful results.
           </p>
         </div>
       </section>
