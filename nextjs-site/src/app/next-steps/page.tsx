@@ -147,7 +147,7 @@ export default function NextSteps() {
             A clear path,&nbsp;<span className="text-sunshine italic">at your pace</span>.
           </h1>
           <p className="text-lg sm:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow">
-            Once a visit feels right, this is what working together looks like. No rush, no surprises, and no pressure to decide before you&rsquo;re ready.
+            Once you visit and decide you&rsquo;d like to move forward with our home, this is what the next steps look like.
           </p>
         </div>
       </section>
@@ -201,7 +201,7 @@ export default function NextSteps() {
               What you can expect to pay.
             </h2>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-4">
-              Monthly care typically runs <span className="text-ink font-semibold">$5,000 to $9,500</span>, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
+              Monthly care typically runs $5,000 to $9,500, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
             </p>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-10">
               We’ll provide your family a care quote after our care plan conversation, once we understand your loved one’s current care requirements and needs.
