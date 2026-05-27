@@ -109,7 +109,7 @@ const QUESTIONS: Question[] = [
     title: "What's holding you back from making a decision?",
     subtitle: 'Select any that apply.',
     options: [
-      { value: 'burnout', label: "I can't keep doing this alone" },
+      { value: 'guilt', label: 'I feel guilty about handing over the reins' },
       { value: 'cost', label: 'Cost and affordability' },
       { value: 'unsure', label: "I don't know what type of care is right" },
       { value: 'disagreement', label: 'Family disagreement on next steps' },
