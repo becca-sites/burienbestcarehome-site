@@ -306,7 +306,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="relationship" className="block text-forest font-semibold mb-2">
-            Relationship to Resident <span className="text-terracotta">*</span>
+            Relationship to Potential Resident <span className="text-terracotta">*</span>
           </label>
           <select
             id="relationship"
