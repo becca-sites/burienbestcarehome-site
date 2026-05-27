@@ -234,7 +234,7 @@ const QUESTIONS: Question[] = [
     step: 13,
     act: 3,
     type: 'single',
-    title: 'What area of King County is most convenient for your family?',
+    title: 'In what area does your loved one currently live?',
     options: [
       { value: 'burien', label: 'Burien, White Center, Normandy Park' },
       { value: 'tukwila', label: 'Tukwila, SeaTac, Des Moines' },
@@ -668,14 +668,11 @@ export default function AssessmentForm() {
             transition={{ duration: 0.32, ease: [0.22, 0.61, 0.36, 1] }}
             className="bg-[color:var(--color-bone)] border border-[rgba(45,62,74,0.08)] shadow-[0_1px_0_rgba(255,255,255,0.7)_inset,0_10px_28px_-12px_rgba(45,62,74,0.16),0_2px_6px_rgba(45,62,74,0.05)] rounded-2xl p-6 sm:p-10"
           >
-            <p className="uppercase tracking-widest text-xs font-semibold text-[color:var(--color-slate-soft)] mb-3">
-              You&rsquo;re doing the right thing by exploring this
-            </p>
             <h2 className="font-serif text-2xl sm:text-3xl text-forest leading-tight mb-3">
               Where should we send your results?
             </h2>
             <p className="text-ink-soft text-base sm:text-lg mb-8 leading-relaxed">
-              We will email you a personalized summary, and Becca will follow up personally to talk through what we saw. No pressure, no sales pitch.
+              We will email you a personalized summary and follow up to talk through what we saw.
             </p>
 
             <form onSubmit={handleSubmit} noValidate className="space-y-6">
