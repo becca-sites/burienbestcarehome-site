@@ -698,7 +698,11 @@ export default function Home() {
             </p>
 
             <p className="text-ink-soft text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
-              You deserve peace of mind. Your parent deserves quality care. Let&rsquo;s take the next step&nbsp;together.
+              You deserve peace of mind, and your parents deserve quality&nbsp;care.
+            </p>
+
+            <p className="text-ink-soft text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
+              Let&rsquo;s take this step&nbsp;together.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 pt-4">
