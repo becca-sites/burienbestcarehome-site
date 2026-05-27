@@ -38,7 +38,6 @@ const QUESTIONS: Question[] = [
     act: 1,
     type: 'single',
     title: 'Who are you exploring care options for?',
-    subtitle: "There are no wrong answers here. Just tell us where you're starting from.",
     options: [
       { value: 'parent', label: 'My parent' },
       { value: 'spouse', label: 'My spouse' },
@@ -534,7 +533,7 @@ export default function AssessmentForm() {
       <div className="mb-8">
         <div className="flex items-center justify-between mb-3">
           <p className="text-sm font-semibold uppercase tracking-widest text-[color:var(--color-slate-soft)]">
-            {isContactStep ? 'Last step' : `Question ${stepIndex + 1} of ${TOTAL_STEPS}`}
+            {isContactStep ? 'Last step' : `Question ${stepIndex + 1} of ${QUESTIONS.length}`}
           </p>
           <p className="text-sm text-ink-soft font-medium">{progressPct}%</p>
         </div>
@@ -824,9 +823,6 @@ export default function AssessmentForm() {
         )}
       </AnimatePresence>
 
-      <p className="text-center text-sm text-ink-soft mt-6">
-        This isn&rsquo;t a test. There are no wrong answers.
-      </p>
     </div>
   )
 }
