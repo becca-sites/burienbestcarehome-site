@@ -48,7 +48,7 @@ const memoryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Person-Centered Dementia Care',
     description:
-      'Caregivers who know your parent\'s story, not just their diagnosis. Care that honors who they were and who they are.',
+      'Caregivers who know your parent\'s story, not just their diagnosis, and honor who they were and who they are.',
   },
   {
     title: 'Safer by Design',
@@ -58,7 +58,7 @@ const memoryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Engaging Activities',
     description:
-      'Music, art, and gentle movement that spark joy and purpose. Moments of connection and happiness every day.',
+      'Music, art, and gentle movement that instill purpose and bring joy, with moments of connection and happiness along the way.',
   },
   {
     title: 'Family Communication',
