@@ -15,7 +15,7 @@ export default function Home() {
     {
       question: 'What if my parent hates it here?',
       answer:
-        'We understand this is a real concern. That\'s why we have a detailed transition plan for every new resident. The first week includes gradual introduction to our home, routines, and team. We provide daily updates to families and work closely with your loved one to ensure a comfortable adjustment. We\'ve found that when families stay involved and visit regularly, the transition is smoother. Your loved one will have time to adjust, and we\'re with them every step of the way.',
+        'We understand this is a real concern. That\'s why we have a detailed transition plan for every new resident. The first week includes gradual introduction to our home, routines, and team. We provide daily updates to families and work closely with your loved one to ensure a comfortable adjustment. We\'ve found that when families stay involved and visit regularly, the transition is smoother. Your loved one will have time to adjust, and we\'re with them every step of the way. If, after a reasonable adjustment period, they\'re still unhappy, we\'ll talk through options together. We don\'t want anyone to feel stuck or uncomfortable.',
     },
     {
       question: 'What is an adult family home and how is it different from assisted living?',
