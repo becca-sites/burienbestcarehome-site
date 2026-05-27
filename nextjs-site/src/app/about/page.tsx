@@ -109,13 +109,10 @@ export default function About() {
             <GlassCard variant="solid" className="p-8 sm:p-12 lg:p-14">
               <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                 <p>
-                  We saw families struggling. We watched loved ones fade in large facilities where they were room numbers, not people. We watched families torn between guilt and exhaustion. And we decided to create something&nbsp;different.
+                  We watched families struggle and loved ones fade in large facilities where they were room numbers, not people. We watched families torn between guilt and exhaustion, and decided to create something different: a home where residents are treated like family, where caregivers know every person&rsquo;s story, and where families find the peace of mind they have been searching&nbsp;for.
                 </p>
                 <p>
-                  Not a facility. A home. A place where residents are treated like family, where caregivers know every person&rsquo;s story, and where families find the peace of mind they have been searching&nbsp;for.
-                </p>
-                <p>
-                  You are looking for peace of mind. You are looking for a place where someone who genuinely knows your parent can carry the responsibility of their care with the same love you&nbsp;would.
+                  You are looking for peace of mind, and a place where someone who genuinely knows your parent can carry the responsibility of their care with the same love you&nbsp;would.
                 </p>
               </div>
             </GlassCard>
