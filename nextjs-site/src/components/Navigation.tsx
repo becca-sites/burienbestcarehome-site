@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -91,7 +90,7 @@ export default function Navigation() {
 
   const isActive = (href: string) => pathname === href;
 
-  // White text always — over hero photo and over sage once scrolled.
+  // White text always -- over hero photo and over sage once scrolled.
   const linkBase = 'text-white hover:text-cream';
   const linkActive = 'text-white border-b-2 border-white';
   const logoColor = 'text-white hover:text-cream';
@@ -111,16 +110,9 @@ export default function Navigation() {
           <Link
             href="/"
             aria-label="Burien Best Care Home - home"
-            className={`inline-flex items-center min-h-12 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-forest rounded ${isScrolled ? '' : 'drop-shadow-md'}`}
+            className={`inline-flex items-center min-h-12 text-lg sm:text-xl font-serif font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-forest rounded ${logoColor} ${isScrolled ? '' : 'drop-shadow-md'}`}
           >
-            <Image
-              src="/bbc_combo_logo.png"
-              alt="Burien Best Care Home"
-              width={880}
-              height={200}
-              priority
-              className="h-10 sm:h-12 md:h-14 w-auto"
-            />
+            Burien Best Care Home
           </Link>
 
           {/* Desktop Navigation */}
