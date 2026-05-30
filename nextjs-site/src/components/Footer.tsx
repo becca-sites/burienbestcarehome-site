@@ -6,7 +6,7 @@ export default function Footer() {
   const quickLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
+    { href: '/services', label: 'Services' },h
     { href: '/contact', label: 'Contact' },
     { href: '/contact', label: 'Schedule a Visit' },
   ];
@@ -94,7 +94,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-sage-light-light">Visits Welcome</p>
-                <p>Roughly 8am &ndash; 8pm</p>
+                <p>Generally 8am &ndash; 8pm</p>
               </div>
             </div>
           </div>
