@@ -387,7 +387,7 @@ export default function ServicesPage() {
         title="Memory Care"
         subtitle={
           <>
-            Your parent with memory loss deserves more than&nbsp;supervision.
+            Your parent with memory loss needs more than&nbsp;supervision.
             <br className="hidden sm:block" />
             <span> They deserve <em className="text-[color:var(--color-sunshine-deep)] italic font-semibold">connection</em>.</span>
           </>
