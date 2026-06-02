@@ -356,17 +356,16 @@ export default function ServicesPage() {
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-black/25" />
 
         <ScrollReveal className="relative z-10 text-center px-4 sm:px-6 py-24 md:py-32 max-w-4xl">
-          <div className="backdrop-blur-xl bg-gradient-to-br from-forest/65 via-forest/55 to-sage/50 border border-white/30 rounded-2xl p-6 sm:p-10 lg:p-14 shadow-2xl ring-1 ring-white/10">
+          <p className="text-white/90 text-[11px] sm:text-xs lg:text-sm font-semibold uppercase tracking-[0.18em] mb-6 drop-shadow-sm">Our Services</p>
             <h1
               id="services-hero-headline"
-              className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-white mb-6 leading-tight"
+              className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight drop-shadow-lg"
             >
               Care That Treats Your Parent as a&nbsp;<span className="text-[color:var(--color-sunshine)] italic">Person</span>.
             </h1>
-            <p className="text-lg md:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/95 leading-relaxed max-w-2xl mx-auto drop-shadow">
               Every care plan starts with one question. What does your parent need to feel safe, happy, and at&nbsp;home?
             </p>
-          </div>
         </ScrollReveal>
       </section>
 
@@ -518,7 +517,6 @@ export default function ServicesPage() {
                 </GlassCard>
               </ScrollReveal>
             </div>
-          </div>
         </ScrollReveal>
       </section>
 
@@ -538,7 +536,6 @@ export default function ServicesPage() {
             <p className="text-sm text-[color:var(--color-ink-soft)] mt-10">
               Licensed by Washington State DSHS &middot; Bonded and insured &middot; Serving families in Burien, Kent, Renton and across King County and surrounding&nbsp;areas.
             </p>
-          </div>
         </ScrollReveal>
       </section>
     </>
