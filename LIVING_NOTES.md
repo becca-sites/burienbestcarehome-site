@@ -2,6 +2,19 @@
 
 ## Design Decisions
 
+### Gallery + Blog (June 5, 2026)
+Shipped `/gallery` and a 15-article blog.
+
+**Gallery:** masonry grid (CSS `columns-1 sm:2 lg:3`) + custom lightbox. Uses the legacy sage/forest/cream class aliases (which now resolve to the neutralized slate/clay palette) so it sits inside the existing theme without new tokens. Lightbox uses a plain `<img>` (images are pre-optimized webp) while the grid uses `next/image`. "Our Home" pinned above the "Spring Planting Party" event section — the pattern for future events is a new `const <event>Images` array + section in `gallery-content.tsx`.
+
+**Blog content model:** posts live as typed objects in `src/content/posts.ts` (`Block[]` per body: `p | h2 | h3 | ul | quote`). Deliberately **no MDX / markdown runtime** — instead a ~40-line `renderInline()` in the article route handles `**bold**`, `*italic*`, and `[text](href)` links. Authoring flow is markdown-in-`blog/` → Node generator → `posts.ts` (generator is scratch, not committed; re-author from it if regenerating).
+
+**Blog hero images:** 16:9, `next/image`, sourced from Unsplash (warm/human/nature/home — explicitly avoided clinical/corporate stock). Works in static export because `next.config` already sets `images.unoptimized: true` + an `images.unsplash.com` remotePattern. **Brand rule still stands: replace stock with real photography when available.** Optional `videoUrl` field on a post renders a responsive 16:9 YouTube/Vimeo embed in place of the still hero (future use).
+
+**Cross-link hygiene:** internal `/blog/*` links that point at not-yet-written articles are de-linked at generation time (anchor text kept) rather than shipped as 404s. When those articles get written, re-running the generator re-activates the links automatically.
+
+**Nav order:** Home, About, Services, Gallery, Is It Time?, Next Steps, Blog, Contact (Footer mirrors, plus Schedule a Visit).
+
 ### Sunshine Polish Pass (April 22, 2026 — Phase C)
 Second iteration on the glassmorphic redesign. Brett flagged that slate-blue H1s read too cool, terracotta accent bars looked brown/muddy, and the CTA button didn't pop. Locked in **sunshine yellow** as the site's single accent/pop color — "lemons in a glass bowl on a kitchen table" energy.
 

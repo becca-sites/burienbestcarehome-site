@@ -1,5 +1,37 @@
 # Session Log
 
+## Session: June 5, 2026 - Photo Gallery + Blog System
+
+### What Was Built
+Two deliverables shipped to `master` (Vercel auto-deploys): a photo gallery page and a fully wired blog of 15 long-form articles.
+
+### Gallery (`/gallery`)
+- `nextjs-site/src/app/gallery/page.tsx` + `gallery-content.tsx` (new) — masonry photo grid (CSS columns) with a keyboard-navigable lightbox (arrows + Escape, body-scroll lock, focus rings). Two sections: **Our Home** (31 photos) pinned at top, then **Spring Planting Party, May 2026** (24 event photos). BreadcrumbList JSON-LD.
+- `nextjs-site/public/images/gallery/` — 55 optimized webp photos (`home/` + `events/spring-planting-2026/`).
+- Nav + Footer: added Gallery link. `sitemap.ts`: added `/gallery` (priority 0.8).
+
+### Blog (`/blog`, `/blog/[slug]`)
+- The blog infrastructure already existed on the remote (index + dynamic route + `src/content/posts.ts`) but held only one placeholder post. Converted the 15 markdown articles in `blog/` into the existing dependency-free `Block[]` model and replaced the placeholder.
+- Posts backdated weekly from 2026-06-05 back to 2026-02-27. All `author: 'Becca Pitts'`. Tags = `[category, 'Burien']`. Reading time computed from word count.
+- Post template upgrades: 16:9 Unsplash hero image (next/image, `unoptimized` + `images.unsplash.com` remotePattern already configured), "By Becca Pitts" byline + date + reading time, a tiny inline renderer for `**bold**` / `*italic*` / `[text](href)` links (internal -> next/link, external -> new tab) so no markdown runtime dependency was added, and an optional `videoUrl` frontmatter field with YouTube/Vimeo embed support (takes priority over the still hero). `image` added to the BlogPosting JSON-LD.
+- Index cards now show 16:9 hero thumbnails, reverse-chron, category tags.
+- Nav + Footer: added Blog link.
+
+### Generation Approach
+- Authored a Node generator (`gen-posts.mjs`, kept in a temp scratch dir, not committed) that parses both YAML-frontmatter and frontmatter-less markdown, strips bylines/author-title/date lines, computes reading time, applies the hero-image + backdate + category maps, and **sanitizes internal cross-links** (absolute -> relative, and de-links references to not-yet-published slugs `abandoning-parent-choosing-care-burien` and `what-is-an-adult-family-home` to avoid 404s). Re-run it against `blog/` to regenerate `posts.ts`.
+
+### Incidental Fix
+- `master` was not building (so Vercel deploys were failing) due to pre-existing syntax errors: a stray `h` in `Footer.tsx` navLinks and two unclosed `<div>` wrappers in `services/page.tsx`. Fixed as part of the gallery commit. (A parallel remote commit fixed the same issues; resolved on rebase.)
+
+### Verification
+- `npm run build` -> compiled successfully, 29 static routes (15 blog posts + gallery + existing pages). Rendered HTML spot-checked: hero images resolve, inline bold/italic/links render, no literal markdown leaks, all 15 internal cross-links resolve, sitemap lists `/gallery` + 15 blog URLs.
+
+### Notes / What's Next
+- Hero images are Unsplash stock. Per the brand rule (real photos > stock), swap in real photography as it becomes available.
+- Unrelated local WIP (a parallel site reconstruction + content files that were in the working tree) was set aside in a git stash (`stash@{0}: WIP gallery+blog+content before clean deploy 2026-06-05`) to deploy from a clean copy of the real remote. It is untouched and recoverable with `git stash list` / `git stash show -u stash@{0}`.
+
+---
+
 ## Session: May 22, 2026 - Care Assessment Questionnaire
 
 ### What Was Built
