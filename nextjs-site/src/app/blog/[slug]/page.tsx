@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getAllPosts, getPostBySlug, type Block } from '@/content/posts'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -34,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
+      images: post.heroImage ? [{ url: post.heroImage }] : undefined,
     },
   }
 }
@@ -48,7 +50,73 @@ function formatDate(iso: string) {
   })
 }
 
+/* ------------------------------------------------------------------ */
+/*  Inline renderer: a tiny, dependency-free subset of markdown.       */
+/*  Supports **bold**, *italic*, and [text](href) links. Internal      */
+/*  hrefs use next/link; external (http) open in a new tab.            */
+/* ------------------------------------------------------------------ */
+function renderEmphasis(text: string, keyPrefix: string): React.ReactNode[] {
+  const out: React.ReactNode[] = []
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*/g
+  let last = 0
+  let i = 0
+  let m: RegExpExecArray | null
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index))
+    if (m[1] !== undefined) {
+      out.push(<strong key={`${keyPrefix}b${i}`}>{m[1]}</strong>)
+    } else {
+      out.push(<em key={`${keyPrefix}i${i}`}>{m[2]}</em>)
+    }
+    last = m.index + m[0].length
+    i++
+  }
+  if (last < text.length) out.push(text.slice(last))
+  return out
+}
+
+function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
+  const nodes: React.ReactNode[] = []
+  const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g
+  let last = 0
+  let i = 0
+  let m: RegExpExecArray | null
+  while ((m = linkRe.exec(text)) !== null) {
+    if (m.index > last) nodes.push(...renderEmphasis(text.slice(last, m.index), `${keyPrefix}t${i}`))
+    const label = m[1]
+    const href = m[2]
+    if (/^https?:\/\//.test(href)) {
+      nodes.push(
+        <a
+          key={`${keyPrefix}l${i}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sunshine-deep underline underline-offset-2 hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-sunshine rounded"
+        >
+          {label}
+        </a>
+      )
+    } else {
+      nodes.push(
+        <Link
+          key={`${keyPrefix}l${i}`}
+          href={href}
+          className="text-sunshine-deep underline underline-offset-2 hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-sunshine rounded"
+        >
+          {label}
+        </Link>
+      )
+    }
+    last = m.index + m[0].length
+    i++
+  }
+  if (last < text.length) nodes.push(...renderEmphasis(text.slice(last), `${keyPrefix}t${i}`))
+  return nodes
+}
+
 function renderBlock(b: Block, i: number) {
+  const key = `blk${i}`
   switch (b.type) {
     case 'h2':
       return (
@@ -56,7 +124,7 @@ function renderBlock(b: Block, i: number) {
           key={i}
           className="font-serif text-3xl md:text-4xl text-ink leading-tight mt-14 mb-5"
         >
-          {b.text}
+          {renderInline(b.text, key)}
         </h2>
       )
     case 'h3':
@@ -65,14 +133,14 @@ function renderBlock(b: Block, i: number) {
           key={i}
           className="font-serif text-2xl md:text-3xl text-ink leading-tight mt-10 mb-4"
         >
-          {b.text}
+          {renderInline(b.text, key)}
         </h3>
       )
     case 'ul':
       return (
         <ul key={i} className="list-disc pl-6 space-y-2 mb-6 text-base md:text-lg text-ink-soft leading-relaxed">
           {b.items.map((it, j) => (
-            <li key={j}>{it}</li>
+            <li key={j}>{renderInline(it, `${key}-${j}`)}</li>
           ))}
         </ul>
       )
@@ -82,7 +150,7 @@ function renderBlock(b: Block, i: number) {
           key={i}
           className="my-8 pl-6 border-l-4 border-sunshine italic text-lg md:text-xl text-ink leading-relaxed"
         >
-          &ldquo;{b.text}&rdquo;
+          &ldquo;{renderInline(b.text, key)}&rdquo;
           {b.attribution && (
             <footer className="mt-2 text-sm not-italic text-ink-soft">&mdash; {b.attribution}</footer>
           )}
@@ -92,10 +160,19 @@ function renderBlock(b: Block, i: number) {
     default:
       return (
         <p key={i} className="text-base md:text-lg text-ink-soft leading-relaxed mb-5">
-          {b.text}
+          {renderInline(b.text, key)}
         </p>
       )
   }
+}
+
+/* Normalize common YouTube/Vimeo share URLs to their embeddable form. */
+function toEmbedUrl(url: string): string {
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/shorts\/)([\w-]+)/)
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}`
+  const vimeo = url.match(/vimeo\.com\/(\d+)/)
+  if (vimeo) return `https://player.vimeo.com/video/${vimeo[1]}`
+  return url
 }
 
 export default async function BlogPost({ params }: PageProps) {
@@ -118,6 +195,7 @@ export default async function BlogPost({ params }: PageProps) {
             description: post.description,
             datePublished: post.date,
             dateModified: post.date,
+            image: post.heroImage ? [post.heroImage] : undefined,
             author: { '@type': 'Person', name: post.author },
             publisher: {
               '@type': 'Organization',
@@ -160,18 +238,18 @@ export default async function BlogPost({ params }: PageProps) {
               <span aria-hidden="true">&bull;</span>
               <span>{post.readingTime} read</span>
               <span aria-hidden="true">&bull;</span>
-              <span>{post.author}</span>
+              <span>By {post.author}</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-ink leading-tight mb-6">
               {post.title}
             </h1>
 
-            <p className="text-lg md:text-xl text-ink-soft leading-relaxed mb-10">
+            <p className="text-lg md:text-xl text-ink-soft leading-relaxed mb-8">
               {post.description}
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-12">
+            <div className="flex flex-wrap gap-2 mb-10">
               {post.tags.map((t) => (
                 <span
                   key={t}
@@ -182,6 +260,37 @@ export default async function BlogPost({ params }: PageProps) {
               ))}
             </div>
           </ScrollReveal>
+
+          {/* Optional video takes priority over the still hero when present */}
+          {post.videoUrl ? (
+            <ScrollReveal delay={0.05}>
+              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-12 shadow-sm bg-ink/5">
+                <iframe
+                  src={toEmbedUrl(post.videoUrl)}
+                  title={post.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </ScrollReveal>
+          ) : (
+            post.heroImage && (
+              <ScrollReveal delay={0.05}>
+                <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-12 shadow-sm bg-ink/5">
+                  <Image
+                    src={post.heroImage}
+                    alt={post.title}
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 768px"
+                    className="object-cover"
+                  />
+                </div>
+              </ScrollReveal>
+            )
+          )}
 
           <ScrollReveal delay={0.1}>
             <div className="prose-wrap">{post.body.map(renderBlock)}</div>

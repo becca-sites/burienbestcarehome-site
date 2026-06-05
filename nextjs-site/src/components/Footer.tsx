@@ -8,6 +8,7 @@ export default function Footer() {
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Services' },
     { href: '/gallery', label: 'Gallery' },
+    { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
     { href: '/contact', label: 'Schedule a Visit' },
   ];

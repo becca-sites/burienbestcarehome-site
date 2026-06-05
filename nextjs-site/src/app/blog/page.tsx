@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getAllPosts } from '@/content/posts'
 import ScrollReveal from '@/components/ScrollReveal'
 import GlassCard from '@/components/GlassCard'
@@ -107,6 +108,17 @@ export default function BlogIndex() {
                     className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-sunshine/60 rounded-2xl"
                   >
                     <GlassCard variant="solid" className="p-6 md:p-10 transition-transform group-hover:-translate-y-0.5">
+                      {post.heroImage && (
+                        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-6 bg-ink/5">
+                          <Image
+                            src={post.heroImage}
+                            alt=""
+                            fill
+                            sizes="(max-width: 768px) 100vw, 700px"
+                            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                          />
+                        </div>
+                      )}
                       <div className="flex flex-wrap items-center gap-3 mb-3 text-xs uppercase tracking-widest text-ink-soft">
                         <time dateTime={post.date}>{formatDate(post.date)}</time>
                         <span aria-hidden="true">&bull;</span>

@@ -19,6 +19,7 @@ export default function Navigation() {
     { href: '/gallery', label: 'Gallery' },
     { href: '/is-it-time', label: 'Is It Time?' },
     { href: '/next-steps', label: 'Next Steps' },
+    { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
   ];
 
