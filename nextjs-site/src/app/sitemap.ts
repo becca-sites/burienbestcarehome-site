@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/assessment`,
+      url: `${SITE_URL}/is-it-time`,
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.9,

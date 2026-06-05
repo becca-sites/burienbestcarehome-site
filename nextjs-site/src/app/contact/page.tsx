@@ -369,10 +369,10 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <ScheduleVisitButton surface="on-white" href="#visit-form" />
               <Link
-                href="/assessment"
+                href="/is-it-time"
                 className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 border-[color:var(--color-ink)] text-[color:var(--color-ink)] font-semibold hover:bg-[color:var(--color-fog)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/40"
               >
-                Take the Free Assessment
+                Take the Free Evaluation
               </Link>
             </div>
           </ScrollReveal>
