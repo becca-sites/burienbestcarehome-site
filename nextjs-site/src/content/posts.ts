@@ -40,7 +40,7 @@ export const posts: Post[] = [
       "Memory Care",
       "Burien"
     ],
-    "heroImage": "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=1600&h=900&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1600&h=900&q=80",
     "body": [
       {
         "type": "p",
