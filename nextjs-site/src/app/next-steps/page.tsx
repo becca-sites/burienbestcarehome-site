@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 const steps = [
   {
     n: '01',
-    title: 'Tour the home & meet the team',
+    title: 'Meet us where you're comfortable',
     body:
-      'Meet the caregivers, walk through the house, look at the backyard, and get all of your questions answered. Even the ones you haven’t thought of yet. If it’s the right fit, fantastic. If it’s not, we might have resources to share that would suit your needs better.',
+      'We can meet at our home for a full tour, at a coffee shop, or even at your parent's current place. Wherever feels right. The goal is simple: get to know each other, answer every question you have (even the ones you haven't thought of yet), and figure out together whether this is the right fit. If it is, fantastic. If it's not, we might have resources to share that would suit your needs better.',
     duration: '60–90 min',
   },
   {
