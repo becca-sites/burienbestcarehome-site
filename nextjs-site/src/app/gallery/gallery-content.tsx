@@ -238,6 +238,11 @@ export default function GalleryContent() {
               and smiles.
             </p>
           </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <Link href="/blog/spring-planting-party-may-2026" className="inline-flex items-center gap-1 text-[color:var(--color-sunshine-deep)] hover:text-[color:var(--color-sunshine)] font-medium transition-colors mt-2">
+              Read the full story
+            </Link>
+          </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <PhotoGrid
               images={springPlantingImages}
