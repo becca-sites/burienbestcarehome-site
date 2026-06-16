@@ -96,7 +96,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-sage-light-light">Visits Welcome</p>
-                <p>Generally 8am &ndash; 8pm</p>
+                <p>Generally 9am &ndash; 8pm</p>
               </div>
             </div>
           </div>
