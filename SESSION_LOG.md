@@ -1,5 +1,41 @@
 # Session Log
 
+## Session: June 16, 2026 - YouTube Blog Series + Build Fix
+
+### What Was Built
+Fixed a critical build-blocking UTF-8 encoding error and shipped 7 new blog articles from Becca's YouTube playlist plus 2 additional blog posts.
+
+### Build Fix (CRITICAL)
+- `nextjs-site/src/app/next-steps/page.tsx` contained a lone Windows-1252 byte (0x92, right single quote) at byte offset 955 that was not valid UTF-8. Turbopack's strict UTF-8 parser rejected it, causing ALL deployments to fail since Brett's recent next-steps rewrites (commits 925e74a through b14e37c, spanning ~4 hours of work).
+- First fix attempt (commit 9775077) blanket-replaced all curly quotes with straight quotes, which broke single-quoted JS strings containing apostrophes. Second fix (commit e27941b) surgically replaced only the 0x92 byte with the proper 3-byte UTF-8 encoding (E2 80 99), preserving all intentional curly quotes. Build went green immediately.
+- **Lesson learned:** Curly/smart quotes (U+2018/2019/201C/201D) are valid UTF-8 and are intentionally used inside single-quoted JSX strings as a way to include apostrophes without breaking the string delimiter. Never blanket-replace them in TSX files.
+
+### YouTube Blog Series
+- `nextjs-site/src/content/posts-youtube-series.ts` (new, ~100KB) - 7 SEO-optimized long-form articles based on Becca's "Your Best Season" YouTube playlist. Each article has a companion video embed via `videoUrl` field.
+- Publishing cadence: 2x/week starting June 23 through July 14.
+- Topics: Recognizing Care Needs, Daily Life in an AFH, Memory Care, Hospital-to-Home Recovery, Family Involvement, Choosing the Right AFH, Planning Your Best Season.
+- Wired into blog system via import + spread in `posts.ts`.
+
+### Additional Blog Posts
+- Spring Planting Party blog post with gallery cross-link.
+- AFH vs Assisted Living comparison article.
+- Family Guide PDF created (asset ready, not yet committed to repo).
+
+### Commits Pushed
+- `2247bc4` - Blog: add 7 YouTube video series posts
+- `b535f69` - Blog: import YouTube series posts into posts registry
+- `9775077` - FIX: replace invalid UTF-8 byte 0x92 (too aggressive)
+- `e27941b` - FIX: surgical 0x92 byte replacement (BUILD GREEN)
+
+### What's Next
+- Commit Family Guide PDF to `nextjs-site/public/family-guide.pdf`.
+- Add Daniela + Abelina to info@ Google Group.
+- Geo landing pages for 7 surrounding cities.
+- Apps Script form backend.
+- Assessment page rename to `/is-it-time`.
+
+---
+
 ## Session: June 5, 2026 - Photo Gallery + Blog System
 
 ### What Was Built
