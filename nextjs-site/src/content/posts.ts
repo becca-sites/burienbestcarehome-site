@@ -30,6 +30,328 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    "slug": "adult-family-home-vs-assisted-living-burien",
+    "title": "Adult Family Home vs. Assisted Living: What Burien Families Actually Need to Know Before Choosing",
+    "description": "The real differences between adult family homes and assisted living facilities in Washington State -- staffing ratios, costs, Medicaid coverage, and what daily life actually looks like in each.",
+    "date": "2026-06-19",
+    "author": "Becca Pitts",
+    "readingTime": "9 min",
+    "tags": [
+      "Choosing Care",
+      "Adult Family Home",
+      "Senior Care",
+      "Washington State"
+    ],
+    "heroImage": "/images/blog/afh-vs-assisted-living.jpg",
+    "body": [
+      {
+        "type": "p",
+        "text": "It is late at night. Your laptop is open on the kitchen counter and you are searching \"adult family home vs assisted living\" for the third time this week. The results are a mess of ads, facility listings, and articles that read like they were written by the same marketing department. Half of them want you to fill out a form before they will tell you anything useful."
+      },
+      {
+        "type": "p",
+        "text": "You are not looking for a sales pitch. You are looking for someone to explain the actual differences so you can figure out which one is right for your parent."
+      },
+      {
+        "type": "p",
+        "text": "This is that explanation. No form required."
+      },
+      {
+        "type": "h2",
+        "text": "What Is an Adult Family Home in Washington State?"
+      },
+      {
+        "type": "p",
+        "text": "An adult family home is a real house in a real neighborhood, licensed by the Washington State Department of Social and Health Services to provide 24/7 care for up to eight residents. The provider lives on site or maintains a consistent daily presence, and the staff-to-resident ratio is typically one caregiver for every two to three residents."
+      },
+      {
+        "type": "p",
+        "text": "Washington has more than 3,000 licensed adult family homes, more than any other state in the country. The model has been part of the long-term care system here since the early 1990s. If you grew up on the East Coast or in the Midwest, you may never have heard of it. If you grew up in King County, there is probably one on your block."
+      },
+      {
+        "type": "p",
+        "text": "Residents in an adult family home share a kitchen table, a living room, and a daily routine that looks more like a household than a facility. Meals are cooked on site, often by the same caregiver who helps residents get dressed in the morning. Care plans are individualized. The environment is calm, predictable, and small enough that every caregiver knows every resident by name, by preference, and by mood."
+      },
+      {
+        "type": "h2",
+        "text": "What Is Assisted Living and How Is It Different?"
+      },
+      {
+        "type": "p",
+        "text": "Assisted living facilities are larger, typically housing 20 to 200 or more residents in apartment-style units within a commercial building. Residents have their own rooms or small apartments, often with a kitchenette, and share common spaces like dining rooms, activity areas, and gardens."
+      },
+      {
+        "type": "p",
+        "text": "Staffing works differently. The caregiver-to-resident ratio in a large assisted living facility is often one to ten or one to twelve during the day, and thinner at night. Staff rotate on shifts. Your parent may see a different aide each morning. The facility has more structured programming: activity calendars, group outings, scheduled meals in a dining hall."
+      },
+      {
+        "type": "p",
+        "text": "Assisted living is licensed under different regulations than adult family homes in Washington. Both are overseen by DSHS, but the requirements, inspection schedules, and staffing rules are separate. Neither is inherently better. They serve different needs at different stages."
+      },
+      {
+        "type": "h2",
+        "text": "How Does the Daily Experience Compare?"
+      },
+      {
+        "type": "p",
+        "text": "In an adult family home, your parent eats family-style meals at a kitchen table with five or six other people. The caregiver who cooked the meal sits down with them. If your mother wants eggs instead of oatmeal this morning, the caregiver makes eggs. If your father has a rough night and sleeps until ten, nobody wakes him at seven for a breakfast schedule. The rhythm of the day bends to the person."
+      },
+      {
+        "type": "p",
+        "text": "The caregivers are consistent. Your parent sees the same faces every day. Over weeks and months, those caregivers learn things that medical charts do not capture: that your mother gets anxious before dinner, that your father calms down when someone sits with him and talks about fishing, that a particular song from 1968 changes the entire temperature of the room."
+      },
+      {
+        "type": "p",
+        "text": "In assisted living, there is more variety. More people to meet, more activities on the calendar, more physical space to explore. For a social, relatively independent senior, this can be energizing. There may be a fitness room, a library, organized bus trips. The social programming is a genuine strength of larger communities."
+      },
+      {
+        "type": "p",
+        "text": "The tradeoff is individual attention. When one caregiver is responsible for ten or twelve residents, the care is competent but less personalized. Meals happen on a set schedule. The dining room is louder. The hallways are longer. For a parent with dementia or anxiety, that scale can feel overwhelming rather than stimulating."
+      },
+      {
+        "type": "h2",
+        "text": "What Do They Cost and Does Medicaid Help?"
+      },
+      {
+        "type": "p",
+        "text": "In King County in 2026, adult family home care typically runs between $4,000 and $8,000 per month, depending on the level of care your parent needs. Private rooms, memory care services, and higher acuity needs push the cost toward the upper range. Assisted living in the same area runs $4,500 to $10,000 or more per month, with memory care units at the higher end."
+      },
+      {
+        "type": "p",
+        "text": "The most important financial difference for many Washington families is Medicaid coverage. Washington's COPES Medicaid waiver pays for adult family home care when a resident qualifies financially and clinically. The current daily rate is approximately $87 per day, which covers room, board, and personal care. This is the same waiver program that makes long-term care accessible for families who have spent down their savings or whose parent's income falls within the eligibility window."
+      },
+      {
+        "type": "p",
+        "text": "Medicaid also covers some assisted living, but the availability of Medicaid beds in larger facilities varies, and the waitlists can be long. Many adult family homes in Washington accept Medicaid directly, and some work with families on private-pay-to-Medicaid transitions. If the financial picture is a significant factor in your decision, and for most families it is, read [our walkthrough of the COPES and Medicaid application process](/blog/copes-medicaid-adult-family-home-burien) for the full breakdown."
+      },
+      {
+        "type": "h2",
+        "text": "What Should You Look for When Touring Either Option?"
+      },
+      {
+        "type": "p",
+        "text": "Whether you are walking into a six-bed adult family home or a 150-unit assisted living building, the things that matter most are the same. Ask about the staff-to-resident ratio on day shift and night shift. Ask how long the current caregivers have worked there. High turnover is a red flag in any care setting, because continuity of care is what keeps your parent safe and known."
+      },
+      {
+        "type": "p",
+        "text": "Ask how the home or facility handles medical changes. If your parent falls, what happens in the first five minutes? If their condition declines, at what point do they need to move? Some assisted living communities discharge residents when care needs exceed a certain threshold. Many adult family homes can increase the level of care within the same house, sometimes all the way through hospice."
+      },
+      {
+        "type": "p",
+        "text": "Pay attention to how staff interact with the people who already live there. Are they talking to residents, or past them? Is the environment calm or chaotic? Does the building smell clean? These are the details that marketing brochures cannot fake."
+      },
+      {
+        "type": "p",
+        "text": "For a deeper dive into the touring process, read [our touring checklist for adult family homes](/blog/touring-adult-family-home-burien). Most of those questions apply to assisted living tours too."
+      },
+      {
+        "type": "h2",
+        "text": "When Is an AFH the Better Choice?"
+      },
+      {
+        "type": "p",
+        "text": "An adult family home is often the better fit when your parent needs memory care, when they do best with routine and consistency, when a smaller and calmer environment helps them feel safe, or when they become anxious or agitated in crowds. Parents who have lived their whole lives in houses, not apartments, often feel more at home in a setting that looks and feels like a house."
+      },
+      {
+        "type": "p",
+        "text": "The staffing ratio makes a measurable difference for parents who need hands-on help with bathing, dressing, eating, and mobility. When one caregiver is responsible for two or three people instead of ten, the pace of care changes. Nobody is rushed through breakfast. Nobody waits forty-five minutes for help getting to the bathroom."
+      },
+      {
+        "type": "p",
+        "text": "Families who want to stay closely involved also tend to prefer adult family homes. In a small home, you know the caregivers. They know you. Communication is direct. When something changes, you hear about it the same day, often by phone from the person who noticed the change."
+      },
+      {
+        "type": "h2",
+        "text": "When Might Assisted Living Be the Better Fit?"
+      },
+      {
+        "type": "p",
+        "text": "Assisted living is often the better fit for a parent who is relatively independent, socially active, and looking for a community with more programming and amenities. If your mother wants to take a watercolor class on Tuesday, join a book club on Thursday, and ride a shuttle to the grocery store on Saturday, a larger community can offer that."
+      },
+      {
+        "type": "p",
+        "text": "Some seniors prefer apartment-style living with their own space, their own kitchenette, and the freedom to come and go. If your parent is mobile, cognitively sharp, and values independence above all else, the assisted living model may feel more like the next chapter and less like a transition they did not choose."
+      },
+      {
+        "type": "p",
+        "text": "Larger facilities also sometimes offer specialized amenities that smaller homes cannot: a swimming pool, a physical therapy gym, an on-site salon, or a dedicated memory care wing with secured access. If a specific amenity matters to your parent's quality of life, that is worth weighing."
+      },
+      {
+        "type": "h2",
+        "text": "How Do You Decide?"
+      },
+      {
+        "type": "p",
+        "text": "Visit both. Not the websites. The actual places. Walk through an adult family home at lunchtime and watch how the meal happens. Walk through an assisted living community during an activity hour and see who is participating. Bring your parent if they are willing. Bring a notebook."
+      },
+      {
+        "type": "p",
+        "text": "Trust your gut in the first five minutes. The right place feels right before anyone hands you a brochure. The light is okay. The sound is okay. The people who work there look like they want to be there. Your parent's face relaxes, even slightly."
+      },
+      {
+        "type": "p",
+        "text": "That is the one."
+      },
+      {
+        "type": "p",
+        "text": "If you are in Burien, SeaTac, White Center, Des Moines, or anywhere in south King County and want to see what a small adult family home actually feels like, we would love to show you around."
+      },
+      {
+        "type": "p",
+        "text": "[Schedule a Visit](/contact) to tour Burien Best Care Home, or [Download Our Family Guide](/family-guide.pdf) to take the key questions with you when you tour any care option."
+      }
+    ]
+  },
+  {
+    "slug": "spring-planting-party-may-2026",
+    "title": "Dirt Under Our Nails and Sun on Our Faces: Inside the Spring Planting Party at Burien Best Care Home",
+    "description": "The real story behind Burien Best Care Home's spring planting party -- raised cedar garden beds, wheelchair-accessible design, and what a community event at a small adult family home actually looks like.",
+    "date": "2026-06-12",
+    "author": "Becca Pitts",
+    "readingTime": "7 min",
+    "tags": [
+      "Life at the Home",
+      "Community",
+      "Garden Therapy",
+      "Memory Care"
+    ],
+    "heroImage": "/images/gallery/events/spring-planting-2026/spring-1.webp",
+    "body": [
+      {
+        "type": "p",
+        "text": "It was a warm May afternoon, the kind of sunny Pacific Northwest day that makes you forget the last four months of gray. The brick patio behind Burien Best Care Home was lined with new raised cedar planting beds, bags of organic soil stacked along the walkway, and flats of petunias and sweet potato vine waiting in the shade."
+      },
+      {
+        "type": "p",
+        "text": "Our residents were already outside. Some in wheelchairs, some in lawn chairs, all of them watching the preparations with the quiet interest of people who know exactly what a garden is for."
+      },
+      {
+        "type": "p",
+        "text": "This is the story of our spring planting party. Not the polished version. The real one."
+      },
+      {
+        "type": "h2",
+        "text": "Why Would an Adult Family Home Throw a Planting Party?"
+      },
+      {
+        "type": "p",
+        "text": "Because our residents live here. This is their home. And one of the hardest things about moving into any care setting is the feeling that you have stopped being useful, that the world is happening around you instead of with you."
+      },
+      {
+        "type": "p",
+        "text": "Gardening gives that back. Not in a therapeutic, clinical sense, although the research on horticultural therapy for older adults is strong. It gives it back in the simple, human sense of putting your hands in dirt and making something grow. Of being needed by a plant that will die if nobody waters it."
+      },
+      {
+        "type": "p",
+        "text": "We built the raised beds at waist height on purpose. Every bed is accessible from a wheelchair. Nobody has to bend down. Nobody has to kneel. A resident who cannot walk to the mailbox can reach into that bed and plant a petunia with their own two hands."
+      },
+      {
+        "type": "h2",
+        "text": "What Did the Planting Party Actually Look Like?"
+      },
+      {
+        "type": "p",
+        "text": "Messy. Joyful. Slow in the best possible way."
+      },
+      {
+        "type": "p",
+        "text": "Residents sat at the raised beds with their wheelchairs pulled up to the edge, hands deep in the soil, working alongside staff and family members who had come out for the afternoon. One of our residents, who usually speaks very little, spent twenty minutes carefully arranging petunias by color. Nobody rushed her. Nobody rearranged her work."
+      },
+      {
+        "type": "p",
+        "text": "A daughter and her mother planted herbs together in the same bed, the daughter following her mother's instructions about spacing even though the spacing did not matter. What mattered was that her mother was giving instructions again."
+      },
+      {
+        "type": "p",
+        "text": "The garden slowed everyone to the same pace. There was no schedule to keep. No activity to transition to. Just soil, sun, and the sound of people doing something together."
+      },
+      {
+        "type": "h2",
+        "text": "Why Does Gardening Matter for Older Adults?"
+      },
+      {
+        "type": "p",
+        "text": "Gardening engages procedural memory, the body-level memory of how to do things. A resident who cannot remember what day it is may remember exactly how to pat soil around the base of a plant. That kind of memory lives deeper than the parts of the brain that dementia damages first. When you watch someone with advanced memory loss pick up a trowel and start working without being told how, you are watching their body remember what their mind has let go of."
+      },
+      {
+        "type": "p",
+        "text": "There is a sensory dimension too. The smell of soil and marigolds. The warmth of sun on bare arms. The texture of a leaf between two fingers. For residents who spend most of their time indoors, these are not small things. They are the difference between a day that blurs into the next and a day that feels like it belonged to them."
+      },
+      {
+        "type": "p",
+        "text": "And then there is the simple beauty of it. A raised bed full of bright petunias outside the window where your parent eats breakfast every morning. That is not decoration. That is dignity."
+      },
+      {
+        "type": "h2",
+        "text": "How Do Raised Garden Beds Help Residents Who Use Wheelchairs?"
+      },
+      {
+        "type": "p",
+        "text": "Traditional garden beds are on the ground. They require bending, kneeling, or crouching, all movements that are impossible or unsafe for many older adults and completely out of reach for anyone in a wheelchair."
+      },
+      {
+        "type": "p",
+        "text": "Our cedar beds sit at wheelchair-seat height, about 24 inches off the ground, with enough clearance underneath for a wheelchair footrest. A resident can roll up to the bed, reach over the edge, and work in the soil with full arm extension. No assistance required. No adaptive equipment. Just a person and a garden."
+      },
+      {
+        "type": "p",
+        "text": "That distinction matters more than it might seem. There is a difference between being helped to garden and gardening independently. Our residents are gardening. Their caregivers are nearby if they need anything, but the work is theirs."
+      },
+      {
+        "type": "h2",
+        "text": "What Happens to the Garden After the Party?"
+      },
+      {
+        "type": "p",
+        "text": "The garden is permanent. It did not go away when the last guest drove home."
+      },
+      {
+        "type": "p",
+        "text": "Staff water the beds daily. The herbs, basil, rosemary, and mint so far, are already being used in the kitchen. Residents walk or wheel out to the beds whenever they want, checking on their plants, pulling a weed, pinching off a dead bloom."
+      },
+      {
+        "type": "p",
+        "text": "We are already talking about what comes next. Tomatoes in the sunny bed along the south wall. Lavender in the bed near the patio door, where the scent drifts inside on warm afternoons. One resident has been asking about strawberries."
+      },
+      {
+        "type": "p",
+        "text": "A garden is a project that does not end. That is exactly the point."
+      },
+      {
+        "type": "h2",
+        "text": "What Does a Community Event Tell You About a Care Home?"
+      },
+      {
+        "type": "p",
+        "text": "Quite a lot, actually."
+      },
+      {
+        "type": "p",
+        "text": "When you are looking at care homes for your parent, look at whether the home does things *with* residents or *to* them. A planting party where residents are sitting at the beds, hands in the soil, making decisions about what goes where, is a different kind of event than a planting party where staff put flowers in pots and residents watch from the patio."
+      },
+      {
+        "type": "p",
+        "text": "A garden is real. It grows. It changes. It needs tending. It is not a photo opportunity. It is not something you can stage for the website and then let die. Six months from now, you will be able to walk up to our patio and see whether those petunias made it. That kind of accountability is built into the dirt."
+      },
+      {
+        "type": "p",
+        "text": "When you tour any care home, ask what the residents did last week. Not what is on the activity calendar. What actually happened. The answer will tell you everything you need to know."
+      },
+      {
+        "type": "p",
+        "text": "[View all photos from the Spring Planting Party](/gallery)"
+      },
+      {
+        "type": "p",
+        "text": "If you are a family in Burien, Des Moines, SeaTac, or south King County exploring care options, we would love to show you around, garden included."
+      },
+      {
+        "type": "p",
+        "text": "[Schedule a Visit](/contact) to see Burien Best Care Home in person, or [Download Our Family Guide](/family-guide.pdf) to take the key questions with you."
+      }
+    ]
+  },
+  {
     "slug": "dementia-parent-stopped-eating-burien",
     "title": "When Mom Stops Eating: A Burien Family's Guide to the Grief Nobody Talks About",
     "description": "When a parent with dementia stops eating, families face a grief nobody prepared them for. A Burien adult family home owner explains what is really happening and what genuinely helps.",
