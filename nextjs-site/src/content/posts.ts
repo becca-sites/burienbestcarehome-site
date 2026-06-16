@@ -1,3 +1,4 @@
+import { youtubeSeriesPosts } from './posts-youtube-series'
 // Blog post registry
 // Each post is a plain TypeScript object. Body is an array of paragraph-level
 // blocks: { type: 'p' | 'h2' | 'h3' | 'ul' | 'quote', text | items }.
@@ -29,6 +30,7 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+    ...youtubeSeriesPosts,
   {
     "slug": "adult-family-home-vs-assisted-living-burien",
     "title": "Adult Family Home vs. Assisted Living: What Burien Families Actually Need to Know Before Choosing",
