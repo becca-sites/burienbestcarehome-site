@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 const steps = [
   {
     n: '01',
-    title: 'Meet us where you're comfortable',
+    title: 'Meet us where you’re comfortable',
     body:
-      'Meet the caregivers, walk through the house, look at the backyard, and get all of your questions answered. Even the ones you haven't thought of yet. If it's the right fit, fantastic. If it's not, we might have resources to share that would suit your needs better.',
-    duration: '60-90 min',
+      'Meet the caregivers, walk through the house, look at the backyard, and get all of your questions answered. Even the ones you haven’t thought of yet. If it’s the right fit, fantastic. If it’s not, we might have resources to share that would suit your needs better.',
+    duration: '60–90 min',
   },
   {
     n: '02',
@@ -41,14 +41,14 @@ const steps = [
     n: '03',
     title: 'Prepare for move-in',
     body:
-      'We help you think through what to bring, how to talk to your parent about the transition, and what the first week might look like. We'll coordinate with their current doctor, pharmacy, case manager, and social worker to make sure everything is set up before their arrival. We handle the logistics so you can focus on your family.',
-    duration: '1-2 weeks of prep',
+      'We help you think through what to bring, how to talk to your parent about the transition, and what the first week might look like. We’ll coordinate with their current doctor, pharmacy, case manager, and social worker to make sure everything is set up before their arrival. We handle the logistics so you can focus on your family.',
+    duration: '1–2 weeks of prep',
   },
   {
     n: '04',
     title: 'Settle in and stay connected',
     body:
-      'First days matter, so we go slow, introduce routines gently, and check in with you often. You're welcome any time. For Sunday dinner, birthdays, or just because. If you plan to share a meal with us, we'll need to know in advance so we can plan appropriately. Your parent is home. You stay involved as much as you want to be.',
+      'First days matter, so we go slow, introduce routines gently, and check in with you often. You’re welcome any time. For Sunday dinner, birthdays, or just because. If you plan to share a meal with us, we’ll need to know in advance so we can plan appropriately. Your parent is home. You stay involved as much as you want to be.',
     duration: 'Lifetime of care',
   },
 ]
@@ -57,22 +57,22 @@ const faqs = [
   {
     question: 'How much does it cost?',
     answer:
-      'Monthly care at Burien Best Care Home ranges from roughly $5,000 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We'll provide your family a quote after our care plan conversation, once we understand your loved one's current care requirements and needs.',
+      'Monthly care at Burien Best Care Home ranges from roughly $5,000 to $9,500, depending on the level of care your parent needs. Memory care and full-mobility assistance sit at the higher end; lighter daily-living support sits at the lower end. We’ll provide your family a quote after our care plan conversation, once we understand your loved one’s current care requirements and needs.',
   },
   {
     question: 'Does Medicaid or long-term care insurance cover this?',
     answer:
-      'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we'll help you work through the claim process with your carrier.',
+      'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we’ll help you work through the claim process with your carrier.',
   },
   {
     question: 'How fast can my parent move in?',
     answer:
-      'When we have an open room, the timeline from first visit to move-in is usually 1-3 weeks, long enough to build a real care plan, coordinate medical records, and avoid rushing them through the transition. If you're in a hospital-discharge situation, we can often accelerate that to a matter of days. In urgent cases we can do a same-day move-in, though that isn't our preference.',
+      'When we have an open room, the timeline from first visit to move-in is usually 1–3 weeks, long enough to build a real care plan, coordinate medical records, and avoid rushing them through the transition. If you’re in a hospital-discharge situation, we can often accelerate that to a matter of days. In urgent cases we can do a same-day move-in, though that isn’t our preference.',
   },
   {
-    question: 'What if my parent's needs change over time?',
+    question: 'What if my parent’s needs change over time?',
     answer:
-      'We expect care needs to change over time. That's what an adult family home is built for. As your parent's needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won't be forced to move them to a different facility when things change.',
+      'We expect care needs to change over time. That’s what an adult family home is built for. As your parent’s needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
   },
   {
     question: 'Can family visit anytime?',
@@ -80,9 +80,9 @@ const faqs = [
       'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 8 a.m. to 8 p.m., to keep the rhythm of the home.',
   },
   {
-    question: 'What happens if it isn't the right fit?',
+    question: 'What happens if it isn’t the right fit?',
     answer:
-      'If you or we feel that another setting would serve your loved one better, let's talk about it. If there's something we can adjust, let's try that first. But if a move is the right decision, we'll make it together. No one benefits from forcing a fit that isn't right.',
+      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right.',
   },
 ]
 
@@ -152,7 +152,7 @@ export default function NextSteps() {
         </div>
       </section>
 
-      {/* The Path Forward - 4 steps */}
+      {/* The Path Forward — 4 steps */}
       <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
@@ -204,7 +204,7 @@ export default function NextSteps() {
               Monthly care typically runs $5,000 to $9,500, depending on the level of support your parent needs. Memory care and full-mobility assistance sit at the higher end. Lighter daily-living support sits at the lower end.
             </p>
             <p className="text-base md:text-lg text-ink-soft leading-relaxed mb-10">
-              We'll provide your family a quote after our care plan conversation, once we understand your loved one's current care requirements and needs.
+              We’ll provide your family a quote after our care plan conversation, once we understand your loved one’s current care requirements and needs.
             </p>
             <ScheduleVisitButton surface="on-white" />
           </ScrollReveal>
