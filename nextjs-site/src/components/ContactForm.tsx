@@ -11,6 +11,7 @@ interface FormData {
   careType: string
   visitDate: string
   visitTime: string
+  moveTimeline: string
   message: string
   // Honeypot — the Apps Script rejects submissions where this is non-empty
   botcheck: string
@@ -36,6 +37,7 @@ export default function ContactForm() {
     careType: '',
     visitDate: '',
     visitTime: '',
+    moveTimeline: '',
     message: '',
     botcheck: '',
   })
@@ -116,6 +118,7 @@ export default function ContactForm() {
       `Care Type: ${formData.careType}`,
       `Preferred Date: ${formData.visitDate || '(not specified)'}`,
       `Preferred Time: ${formData.visitTime}`,
+      `Move Timeline: ${formData.moveTimeline || '(not specified)'}`,
       '',
       `Message: ${formData.message || '(none)'}`,
     ].join('\n')
@@ -356,6 +359,9 @@ export default function ContactForm() {
             <option value="assisted-living">Assisted Living</option>
             <option value="general-care">General Care</option>
             <option value="respite-care">Respite Care</option>
+            <option value="parkinsons">Parkinson\'s Disease Care</option>
+            <option value="bed-bound">Bed Bound / Totally Dependent</option>
+            <option value="hospice">Hospice</option>
             <option value="not-sure">Not Sure Yet</option>
           </select>
           {errors.careType && (
@@ -408,6 +414,28 @@ export default function ContactForm() {
             <p className="text-terracotta-deep text-sm mt-1 font-medium">{errors.visitTime}</p>
           )}
         </div>
+      </div>
+
+      {/* Row 4.5: Move Timeline */}
+      <div>
+        <label htmlFor="moveTimeline" className="block text-sm font-semibold text-ink mb-2">
+          How Soon Is a Move Needed?
+        </label>
+        <select
+          id="moveTimeline"
+          name="moveTimeline"
+          value={formData.moveTimeline}
+          onChange={handleChange}
+          autoComplete="off"
+          className="w-full min-h-12 px-4 py-3 rounded-lg border-2 transition-colors border-sage-light focus:border-sage bg-white/80 text-ink"
+        >
+          <option value="">Select a timeline</option>
+          <option value="urgent">Urgent</option>
+          <option value="few-weeks">Within the next few weeks</option>
+          <option value="few-months">Within the next few months</option>
+          <option value="within-year">Within the year</option>
+          <option value="gathering-info">Just gathering information for now</option>
+        </select>
       </div>
 
       {/* Row 5: Message */}
