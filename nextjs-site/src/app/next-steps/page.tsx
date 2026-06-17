@@ -77,7 +77,7 @@ const faqs = [
   {
     question: 'Can family visit anytime?',
     answer:
-      'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 8 a.m. to 8 p.m., to keep the rhythm of the home.',
+      'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 9 a.m. to 8 p.m., to keep the rhythm of the home. If you have unique circumstances, just talk with us. We\'re happy to accommodate.',
   },
   {
     question: 'What happens if it isn’t the right fit?',
