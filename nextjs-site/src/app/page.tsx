@@ -466,8 +466,28 @@ export default function Home() {
                 </GlassCard>
               </ScrollReveal>
 
-              {/* Respite Care */}
-              <ScrollReveal delay={0.2}>
+              
+              {/* Parkinson's Disease Care */}
+              <ScrollReveal delay={0.15}>
+                <GlassCard variant="solid" className="h-full p-8 flex flex-col">
+                  <div aria-hidden="true" className="w-12 h-1 bg-[color:var(--color-sunshine)] rounded-full mb-5" />
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-forest leading-tight mb-4">
+                    Parkinson\u2019s Disease Care
+                  </h3>
+                  <p className="text-ink-soft leading-relaxed flex-1">
+                    Parkinson\u2019s changes everything about daily life. We understand the rhythms of the disease and adapt care around medication timing, mobility challenges, and the patience your loved one deserves. Specialized support that moves at their pace.
+                  </p>
+                  <a
+                    href="/services#parkinsons-care"
+                    className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
+                  >
+                    Learn More <span aria-hidden="true">\u2192</span>
+                  </a>
+                </GlassCard>
+              </ScrollReveal>
+
+{/* Respite Care */}
+              <ScrollReveal delay={0.25}>
                 <GlassCard variant="solid" className="h-full p-8 flex flex-col">
                   <div aria-hidden="true" className="w-12 h-1 bg-[color:var(--color-sunshine)] rounded-full mb-5" />
                   <h3 className="font-serif text-2xl sm:text-3xl font-normal text-forest mb-4 leading-tight">
@@ -487,7 +507,7 @@ export default function Home() {
               </ScrollReveal>
 
               {/* Post-Hospital Recovery */}
-              <ScrollReveal delay={0.3}>
+              <ScrollReveal delay={0.35}>
                 <GlassCard variant="solid" className="h-full p-8 flex flex-col">
                   <div aria-hidden="true" className="w-12 h-1 bg-[color:var(--color-sunshine)] rounded-full mb-5" />
                   <h3 className="font-serif text-2xl sm:text-3xl font-normal text-forest mb-4 leading-tight">
@@ -503,6 +523,25 @@ export default function Home() {
                   >
                     Learn More <span aria-hidden="true" className="ml-2">&rarr;</span>
                   </Link>
+                </GlassCard>
+              </ScrollReveal>
+
+              {/* Hospice Care Coordination */}
+              <ScrollReveal delay={0.4}>
+                <GlassCard variant="solid" className="h-full p-8 flex flex-col">
+                  <div aria-hidden="true" className="w-12 h-1 bg-[color:var(--color-sunshine)] rounded-full mb-5" />
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-forest leading-tight mb-4">
+                    Hospice Care Coordination
+                  </h3>
+                  <p className="text-ink-soft leading-relaxed flex-1">
+                    We are not the hospice nurse. We are the ones who make sure your loved one is comfortable between visits. We coordinate with your hospice team, follow their directives, and provide the steady, compassionate presence your family needs.
+                  </p>
+                  <a
+                    href="/services#hospice-care"
+                    className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
+                  >
+                    Learn More <span aria-hidden="true">\u2192</span>
+                  </a>
                 </GlassCard>
               </ScrollReveal>
             </div>
