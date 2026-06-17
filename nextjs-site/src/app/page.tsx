@@ -268,7 +268,7 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-4">
                     <span aria-hidden="true" className="font-serif text-5xl leading-none text-sage">1</span>
                     <h3 className="font-serif text-2xl font-normal text-forest leading-tight">
-                      Schedule a Visit
+                      Stop By
                     </h3>
                   </div>
                   <p className="text-ink-soft leading-relaxed flex-grow">
