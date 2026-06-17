@@ -135,23 +135,6 @@ export default function AssessmentPage() {
         <AssessmentForm />
       </section>
 
-      {/* Reassurance + alternative CTA */}
-      <section className="pb-20 sm:pb-24 px-4 sm:px-6 lg:px-8 bg-transparent">
-        <div className="max-w-2xl mx-auto text-center glass-panel p-8 sm:p-10">
-          <h2 className="font-serif text-2xl sm:text-3xl text-forest leading-tight mb-3">
-            Would rather just talk to someone?
-          </h2>
-          <p className="text-ink-soft text-base sm:text-lg leading-relaxed mb-6">
-            Call us directly. We will listen and help you figure out the next right step for your family.
-          </p>
-          <a
-            href="tel:+12536787089"
-            className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-lg border-2 bg-[color:var(--color-sunshine)] border-[color:var(--color-sunshine)] text-[color:var(--color-ink)] font-semibold hover:bg-[color:var(--color-sunshine-deep)] hover:border-[color:var(--color-sunshine-deep)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-[color:var(--color-sunshine)]/50"
-          >
-            Call (253) 678-7089
-          </a>
-        </div>
-      </section>
     </>
   )
 }
