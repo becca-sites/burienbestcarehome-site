@@ -477,12 +477,12 @@ export default function Home() {
                   <p className="text-ink-soft leading-relaxed flex-1">
                     Parkinson’s changes everything about daily life. We understand the rhythms of the disease and adapt care around medication timing, mobility challenges, and the patience your loved one deserves. Specialized support that moves at their pace.
                   </p>
-                  <a
+                  <Link
                     href="/services#parkinsons-care"
-                    className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
+                    className="inline-flex items-center text-forest hover:text-[color:var(--color-sunshine-deep)] font-semibold underline underline-offset-4 decoration-2 decoration-[color:var(--color-sunshine)]/60 hover:decoration-[color:var(--color-sunshine-deep)] transition-colors"
                   >
                     Learn More <span aria-hidden="true" className="ml-2">&rarr;</span>
-                  </a>
+                  </Link>
                 </GlassCard>
               </ScrollReveal>
 
@@ -536,12 +536,12 @@ export default function Home() {
                   <p className="text-ink-soft leading-relaxed flex-1">
                     We are not the hospice nurse. We are the ones who make sure your loved one is comfortable between visits. We coordinate with your hospice team, follow their directives, and provide the steady, compassionate presence your family needs.
                   </p>
-                  <a
+                  <Link
                     href="/services#hospice-care"
-                    className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
+                    className="inline-flex items-center text-forest hover:text-[color:var(--color-sunshine-deep)] font-semibold underline underline-offset-4 decoration-2 decoration-[color:var(--color-sunshine)]/60 hover:decoration-[color:var(--color-sunshine-deep)] transition-colors"
                   >
                     Learn More <span aria-hidden="true" className="ml-2">&rarr;</span>
-                  </a>
+                  </Link>
                 </GlassCard>
               </ScrollReveal>
             </div>
