@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 const steps = [
   {
     n: '01',
-    title: 'Meet us where you’re comfortable',
+    title: 'Meet us',
     body:
-      'Meet the caregivers, walk through the house, look at the backyard, and get all of your questions answered. Even the ones you haven’t thought of yet. If it’s the right fit, fantastic. If it’s not, we might have resources to share that would suit your needs better.',
+      'We’re happy to meet wherever you feel most comfortable - a coffee shop, your loved one’s current residence, or here at our home. When the time is right, walk through the house, meet the caregivers, and take in the backyard. Ask every question you have, even the ones you haven’t thought of yet. If it’s the right fit, fantastic. If it’s not, we might have resources to share that would suit your needs better.',
     duration: '60–90 min',
   },
   {
