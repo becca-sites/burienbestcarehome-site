@@ -82,7 +82,7 @@ const faqs = [
   {
     question: 'What happens if it isn’t the right fit?',
     answer:
-      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right.',
+      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right. We’re well connected in the care community and would be happy to help you find the right place.',
   },
 ]
 
