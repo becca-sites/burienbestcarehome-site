@@ -46,12 +46,12 @@ export default function About() {
 
   const promises = [
     {
-      title: 'Your Parent\u2019s Dignity First',
+      title: 'Your Parent’s Dignity First',
       description: 'We never rush, never talk down, never treat care as a checklist. Your parent is not a task. They are a person with a lifetime of stories and wisdom to share.',
     },
     {
       title: 'We Keep You Informed',
-      description: 'Open communication and visits are welcome. We set up a communication plan based on your family\u2019s preferences and needs. You stay in the loop on what matters and you choose how involved to be.',
+      description: 'Open communication and visits are welcome. We set up a communication plan based on your family’s preferences and needs. You stay in the loop on what matters and you choose how involved to be.',
     },
     {
       title: 'Small by Design',
