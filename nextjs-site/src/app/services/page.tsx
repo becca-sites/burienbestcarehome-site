@@ -346,7 +346,7 @@ export default function ServicesPage() {
                 serviceType: 'Memory Care',
                 provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
-                description: 'Specialized dementia and Alzheimer\u2019s care in a small, home-like adult family home with consistent caregivers and personalized routines.',
+                description: 'Specialized dementia and Alzheimer’s care in a small, home-like adult family home with consistent caregivers and personalized routines.',
                 url: 'https://burienbestcarehome.com/services#memory-care',
               },
               {
@@ -480,7 +480,7 @@ export default function ServicesPage() {
         }
         paragraphs={[
           'Your parent is more than their diagnosis. Even with memory loss, they remember the warmth of your touch. They feel the difference between someone going through the motions and someone who truly cares. Our memory care program is built on that truth.',
-          'We don\u2019t just manage symptoms, we preserve dignity. We maintain routines that feel familiar. We play music they grew up with, encourage activities that bring joy, and speak to them the way they deserve to be spoken to.',
+          'We don’t just manage symptoms, we preserve dignity. We maintain routines that feel familiar. We play music they grew up with, encourage activities that bring joy, and speak to them the way they deserve to be spoken to.',
         ]}
         features={memoryCareFeaturesData}
         delay={0.1}
@@ -508,7 +508,7 @@ export default function ServicesPage() {
       {/* Parkinson's Disease Care Section */}
       <ServiceSection
         id="parkinsons-care"
-        title={"Parkinson\u2019s Disease Care"}
+        title={"Parkinson’s Disease Care"}
         subtitle={
           <>
             Parkinson&rsquo;s changes how your loved one moves through the&nbsp;world.
@@ -537,8 +537,8 @@ export default function ServicesPage() {
           </>
         }
         paragraphs={[
-          'You\u2019ve been doing this for months. Maybe years. You love your parent fiercely, but you\u2019re exhausted. Burnt out. Running on empty. You feel guilty about needing a break, when the truth is: needing rest doesn\u2019t make you a bad child. It makes you human.',
-          'Our respite care gives you permission to breathe while your parent receives the personalized care you\u2019ve been providing, just in a different setting, with professional care from people who understand what your parent needs.',
+          'You’ve been doing this for months. Maybe years. You love your parent fiercely, but you’re exhausted. Burnt out. Running on empty. You feel guilty about needing a break, when the truth is: needing rest doesn’t make you a bad child. It makes you human.',
+          'Our respite care gives you permission to breathe while your parent receives the personalized care you’ve been providing, just in a different setting, with professional care from people who understand what your parent needs.',
         ]}
         features={respiteCareFeaturesData}
         delay={0.3}
@@ -580,8 +580,8 @@ export default function ServicesPage() {
           </>
         }
         paragraphs={[
-          'When your family enters the hospice chapter, the medical team provides clinical care on their schedule. But your loved one needs support around the clock. They need someone to adjust the pillow, manage medications between nurse visits, keep them clean and comfortable, and simply be there. That\u2019s where we come in.',
-          'We coordinate directly with your hospice provider and follow their care plan and comfort directives to the letter. Our job is not to replace the hospice team. It\u2019s to be the steady, compassionate presence in between, so your loved one is never alone and you can focus on being family during the time that matters most.',
+          'When your family enters the hospice chapter, the medical team provides clinical care on their schedule. But your loved one needs support around the clock. They need someone to adjust the pillow, manage medications between nurse visits, keep them clean and comfortable, and simply be there. That’s where we come in.',
+          'We coordinate directly with your hospice provider and follow their care plan and comfort directives to the letter. Our job is not to replace the hospice team. It’s to be the steady, compassionate presence in between, so your loved one is never alone and you can focus on being family during the time that matters most.',
         ]}
         features={hospiceCareFeaturesData}
         delay={0.45}
