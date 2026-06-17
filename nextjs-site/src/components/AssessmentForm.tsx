@@ -140,7 +140,7 @@ const QUESTIONS: Question[] = [
     step: 7,
     act: 2,
     type: 'single',
-    title: "Has your loved one been diagnosed with dementia, Alzheimer's, or memory loss?",
+    title: "Has your loved one been diagnosed with Dementia, Alzheimer's, Parkinson's, or memory loss?",
     options: [
       { value: 'yes', label: 'Yes, diagnosed' },
       { value: 'suspect', label: 'We suspect it but no formal diagnosis' },
