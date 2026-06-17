@@ -360,7 +360,7 @@ export default function ContactForm() {
             <option value="assisted-living">Assisted Living</option>
             <option value="general-care">General Care</option>
             <option value="respite-care">Respite Care</option>
-            <option value="parkinsons">Parkinson\'s Disease Care</option>
+            <option value="parkinsons">Parkinson's Disease Care</option>
             <option value="bed-bound">Bed Bound / Totally Dependent</option>
             <option value="hospice">Hospice</option>
             <option value="not-sure">Not Sure Yet</option>
