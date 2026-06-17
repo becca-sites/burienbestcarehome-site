@@ -216,7 +216,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                   <p>
-                    Our door is open for morning coffee, for dinner, or for no reason at all. Your parent&rsquo;s home is your home, and your pace is yours.
+                    Our door is open for morning coffee, for dinner, or for no reason at all. You are always welcome at your parent&rsquo;s home.
                   </p>
                   <p>
                     We keep families informed about what matters, and we welcome your visits and questions. You decide how involved you want to be. There is no right amount, and we meet you where you&nbsp;are.
