@@ -206,6 +206,40 @@ const recoveryCareFeaturesData: FeatureItem[] = [
   },
 ]
 
+
+const hospiceCareFeaturesData: FeatureItem[] = [
+  {
+    title: 'Hospice Team Coordination',
+    description:
+      'We work hand in hand with your hospice provider, attending team meetings, following their care plan, and ensuring every directive is carried out with precision and compassion.',
+  },
+  {
+    title: 'Comfort Path Support',
+    description:
+      'Our role is to follow the comfort path your hospice team prescribes. We manage day-to-day comfort measures, administer medications on schedule, and keep your loved one as peaceful as possible.',
+  },
+  {
+    title: 'Dignity in Every Moment',
+    description:
+      'Gentle repositioning, personal hygiene, and a calm environment. We ensure your loved one is comfortable, clean, and treated with the respect they deserve throughout this chapter.',
+  },
+  {
+    title: 'Family Space & Support',
+    description:
+      'This is your time to be with your loved one, not to manage their care. We handle the daily needs so you can focus on being present, sharing memories, and saying what matters.',
+  },
+  {
+    title: '24/7 Attentive Care',
+    description:
+      'Around-the-clock caregivers who understand end-of-life needs. Someone is always close by, always watching, always ready to respond with a gentle hand.',
+  },
+  {
+    title: 'Communication & Updates',
+    description:
+      'We keep you and the hospice team informed with regular updates. Changes in condition, comfort levels, and care adjustments are communicated promptly so everyone stays aligned.',
+  },
+]
+
 type Surface = 'white' | 'terracotta'
 
 function FeatureGrid({ features, surface: _surface }: { features: FeatureItem[]; surface: Surface }) {
@@ -350,6 +384,15 @@ export default function ServicesPage() {
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: '24/7 recovery support with medication coordination, mobility assistance, and ongoing monitoring after a hospital stay.',
                 url: 'https://burienbestcarehome.com/services#recovery',
+              },
+              {
+                '@type': 'Service',
+                name: 'Hospice Coordination',
+                serviceType: 'Hospice Support',
+                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
+                description: 'Compassionate coordination with hospice providers, following comfort care directives and supporting families through end-of-life care in a peaceful home setting.',
+                url: 'https://burienbestcarehome.com/services#hospice-care',
               },
             ],
           }),
@@ -524,7 +567,28 @@ export default function ServicesPage() {
         surface="white"
       />
 
-      {/* What Makes Our Care Different */}
+      
+      {/* Hospice Care Coordination Section */}
+      <ServiceSection
+        id="hospice-care"
+        title="Hospice Care Coordination"
+        subtitle={
+          <>
+            We are not the hospice&nbsp;nurse.
+            <br className="hidden sm:block" />
+            We are the ones who make sure your loved one is <em className="text-[color:var(--color-sunshine-deep)] italic font-semibold">comfortable</em>&nbsp;between&nbsp;visits.
+          </>
+        }
+        paragraphs={[
+          'When your family enters the hospice chapter, the medical team provides clinical care on their schedule. But your loved one needs support around the clock. They need someone to adjust the pillow, manage medications between nurse visits, keep them clean and comfortable, and simply be there. That\u2019s where we come in.',
+          'We coordinate directly with your hospice provider and follow their care plan and comfort directives to the letter. Our job is not to replace the hospice team. It\u2019s to be the steady, compassionate presence in between, so your loved one is never alone and you can focus on being family during the time that matters most.',
+        ]}
+        features={hospiceCareFeaturesData}
+        delay={0.45}
+        surface="terracotta"
+      />
+
+{/* What Makes Our Care Different */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-transparent">
         <ScrollReveal delay={0.5} className="w-full">
           <div className="max-w-5xl mx-auto">
