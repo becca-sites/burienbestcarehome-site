@@ -116,7 +116,7 @@ const parkinsonsFeaturesData: FeatureItem[] = [
   {
     title: 'Medication Timing & Coordination',
     description:
-      'With Parkinson\'s, when your parent takes their medication matters as much as what they take. We track doses precisely, coordinate with their neurologist, and adjust routines around their medication cycle.',
+      'With Parkinson\'s, when your loved one takes their medication matters as much as what they take. We track doses precisely, coordinate with their neurologist, and adjust routines around their medication cycle.',
   },
   {
     title: 'Exercise & Physical Therapy Support',
@@ -126,7 +126,7 @@ const parkinsonsFeaturesData: FeatureItem[] = [
   {
     title: 'Adaptive Daily Living Assistance',
     description:
-      'Tremors, rigidity, and slowness can turn simple tasks into real challenges. We help with bathing, dressing, grooming, and meals at your parent\'s pace, with tools and techniques adapted to their needs.',
+      'Tremors, rigidity, and slowness can turn simple tasks into real challenges. We help with bathing, dressing, grooming, and meals at your loved one\'s pace, with tools and techniques adapted to their needs.',
   },
   {
     title: 'Speech & Swallowing Support',
@@ -136,7 +136,7 @@ const parkinsonsFeaturesData: FeatureItem[] = [
   {
     title: 'Emotional Wellbeing & Engagement',
     description:
-      'Depression and anxiety are common with Parkinson\'s. We provide meaningful activities, social connection, and a steady daily rhythm that gives your parent purpose and something to look forward to.',
+      'Depression and anxiety are common with Parkinson\'s. We provide meaningful activities, social connection, and a steady daily rhythm that gives your loved one purpose and something to look forward to.',
   },
 ]
 
@@ -468,13 +468,13 @@ export default function ServicesPage() {
         title={"Parkinson\u2019s Disease Care"}
         subtitle={
           <>
-            Parkinson&rsquo;s changes how your parent moves through the&nbsp;world.
+            Parkinson&rsquo;s changes how your loved one moves through the&nbsp;world.
             <br className="hidden sm:block" />
             It doesn&rsquo;t have to change how they&rsquo;re <em className="text-[color:var(--color-sunshine-deep)] italic font-semibold">cared&nbsp;for</em>.
           </>
         }
         paragraphs={[
-          'Parkinson\'s is more than tremors. It affects balance, speech, sleep, mood, and the ability to do things your parent has done their entire life. As the disease progresses, the gap between what they need and what they can manage on their own grows wider. You\'ve watched it happen. You\'ve tried to fill that gap yourself.',
+          'Parkinson\'s is more than tremors. It affects balance, speech, sleep, mood, and the ability to do things your loved one has done their entire life. As the disease progresses, the gap between what they need and what they can manage on their own grows wider. You\'ve watched it happen. You\'ve tried to fill that gap yourself.',
           'Our caregivers understand the rhythms of Parkinson\'s. We know that medication timing matters, that mornings might be harder than afternoons, and that a steady hand and a patient voice can make the difference between a good day and a bad one. As a member of the Parkinson\'s Foundation, we stay current on the latest care practices and connect families with trusted resources. Your parent gets care that adapts to the disease, not care that ignores it.',
         ]}
         features={parkinsonsFeaturesData}
