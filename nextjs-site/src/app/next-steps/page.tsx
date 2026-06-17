@@ -89,6 +89,11 @@ const faqs = [
     answer:
       'Life is unpredictable, and finances can shift. If that happens, we’ll work with you to explore every option, whether that’s adjusting the care plan, connecting you with benefits you may qualify for, or finding another path forward. Your loved one’s home here is not something we take away lightly.',
   },
+  {
+    question: 'What if our available finances are tied up in real estate?',
+    answer:
+      'We understand that sometimes the funds are there, just not liquid yet. We’re open to working with families through a promissory note payable after the property sells. Every situation is different, so let’s sit down and talk through yours.',
+  },
 ]
 
 export default function NextSteps() {
