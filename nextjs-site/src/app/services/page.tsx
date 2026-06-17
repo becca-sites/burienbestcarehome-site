@@ -187,7 +187,7 @@ const recoveryCareFeaturesData: FeatureItem[] = [
   {
     title: 'Medication Management',
     description:
-      'Precise tracking of medications and health metrics. Recovery progress monitored daily, doctors kept informed.',
+      'Precise tracking of medications and health metrics. Recovery progress monitored daily, doctors’ orders are followed.',
   },
   {
     title: 'Physical Therapy Coordination',
