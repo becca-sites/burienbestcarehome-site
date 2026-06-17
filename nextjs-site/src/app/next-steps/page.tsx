@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'Does Medicaid or long-term care insurance cover this?',
     answer:
-      'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we’ll help you work through the claim process with your carrier.',
+      'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we’ll help you work through the claim process with your carrier. We can also help you navigate your Medicaid spend down, and in some circumstances we’ll accommodate Medicaid upon move-in.',
   },
   {
     question: 'How fast can my parent move in?',
