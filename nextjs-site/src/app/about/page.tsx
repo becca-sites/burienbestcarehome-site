@@ -216,13 +216,13 @@ export default function About() {
                 </h2>
                 <div className="space-y-6 text-lg text-ink-soft leading-relaxed">
                   <p>
-                    Our door is open for morning coffee, for dinner, or for no reason at all. You are always welcome at your parent&rsquo;s home.
+                    Our door is open for morning coffee, for dinner, or for no reason at all. Your parent&rsquo;s home is your home, and your pace is yours.
                   </p>
                   <p>
                     We keep families informed about what matters, and we welcome your visits and questions. You decide how involved you want to be. There is no right amount, and we meet you where you&nbsp;are.
                   </p>
                   <p>
-                    Your parent isn&rsquo;t just being cared for. They are being loved. You are never an intrusion, and you belong&nbsp;here. Want to plan a family dinner, organize a birthday celebration, or bring over a favorite recipe to cook together? We love that. Friends and family are always welcome to join in the fun, plan meals for the house, or dream up activities and events. Think of this as grandma's house, because it&nbsp;is.
+                    Want to plan a family dinner, organize a birthday celebration, or bring over a favorite recipe to cook together? We love that. Friends and family are always welcome to join in the fun, plan meals for the house, or dream up activities and events. Think of this as grandma's house, because it&nbsp;is.
                   </p>
                 </div>
               </div>
