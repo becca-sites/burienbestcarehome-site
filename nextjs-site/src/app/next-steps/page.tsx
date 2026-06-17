@@ -65,26 +65,6 @@ const faqs = [
       'We accept private pay, long-term care insurance, Medicaid, and some VA benefits. If you have LTC insurance, we’ll help you work through the claim process with your carrier. We can also help you navigate your Medicaid spend down, and in some circumstances we’ll accommodate Medicaid upon move-in.',
   },
   {
-    question: 'How fast can my parent move in?',
-    answer:
-      'If it\'s urgent, we can have your parent moved in within 24 hours. For hospital discharges, we typically accelerate to just a few days. The standard timeline from first visit to move-in is 1 to 3 weeks, long enough to build a real care plan, coordinate medical records, and make sure the transition feels smooth for everyone.',
-  },
-  {
-    question: 'What if my parent’s needs change over time?',
-    answer:
-      'We expect care needs to change over time. That’s what an adult family home is built for. As your parent’s needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
-  },
-  {
-    question: 'Can family visit anytime?',
-    answer:
-      'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 9 a.m. to 8 p.m., to keep the rhythm of the home. If you have unique circumstances, just talk with us. We\'re happy to accommodate.',
-  },
-  {
-    question: 'What happens if it isn’t the right fit?',
-    answer:
-      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right. We’re well connected in the care community and would be happy to help you find the right place.',
-  },
-  {
     question: 'What if my financial situation changes?',
     answer:
       'Life is unpredictable, and finances can shift. If that happens, we’ll work with you to explore every option, from connecting you with benefits you may qualify for to finding another path forward. Your loved one’s home here is not something we take away lightly.',
@@ -93,6 +73,26 @@ const faqs = [
     question: 'What if our available finances are tied up in real estate?',
     answer:
       'We understand that sometimes the funds are there, just not liquid yet. We’re open to working with families through a promissory note payable after the property sells. Every situation is different, so let’s sit down and talk through yours.',
+  },
+  {
+    question: 'How fast can my parent move in?',
+    answer:
+      'If it\'s urgent, we can have your parent moved in within 24 hours. For hospital discharges, we typically accelerate to just a few days. The standard timeline from first visit to move-in is 1 to 3 weeks, long enough to build a real care plan, coordinate medical records, and make sure the transition feels smooth for everyone.',
+  },
+  {
+    question: 'Can family visit anytime?',
+    answer:
+      'Almost any time, yes. This is their home now, which makes it an extension of yours. Come for lunch, bring the grandkids, show up on a Tuesday afternoon. Our visiting hours run loosely from 9 a.m. to 8 p.m., to keep the rhythm of the home. If you have unique circumstances, just talk with us. We\'re happy to accommodate.',
+  },
+  {
+    question: 'What if my parent’s needs change over time?',
+    answer:
+      'We expect care needs to change over time. That’s what an adult family home is built for. As your parent’s needs evolve, we adjust the care plan with them. More help with bathing one month, a new medication the next, hospice support if and when that day comes. You won’t be forced to move them to a different facility when things change.',
+  },
+  {
+    question: 'What happens if it isn’t the right fit?',
+    answer:
+      'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right. We’re well connected in the care community and would be happy to help you find the right place.',
   },
 ]
 
