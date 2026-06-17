@@ -472,16 +472,16 @@ export default function Home() {
                 <GlassCard variant="solid" className="h-full p-8 flex flex-col">
                   <div aria-hidden="true" className="w-12 h-1 bg-[color:var(--color-sunshine)] rounded-full mb-5" />
                   <h3 className="font-serif text-2xl sm:text-3xl font-normal text-forest leading-tight mb-4">
-                    Parkinson\u2019s Disease Care
+                    Parkinson’s Disease Care
                   </h3>
                   <p className="text-ink-soft leading-relaxed flex-1">
-                    Parkinson\u2019s changes everything about daily life. We understand the rhythms of the disease and adapt care around medication timing, mobility challenges, and the patience your loved one deserves. Specialized support that moves at their pace.
+                    Parkinson’s changes everything about daily life. We understand the rhythms of the disease and adapt care around medication timing, mobility challenges, and the patience your loved one deserves. Specialized support that moves at their pace.
                   </p>
                   <a
                     href="/services#parkinsons-care"
                     className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
                   >
-                    Learn More <span aria-hidden="true">\u2192</span>
+                    Learn More <span aria-hidden="true" className="ml-2">&rarr;</span>
                   </a>
                 </GlassCard>
               </ScrollReveal>
@@ -540,7 +540,7 @@ export default function Home() {
                     href="/services#hospice-care"
                     className="inline-flex items-center gap-1 text-[color:var(--color-ink)] font-semibold mt-5 hover:text-[color:var(--color-sunshine-deep)] transition-colors"
                   >
-                    Learn More <span aria-hidden="true">\u2192</span>
+                    Learn More <span aria-hidden="true" className="ml-2">&rarr;</span>
                   </a>
                 </GlassCard>
               </ScrollReveal>
