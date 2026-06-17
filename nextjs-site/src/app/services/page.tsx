@@ -475,7 +475,7 @@ export default function ServicesPage() {
         }
         paragraphs={[
           'Parkinson\'s is more than tremors. It affects balance, speech, sleep, mood, and the ability to do things your loved one has done their entire life. As the disease progresses, the gap between what they need and what they can manage on their own grows wider. You\'ve watched it happen. You\'ve tried to fill that gap yourself.',
-          'Our caregivers understand the rhythms of Parkinson\'s. We know that medication timing matters, that mornings might be harder than afternoons, and that a steady hand and a patient voice can make the difference between a good day and a bad one. As a member of the Parkinson\'s Foundation, we stay current on the latest care practices and connect families with trusted resources. Your parent gets care that adapts to the disease, not care that ignores it.',
+          'Our caregivers understand the rhythms of Parkinson\'s. We know that medication timing matters, that mornings might be harder than afternoons, and that a steady hand and a patient voice can make the difference between a good day and a bad one. As a member of the Parkinson\'s Foundation, we stay current on the latest care practices and connect families with trusted resources. Your loved one gets care that adapts to the disease, not care that ignores it.',
         ]}
         features={parkinsonsFeaturesData}
         delay={0.25}
