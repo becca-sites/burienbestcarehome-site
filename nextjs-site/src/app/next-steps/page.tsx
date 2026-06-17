@@ -84,6 +84,11 @@ const faqs = [
     answer:
       'If you or we feel that another setting would serve your loved one better, let’s talk about it. If there’s something we can adjust, let’s try that first. But if a move is the right decision, we’ll make it together. No one benefits from forcing a fit that isn’t right. We’re well connected in the care community and would be happy to help you find the right place.',
   },
+  {
+    question: 'What if my financial situation changes?',
+    answer:
+      'Life is unpredictable, and finances can shift. If that happens, we’ll work with you to explore every option, whether that’s adjusting the care plan, connecting you with benefits you may qualify for, or finding another path forward. Your loved one’s home here is not something we take away lightly.',
+  },
 ]
 
 export default function NextSteps() {
