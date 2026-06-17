@@ -34,25 +34,25 @@ export default function Contact() {
       number: 1,
       title: 'Reach Out',
       description:
-        'Call or email, and we\u2019ll get back to you within 24 hours or the next business day.',
+        'Call or email, and we’ll get back to you within 24 hours or the next business day.',
     },
     {
       number: 2,
       title: 'Schedule Your Visit',
       description:
-        'We\u2019ll work around your schedule. You\u2019ll get all the details you need and answers to any questions before you arrive.',
+        'We’ll work around your schedule. You’ll get all the details you need and answers to any questions before you arrive.',
     },
     {
       number: 3,
       title: 'You Tour the Home and Meet Our Team',
       description:
-        'You\u2019ll see the living spaces, meet the people who\u2019ll care for your parent, and ask anything you want. We\u2019ll talk you through how we do things and what a typical day looks like.',
+        'You’ll see the living spaces, meet the people who’ll care for your parent, and ask anything you want. We’ll talk you through how we do things and what a typical day looks like.',
     },
     {
       number: 4,
       title: 'We Talk About What Matters Most',
       description:
-        'We\u2019ll sit down and get to know your parent and your family. If we\u2019re the right fit, we\u2019ll talk through next steps together. If we\u2019re not, we\u2019ll help you find a setting that better suits your loved one\u2019s needs.',
+        'We’ll sit down and get to know your parent and your family. If we’re the right fit, we’ll talk through next steps together. If we’re not, we’ll help you find a setting that better suits your loved one’s needs.',
     },
     {
       number: 5,
@@ -361,7 +361,7 @@ export default function Contact() {
 
           <ScrollReveal delay={0.1}>
             <p className="text-lg sm:text-xl text-ink-soft mb-10 leading-relaxed">
-              You\u2019ve been carrying this decision alone long enough. Let us walk this road with&nbsp;you.
+              You’ve been carrying this decision alone long enough. Let us walk this road with&nbsp;you.
             </p>
           </ScrollReveal>
 
