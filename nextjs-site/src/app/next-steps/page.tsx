@@ -87,7 +87,7 @@ const faqs = [
   {
     question: 'What if my financial situation changes?',
     answer:
-      'Life is unpredictable, and finances can shift. If that happens, we’ll work with you to explore every option, whether that’s adjusting the care plan, connecting you with benefits you may qualify for, or finding another path forward. Your loved one’s home here is not something we take away lightly.',
+      'Life is unpredictable, and finances can shift. If that happens, we’ll work with you to explore every option, from connecting you with benefits you may qualify for to finding another path forward. Your loved one’s home here is not something we take away lightly.',
   },
   {
     question: 'What if our available finances are tied up in real estate?',
