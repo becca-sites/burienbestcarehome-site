@@ -8,13 +8,15 @@ import ScheduleVisitButton from '@/components/ScheduleVisitButton'
 export const metadata: Metadata = {
   title: 'Our Services | Memory Care & Senior Care in Burien, WA',
   description:
-    'Personalized memory care, daily living assistance, respite care, and post-hospital recovery for seniors in Burien and King County. Focus on outcomes, not facilities.',
+    'Personalized memory care, daily living assistance, Parkinson\'s disease care, respite care, and post-hospital recovery for seniors in Burien and King County. Focus on outcomes, not facilities.',
   keywords: [
     'memory care Burien',
     'senior care King County',
     'adult family home',
     'dementia care Washington',
     'respite care Burien',
+    'Parkinsons disease care Burien',
+    'Parkinsons care adult family home',
   ],
   alternates: {
     canonical: '/services',
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Our Services | Memory Care & Senior Care in Burien, WA',
     description:
-      'Memory care, daily living assistance, respite care, and post-hospital recovery in a small, family-centered home.',
+      'Memory care, daily living assistance, Parkinson\'s disease care, respite care, and post-hospital recovery in a small, family-centered home.',
   },
 }
 
@@ -102,6 +104,39 @@ const dailyLivingFeaturesData: FeatureItem[] = [
     title: 'Medical Transportation',
     description:
       'Coordinated support for doctor appointments and medical visits. Getting where they need to be, safely and on time.',
+  },
+]
+
+const parkinsonsFeaturesData: FeatureItem[] = [
+  {
+    title: 'Fall Prevention & Mobility Safety',
+    description:
+      'Parkinson\'s doubles the risk of falls. Our home is designed with clear walking paths, grab bars, and steady surfaces. Caregivers are trained to spot freezing episodes and provide support before a fall happens.',
+  },
+  {
+    title: 'Medication Timing & Coordination',
+    description:
+      'With Parkinson\'s, when your parent takes their medication matters as much as what they take. We track doses precisely, coordinate with their neurologist, and adjust routines around their medication cycle.',
+  },
+  {
+    title: 'Exercise & Physical Therapy Support',
+    description:
+      'Movement is medicine for Parkinson\'s. We support daily exercises, walking routines, and coordination with physical therapists to help maintain strength, balance, and flexibility.',
+  },
+  {
+    title: 'Adaptive Daily Living Assistance',
+    description:
+      'Tremors, rigidity, and slowness can turn simple tasks into real challenges. We help with bathing, dressing, grooming, and meals at your parent\'s pace, with tools and techniques adapted to their needs.',
+  },
+  {
+    title: 'Speech & Swallowing Support',
+    description:
+      'Parkinson\'s often affects the voice and swallowing. We prepare meals with appropriate textures, monitor eating safely, and support speech therapy exercises prescribed by their care team.',
+  },
+  {
+    title: 'Emotional Wellbeing & Engagement',
+    description:
+      'Depression and anxiety are common with Parkinson\'s. We provide meaningful activities, social connection, and a steady daily rhythm that gives your parent purpose and something to look forward to.',
   },
 ]
 
@@ -291,6 +326,15 @@ export default function ServicesPage() {
               },
               {
                 '@type': 'Service',
+                name: 'Parkinson\'s Disease Care',
+                serviceType: 'Parkinson\'s Disease Care',
+                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
+                description: 'Specialized Parkinson\'s disease care with fall prevention, precise medication timing, mobility support, and adaptive daily living assistance in a small adult family home.',
+                url: 'https://burienbestcarehome.com/services#parkinsons-care',
+              },
+              {
+                '@type': 'Service',
                 name: 'Respite Care',
                 serviceType: 'Respite Care',
                 provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
@@ -416,6 +460,26 @@ export default function ServicesPage() {
         features={dailyLivingFeaturesData}
         delay={0.2}
         surface="white"
+      />
+
+      {/* Parkinson's Disease Care Section */}
+      <ServiceSection
+        id="parkinsons-care"
+        title={"Parkinson\u2019s Disease Care"}
+        subtitle={
+          <>
+            Parkinson&rsquo;s changes how your parent moves through the&nbsp;world.
+            <br className="hidden sm:block" />
+            It doesn&rsquo;t have to change how they&rsquo;re <em className="text-[color:var(--color-sunshine-deep)] italic font-semibold">cared&nbsp;for</em>.
+          </>
+        }
+        paragraphs={[
+          'Parkinson\'s is more than tremors. It affects balance, speech, sleep, mood, and the ability to do things your parent has done their entire life. As the disease progresses, the gap between what they need and what they can manage on their own grows wider. You\'ve watched it happen. You\'ve tried to fill that gap yourself.',
+          'Our caregivers understand the rhythms of Parkinson\'s. We know that medication timing matters, that mornings might be harder than afternoons, and that a steady hand and a patient voice can make the difference between a good day and a bad one. As a member of the Parkinson\'s Foundation, we stay current on the latest care practices and connect families with trusted resources. Your parent gets care that adapts to the disease, not care that ignores it.',
+        ]}
+        features={parkinsonsFeaturesData}
+        delay={0.25}
+        surface="terracotta"
       />
 
       {/* Respite Care Section */}
