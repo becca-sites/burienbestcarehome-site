@@ -88,7 +88,7 @@ export default function BlogIndex() {
               <span className="text-sunshine-deep italic">decision mode</span>.
             </h1>
             <p className="text-lg md:text-xl text-ink-soft leading-relaxed max-w-2xl mx-auto">
-              Practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home in King County &mdash; not just ours.
+              Practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home in King County.
             </p>
           </ScrollReveal>
         </div>
