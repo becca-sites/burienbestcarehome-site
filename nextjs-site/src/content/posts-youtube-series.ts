@@ -13,7 +13,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "8 min",
   tags: ["Hospice Care", "End of Life", "Family Caregiving", "Senior Care"],
-  heroImage: "/images/blog/understanding-hospice-care-what-families-need-to-know.jpg",
+  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=gC4-fz5IZUc",
   body: [
     {
@@ -280,7 +280,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "10 min",
   tags: ["Estate Planning", "Legal Planning", "Power of Attorney", "Senior Care"],
-  heroImage: "/images/blog/estate-planning-101-wills-trusts-power-of-attorney.jpg",
+  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=Cpd3pZfKj1c",
   body: [
     {
@@ -511,7 +511,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "7 min",
   tags: ["Home Care", "Home Health", "Senior Care Options", "Caregiving"],
-  heroImage: "/images/blog/home-care-vs-home-health-difference-explained.jpg",
+  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=e8yVyO2d8Q0",
   body: [
     {
@@ -765,7 +765,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["Home Maintenance", "Aging in Place", "Senior Safety", "Caregiving"],
-  "heroImage": "/images/blog/senior-home-maintenance-aging-in-place-safely.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=B4XEkrOmvGk",
   "body": [
     {
@@ -944,7 +944,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["End of Life Planning", "Cremation", "Family Planning", "Senior Care"],
-  "heroImage": "/images/blog/prepaid-cremation-planning-ahead-for-families.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=hTWmeg5KIgg",
   "body": [
     {
@@ -1104,7 +1104,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "10 min",
   "tags": ["Reverse Mortgage", "Senior Finance", "Home Equity", "Family Planning"],
-  "heroImage": "/images/blog/reverse-mortgage-qa-seniors-families-guide.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=te1kDf5fflo",
   "body": [
     {
@@ -1312,7 +1312,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["Senior Move", "Downsizing", "Transition", "Family Caregiving"],
-  "heroImage": "/images/blog/senior-move-management-transitioning-with-ease.jpg",
+  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=FKhn1iLEjvY",
   "body": [
     {
