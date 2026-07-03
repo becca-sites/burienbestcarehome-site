@@ -6264,7 +6264,7 @@ export const posts: Post[] = [
 ]
 
 export function getAllPosts(): Post[] {
-  return [...posts].sort((a, b) => (a.date < b.date ? 1 : -1))
+  const today = new Date().toISOString().split('T')[0]; return [...posts].filter(p => p.date <= today).sort((a, b) => (a.date < b.date ? 1 : -1))
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
