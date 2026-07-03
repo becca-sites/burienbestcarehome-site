@@ -8,12 +8,12 @@ import GlassCard from '@/components/GlassCard'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Honest writing for families navigating senior care in King County: practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home.',
+    'Thoughtful writing for families navigating senior care in King County: practical guides, real-talk about cost and timing, and what to look for when you tour any adult family home.',
   alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Blog | Burien Best Care Home',
     description:
-      'Honest writing for families navigating senior care in King County.',
+      'Thoughtful writing for families navigating senior care in King County.',
     url: 'https://burienbestcarehome.com/blog',
     type: 'website',
   },
@@ -46,7 +46,7 @@ export default function BlogIndex() {
             name: 'Burien Best Care Home Blog',
             url: `${SITE_URL}/blog`,
             description:
-              'Honest writing for families navigating senior care in King County.',
+              'Thoughtful writing for families navigating senior care in King County.',
             publisher: {
               '@type': 'Organization',
               name: 'Burien Best Care Home',
@@ -84,7 +84,7 @@ export default function BlogIndex() {
               The Blog
             </p>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-ink leading-tight mb-6">
-              Honest writing for families in{' '}
+              Thoughtful writing for families in{' '}
               <span className="text-sunshine-deep italic">decision mode</span>.
             </h1>
             <p className="text-lg md:text-xl text-ink-soft leading-relaxed max-w-2xl mx-auto">

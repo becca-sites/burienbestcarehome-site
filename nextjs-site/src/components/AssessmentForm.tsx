@@ -456,7 +456,6 @@ export default function AssessmentForm() {
     if (!contact.email.trim()) next.email = 'Email is required'
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.email))
       next.email = 'Please enter a valid email address'
-    if (!contact.bestTime) next.bestTime = 'Please pick a best time to reach you'
     setErrors(next)
     return Object.keys(next).length === 0
   }
@@ -765,7 +764,7 @@ export default function AssessmentForm() {
 
               <div>
                 <label htmlFor="bestTime" className="block text-forest font-semibold mb-2">
-                  Best time to reach you <span className="text-terracotta-deep">*</span>
+                  Best time to reach you
                 </label>
                 <select
                   id="bestTime"
