@@ -44,7 +44,7 @@ export const posts: Post[] = [
       "Senior Care",
       "Washington State"
     ],
-    "heroImage": "/images/blog/afh-vs-assisted-living.jpg",
+    "heroImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&h=900&q=80",
     "body": [
       {
         "type": "p",
