@@ -944,7 +944,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["End of Life Planning", "Cremation", "Family Planning", "Senior Care"],
-  "heroImage": "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=hTWmeg5KIgg",
   "body": [
     {
@@ -1312,7 +1312,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["Senior Move", "Downsizing", "Transition", "Family Caregiving"],
-  "heroImage": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=FKhn1iLEjvY",
   "body": [
     {
