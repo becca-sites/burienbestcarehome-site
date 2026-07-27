@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -112,9 +113,16 @@ export default function Navigation() {
           <Link
             href="/"
             aria-label="Burien Best Care Home - home"
-            className={`inline-flex items-center min-h-12 text-lg sm:text-xl font-serif font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-forest rounded ${logoColor} ${isScrolled ? '' : 'drop-shadow-md'}`}
+            className="inline-flex items-center min-h-12 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-forest rounded"
           >
-            Burien Best Care Home
+            <Image
+              src="/images/BBC_Full Logo_PNG.png"
+              alt="Burien Best Care Home"
+              width={200}
+              height={67}
+              className="h-10 md:h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
