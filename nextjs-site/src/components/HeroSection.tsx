@@ -86,9 +86,7 @@ export default function HeroSection() {
             className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[color:var(--color-ink)] mb-6 leading-[1.1]"
             variants={itemVariants}
           >
-            Your parent&rsquo;s <span className="italic font-semibold text-[color:var(--color-sunshine-deep)]">safety</span>
-            <br />
-            shouldn&rsquo;t keep you up at&nbsp;night.
+            Your parent needs more help and living alone safely is no longer possible.
           </motion.h1>
 
           {/* Supporting Paragraph — promise of ongoing care, not just one decision */}
