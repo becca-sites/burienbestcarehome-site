@@ -13,7 +13,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "8 min",
   tags: ["Hospice Care", "End of Life", "Family Caregiving", "Senior Care"],
-  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  heroImage: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=gC4-fz5IZUc",
   body: [
     {
