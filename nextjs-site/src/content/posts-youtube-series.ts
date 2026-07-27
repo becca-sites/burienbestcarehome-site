@@ -280,7 +280,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "10 min",
   tags: ["Estate Planning", "Legal Planning", "Power of Attorney", "Senior Care"],
-  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=Cpd3pZfKj1c",
   body: [
     {
@@ -511,7 +511,7 @@ export const youtubeSeriesPosts: Post[] = [
   author: "Becca Pitts",
   readingTime: "7 min",
   tags: ["Home Care", "Home Health", "Senior Care Options", "Caregiving"],
-  heroImage: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  heroImage: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&h=900&q=80",
   videoUrl: "https://www.youtube.com/watch?v=e8yVyO2d8Q0",
   body: [
     {
@@ -765,7 +765,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["Home Maintenance", "Aging in Place", "Senior Safety", "Caregiving"],
-  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=B4XEkrOmvGk",
   "body": [
     {
@@ -944,7 +944,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["End of Life Planning", "Cremation", "Family Planning", "Senior Care"],
-  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=hTWmeg5KIgg",
   "body": [
     {
@@ -1104,7 +1104,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "10 min",
   "tags": ["Reverse Mortgage", "Senior Finance", "Home Equity", "Family Planning"],
-  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=te1kDf5fflo",
   "body": [
     {
@@ -1312,7 +1312,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["Senior Move", "Downsizing", "Transition", "Family Caregiving"],
-  "heroImage": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=FKhn1iLEjvY",
   "body": [
     {
