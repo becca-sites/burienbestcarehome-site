@@ -116,11 +116,11 @@ export default function Navigation() {
             className="inline-flex items-center min-h-12 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-forest rounded"
           >
             <Image
-              src="/images/BBC_Full Logo_PNG.png"
+              src="/images/bbch-logo.png"
               alt="Burien Best Care Home"
               width={200}
               height={67}
-              className="h-10 md:h-12 w-auto mix-blend-multiply"
+              className="h-10 md:h-12 w-auto"
               priority
             />
           </Link>
