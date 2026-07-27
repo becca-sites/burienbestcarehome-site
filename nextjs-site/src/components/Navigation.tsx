@@ -120,7 +120,7 @@ export default function Navigation() {
               alt="Burien Best Care Home"
               width={200}
               height={67}
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-auto mix-blend-multiply"
               priority
             />
           </Link>
