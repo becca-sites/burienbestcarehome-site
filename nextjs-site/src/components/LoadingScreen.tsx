@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function LoadingScreen() {
@@ -48,7 +49,7 @@ export default function LoadingScreen() {
               aria-hidden="true"
               className="font-serif text-5xl md:text-6xl text-sage font-bold"
             >
-              Burien Best Care Home
+              <Image src="/images/bbch-logo.png" alt="Burien Best Care Home" width={400} height={133} className="w-64 md:w-96 h-auto" priority />
             </div>
             <p aria-hidden="true" className="font-serif text-xl md:text-2xl text-sage/70">
               Where Family Feels Like Home
