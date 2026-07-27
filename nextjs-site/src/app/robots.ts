@@ -26,3 +26,5 @@ export default function robots(): MetadataRoute.Robots {
     host: SITE_URL,
   }
 }
+
+// Updated Jul 2026
