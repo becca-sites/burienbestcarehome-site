@@ -944,7 +944,7 @@ export const youtubeSeriesPosts: Post[] = [
   "author": "Becca Pitts",
   "readingTime": "7 min",
   "tags": ["End of Life Planning", "Cremation", "Family Planning", "Senior Care"],
-  "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&h=900&q=80",
+  "heroImage": "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?auto=format&fit=crop&w=1600&h=900&q=80",
   "videoUrl": "https://www.youtube.com/watch?v=hTWmeg5KIgg",
   "body": [
     {
