@@ -101,7 +101,7 @@ export default function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-forest shadow-md' : 'bg-transparent'
+        'bg-forest shadow-md'
       }`}
     >
       <nav
@@ -120,19 +120,19 @@ export default function Navigation() {
               alt="Burien Best Care Home"
               width={200}
               height={67}
-              className="h-10 md:h-12 w-auto"
+              className="h-8 md:h-10 w-auto"
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2 lg:gap-4">
+          <div className="hidden md:flex items-center gap-1 lg:gap-3">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 aria-current={isActive(link.href) ? 'page' : undefined}
-                className={`inline-flex items-center min-h-12 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded px-3 py-2 ${
+                className={`inline-flex items-center min-h-12 font-medium whitespace-nowrap transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded px-3 py-2 ${
                   isActive(link.href) ? linkActive : linkBase
                 } ${isScrolled ? '' : 'drop-shadow-md'}`}
               >
