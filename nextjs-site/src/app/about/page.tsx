@@ -36,7 +36,7 @@ export default function About() {
       bio: 'Becca has spent 15 years as a licensed real estate broker in Washington and is a Seniors Real Estate Specialist (SRES), guiding families through the housing transitions that come with aging. She built Burien Best Care Home after navigating senior care for her own family. She knows the exhaustion of looking for a place that feels like home, not a facility. She built this so other families would not have to search the way she did.',
     },
     {
-      image: '/photos/staff/dana-t-caregiver.webp',
+      image: '/photos/staff/daniela-torkelson.webp',
       initials: 'DT',
       name: 'Daniela Torkelson',
       role: 'Co-Owner, Provider & Resident Manager',
