@@ -674,7 +674,7 @@ export default function Home() {
                 <GlassCard variant="tinted" className="p-8 sm:p-10 text-center h-full flex flex-col">
                   <div className="w-28 h-28 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[color:var(--color-sunshine)]/40 shadow-inner relative">
                     <Image
-                      src="/photos/staff/dana-t-caregiver.webp"
+                      src="/photos/staff/daniela-torkelson.webp"
                       alt="Portrait of Daniela Torkelson, Co-Owner, Provider & Resident Manager at Burien Best Care Home"
                       fill
                       sizes="112px"
