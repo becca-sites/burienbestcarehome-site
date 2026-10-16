@@ -29,6 +29,7 @@ const sensoryWallImages: GalleryImage[] = [
   { src: '/images/gallery/home/home-fidget-spinner-airplane.webp', alt: 'Fidget spinner airplane art, an interactive sensory station for fine motor engagement', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-blue-splash-art.webp', alt: 'Abstract blue splash painting, a visual sensory station on the hallway wall', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-pinwheel-display.webp', alt: 'Colorful pinwheel display, a playful sensory station that invites gentle interaction', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-xylophone-music-station.webp', alt: 'Rainbow xylophone music station with color-coded sheet music for familiar songs, a musical sensory station', w: 1200, h: 1600 },
 ]
 
 /* ------------------------------------------------------------------ */
