@@ -49,6 +49,17 @@ const homeImages: GalleryImage[] = [
   { src: '/images/gallery/home/home-IMG-20250612-WA0004.webp', alt: 'Burien Best Care Home details', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-IMG_20260424_130441.webp', alt: 'Quality care in a quality space', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-IMG_20260424_130444.webp', alt: 'Our home is your home', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-hallway-art-gallery.webp', alt: 'The sensory hallway at Burien Best Care Home, lined with handmade interactive art stations', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-sand-art-ocean.webp', alt: 'Sand art ocean scene, a calming sensory station on the hallway wall', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-magna-doodle.webp', alt: 'Magna Doodle station on the sensory wall, used for creative expression and redirection', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-convex-mirror-art.webp', alt: 'Colorful convex mirror art piece, an engaging visual sensory station', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-rope-spiral-art.webp', alt: 'Green rope spiral texture art, a tactile sensory station for residents', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-blue-textile-art.webp', alt: 'Blue chenille textile art, a soft tactile sensory station', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-blue-splash-art.webp', alt: 'Abstract blue splash painting, a visual sensory station on the hallway wall', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-fidget-spinner-airplane.webp', alt: 'Fidget spinner airplane art, an interactive sensory station for fine motor engagement', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-pinwheel-display.webp', alt: 'Colorful pinwheel display, a playful sensory station that invites gentle interaction', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-sensory-activity-board.webp', alt: 'Wooden activity board with abacus, clock, gears, and lacing, a hands-on sensory station for cognitive engagement', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-i-spy-shadowbox.webp', alt: 'I-spy shadowbox filled with everyday objects, a visual search game for cognitive stimulation', w: 1200, h: 1600 },
 ]
 
 /* ------------------------------------------------------------------ */
