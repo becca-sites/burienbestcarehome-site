@@ -15,6 +15,23 @@ interface GalleryImage {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Our Sensory Wall - 24 handmade stations for engagement & comfort   */
+/* ------------------------------------------------------------------ */
+const sensoryWallImages: GalleryImage[] = [
+  { src: '/images/gallery/home/home-hallway-art-gallery.webp', alt: 'The sensory hallway at Burien Best Care Home, lined with handmade interactive art stations', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-sensory-activity-board.webp', alt: 'Wooden activity board with abacus, clock, gears, and lacing, a hands-on sensory station for cognitive engagement', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-i-spy-shadowbox.webp', alt: 'I-spy shadowbox filled with everyday objects, a visual search game for cognitive stimulation', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-convex-mirror-art.webp', alt: 'Colorful convex mirror art piece, an engaging visual sensory station', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-rope-spiral-art.webp', alt: 'Green rope spiral texture art, a tactile sensory station for residents', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-blue-textile-art.webp', alt: 'Blue chenille textile art, a soft tactile sensory station', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-sand-art-ocean.webp', alt: 'Sand art ocean scene, a calming sensory station on the hallway wall', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-magna-doodle.webp', alt: 'Magna Doodle station on the sensory wall, used for creative expression and redirection', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-fidget-spinner-airplane.webp', alt: 'Fidget spinner airplane art, an interactive sensory station for fine motor engagement', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-blue-splash-art.webp', alt: 'Abstract blue splash painting, a visual sensory station on the hallway wall', w: 1200, h: 1600 },
+  { src: '/images/gallery/home/home-pinwheel-display.webp', alt: 'Colorful pinwheel display, a playful sensory station that invites gentle interaction', w: 1200, h: 1600 },
+]
+
+/* ------------------------------------------------------------------ */
 /*  Our Home photos - ordered for visual balance in masonry grid       */
 /* ------------------------------------------------------------------ */
 const homeImages: GalleryImage[] = [
@@ -49,17 +66,6 @@ const homeImages: GalleryImage[] = [
   { src: '/images/gallery/home/home-IMG-20250612-WA0004.webp', alt: 'Burien Best Care Home details', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-IMG_20260424_130441.webp', alt: 'Quality care in a quality space', w: 1200, h: 1600 },
   { src: '/images/gallery/home/home-IMG_20260424_130444.webp', alt: 'Our home is your home', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-hallway-art-gallery.webp', alt: 'The sensory hallway at Burien Best Care Home, lined with handmade interactive art stations', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-sand-art-ocean.webp', alt: 'Sand art ocean scene, a calming sensory station on the hallway wall', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-magna-doodle.webp', alt: 'Magna Doodle station on the sensory wall, used for creative expression and redirection', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-convex-mirror-art.webp', alt: 'Colorful convex mirror art piece, an engaging visual sensory station', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-rope-spiral-art.webp', alt: 'Green rope spiral texture art, a tactile sensory station for residents', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-blue-textile-art.webp', alt: 'Blue chenille textile art, a soft tactile sensory station', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-blue-splash-art.webp', alt: 'Abstract blue splash painting, a visual sensory station on the hallway wall', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-fidget-spinner-airplane.webp', alt: 'Fidget spinner airplane art, an interactive sensory station for fine motor engagement', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-pinwheel-display.webp', alt: 'Colorful pinwheel display, a playful sensory station that invites gentle interaction', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-sensory-activity-board.webp', alt: 'Wooden activity board with abacus, clock, gears, and lacing, a hands-on sensory station for cognitive engagement', w: 1200, h: 1600 },
-  { src: '/images/gallery/home/home-i-spy-shadowbox.webp', alt: 'I-spy shadowbox filled with everyday objects, a visual search game for cognitive stimulation', w: 1200, h: 1600 },
 ]
 
 /* ------------------------------------------------------------------ */
@@ -206,7 +212,38 @@ export default function GalleryContent() {
         </div>
       </section>
 
-      {/* ── Our Home ──────────────────────────────────────────────── */}
+      {/* ── Our Sensory Wall ─────────────────────────────────────── */}
+      <section className="py-20 px-6 bg-cream">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-serif text-4xl md:text-5xl text-forest mb-4 text-center">
+              Our Sensory Wall
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <p className="text-lg text-forest text-center max-w-2xl mx-auto mb-4 leading-relaxed">
+              Our hallway features 24 handmade sensory stations designed to
+              engage residents through touch, sight, and creativity. From tactile
+              art and activity boards to visual puzzles and interactive displays,
+              each station provides meaningful stimulation throughout the day.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.15}>
+            <p className="text-base text-sage text-center max-w-2xl mx-auto mb-12 leading-relaxed italic">
+              These stations give our residents independent entertainment and
+              provide our care staff with thoughtful tools for gentle redirection.
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <PhotoGrid
+              images={sensoryWallImages}
+              onImageClick={(i) => openLightbox(sensoryWallImages, i)}
+            />
+          </ScrollReveal>
+        </div>
+      </section>
+
+            {/* ── Our Home ──────────────────────────────────────────────── */}
       <section className="py-20 px-6 bg-cream">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
