@@ -26,6 +26,10 @@ export interface Post {
   tags: string[]
   heroImage?: string
   videoUrl?: string // optional YouTube/Vimeo embed URL (future use)
+  // Optional FAQPage structured data. Rendered as a real ld+json script tag by
+  // the article route. Previously these lived in the body as visible "Schema
+  // Suggestion" code blocks, which shipped to readers as raw text.
+  faqSchema?: { '@context': string; '@type': string; mainEntity: unknown[] }
   body: Block[]
 }
 
@@ -965,14 +969,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "*Burien Best Care Home is a licensed adult family home in Burien, WA, serving families throughout King County. We accept private pay and Medicaid (COPES).*"
-      },
-      {
-        "type": "h2",
-        "text": "FAQ Schema Suggestion (for developer)"
-      },
-      {
-        "type": "p",
-        "text": "For AEO/GEO surfacing, implement JSON-LD FAQPage schema on this article including the six FAQ questions and answers above. Primary entity should be `Question`, with each `acceptedAnswer` carrying the full answer text. Schema helps Google and AI assistants surface this content in answer boxes and generative responses."
       }
     ]
   },
@@ -1276,6 +1272,60 @@ export const posts: Post[] = [
   },
   {
     "slug": "copes-medicaid-adult-family-home-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is COPES in Washington State?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "COPES is Washington's Community Options Program Entry System, a Medicaid waiver program that pays for long-term care services for seniors in their own home, a family member's home, an adult family home, or an assisted living facility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Medicaid pay for adult family homes in Washington?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Washington is one of the best states in the country for Medicaid coverage of adult family homes. Through the COPES waiver program, Medicaid pays for room, board, and care at Medicaid-contracted adult family homes for seniors who meet the financial and functional eligibility requirements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the income and asset limits for COPES in 2026?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In 2026, the income limit for COPES is $2,982 per month in gross income and the asset limit is $2,000 in countable assets. Many assets are exempt, including the primary home, one vehicle, personal belongings, and prepaid funeral plans."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to get approved for COPES?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard COPES applications are processed within 45 days. Applications requiring a disability determination can take up to 90 days."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the Medicaid lookback period in Washington?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Washington reviews 60 months (five years) of financial records when an applicant applies for COPES or Nursing Home Medicaid. Normal spending, medical bills, and properly drafted personal care agreements do not trigger lookback penalties."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will Medicaid take my parent's house?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Not while your parent is alive and receiving care through COPES. The primary home is exempt from the asset calculation if a spouse, a disabled child, or a child under 21 is living there."
+                }
+            }
+        ]
+    },
     "title": "When Mom's Money Runs Out: The Honest Guide to COPES, Medicaid, and Paying for an Adult Family Home in Burien, WA",
     "description": "How the Washington COPES Medicaid waiver helps families pay for an adult family home in Burien. Who qualifies, what it covers, and how to start, in plain language.",
     "date": "2026-05-15",
@@ -1730,234 +1780,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "Becca Pitts is the owner of Burien Best Care Home, bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs Your Best Season (yourbestseason.com), a senior transitions education platform, and Your Next Step Home (yournextstephome.com), helping Washington families navigate real estate transitions."
-      },
-      {
-        "type": "h2",
-        "text": "JSON-LD Schema Suggestion"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What is COPES in Washington State?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"COPES is Washington's Community Options Program Entry System, a Medicaid waiver program that pays for long-term care services for seniors in their own home, a family member's home, an adult family home, or an assisted living facility.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Does Medicaid pay for adult family homes in Washington?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Washington is one of the best states in the country for Medicaid coverage of adult family homes. Through the COPES waiver program, Medicaid pays for room, board, and care at Medicaid-contracted adult family homes for seniors who meet the financial and functional eligibility requirements.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What are the income and asset limits for COPES in 2026?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"In 2026, the income limit for COPES is $2,982 per month in gross income and the asset limit is $2,000 in countable assets. Many assets are exempt, including the primary home, one vehicle, personal belongings, and prepaid funeral plans.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How long does it take to get approved for COPES?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Standard COPES applications are processed within 45 days. Applications requiring a disability determination can take up to 90 days.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What is the Medicaid lookback period in Washington?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Washington reviews 60 months (five years) of financial records when an applicant applies for COPES or Nursing Home Medicaid. Normal spending, medical bills, and properly drafted personal care agreements do not trigger lookback penalties.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Will Medicaid take my parent's house?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Not while your parent is alive and receiving care through COPES. The primary home is exempt from the asset calculation if a spouse, a disabled child, or a child under 21 is living there.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       }
     ]
   },
@@ -2250,6 +2072,52 @@ export const posts: Post[] = [
   },
   {
     "slug": "hospital-discharge-parent-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long do I have after the hospital says my parent is being discharged?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Typically 24 to 72 hours, depending on when the discharge order is written. You have the right to appeal the discharge timing through Livanta, Washington's Medicare Quality Improvement Organization, and your parent cannot be discharged during the review."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can an adult family home accept my parent straight from the hospital?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Licensed adult family homes in Washington state, including those in Burien and King County, can accept direct hospital discharges. The home will conduct a care assessment, review the discharge paperwork and medication list, and coordinate with the hospital's discharge planner."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is an adult family home cheaper than assisted living in Washington state?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Usually yes. Adult family homes in Burien and King County typically run $4,500 to $8,500 per month, while assisted living in Washington averages around $6,975 per month with additional care charges. Adult family homes offer 1:3 staffing ratios compared to 1:10 or higher in assisted living, which means comparable care typically costs less in a small home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Medicaid pay for an adult family home in Washington?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, for licensed adult family homes that contract with DSHS. The program is commonly called COPES (Community Options Program Entry System) or the Medicaid Personal Care program. Not every home accepts Medicaid, so ask directly before you tour."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens if my parent's care needs increase in an adult family home?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A good adult family home will discuss aging in place openly during the initial tour. Many Washington adult family homes can care for residents through increasing needs including late-stage dementia and hospice, provided the state licensure level supports it. Ask to see the home's specialty license endorsements."
+                }
+            }
+        ]
+    },
     "title": "The 4 PM Friday Phone Call: What to Do When the Hospital Is Discharging Your Parent and You're Not Ready",
     "description": "A safe hospital discharge for a parent who cannot go home alone. A Burien adult family home owner walks families through discharge planning and the adult family home option.",
     "date": "2026-05-01",
@@ -2562,202 +2430,6 @@ export const posts: Post[] = [
           "[The Money Question: How Burien Families Actually Pay for Senior Care](/blog/paying-for-senior-care-burien)",
           "[How Often Should I Visit My Parent in an Adult Family Home?](/blog/visiting-parent-adult-family-home-burien)"
         ]
-      },
-      {
-        "type": "h2",
-        "text": "JSON-LD FAQPage Schema (For Implementation)"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How long do I have after the hospital says my parent is being discharged?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Typically 24 to 72 hours, depending on when the discharge order is written. You have the right to appeal the discharge timing through Livanta, Washington's Medicare Quality Improvement Organization, and your parent cannot be discharged during the review.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Can an adult family home accept my parent straight from the hospital?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Licensed adult family homes in Washington state, including those in Burien and King County, can accept direct hospital discharges. The home will conduct a care assessment, review the discharge paperwork and medication list, and coordinate with the hospital's discharge planner.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Is an adult family home cheaper than assisted living in Washington state?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Usually yes. Adult family homes in Burien and King County typically run $4,500 to $8,500 per month, while assisted living in Washington averages around $6,975 per month with additional care charges. Adult family homes offer 1:3 staffing ratios compared to 1:10 or higher in assisted living, which means comparable care typically costs less in a small home.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Does Medicaid pay for an adult family home in Washington?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes, for licensed adult family homes that contract with DSHS. The program is commonly called COPES (Community Options Program Entry System) or the Medicaid Personal Care program. Not every home accepts Medicaid, so ask directly before you tour.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What happens if my parent's care needs increase in an adult family home?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"A good adult family home will discuss aging in place openly during the initial tour. Many Washington adult family homes can care for residents through increasing needs including late-stage dementia and hospice, provided the state licensure level supports it. Ask to see the home's specialty license endorsements.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       }
     ]
   },
@@ -3030,6 +2702,52 @@ export const posts: Post[] = [
   },
   {
     "slug": "day-in-the-life-adult-family-home-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What time do residents wake up at a Burien adult family home?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There is no set wake-up time. Washington State licensing emphasizes resident choice, and residents wake when they wake, typically between 6:30 and 8:30am."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many hours a day does a resident actually have staff attention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In a 1:3 ratio home, a resident has access to a caregiver nearly continuously through the waking day."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What do residents do if they don't want to participate in activities?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A small home does not require participation to be part of the household. Residents who prefer to read, nap, or sit quietly are still part of the rhythm of the home."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens in the evenings at an adult family home?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dinner is typically between 5 and 6pm, followed by a quiet evening of television, music, reading, or family visits. There is always a caregiver on site overnight."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can family visit any time at a Burien adult family home?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Burien Best Care Home welcomes family visits throughout the day, with light coordination around personal care times."
+                }
+            }
+        ]
+    },
     "title": "A Day in the Life at a Burien Adult Family Home: What Your Parent Will Actually Do All Day (And Why the Schedule Isn't the Point)",
     "description": "A Burien adult family home owner walks you through what your parent's day will actually look like, honestly, hour by hour. The real answer to \"what will she do all day?\" and why the best days in a small home are not about activities at all.",
     "date": "2026-04-17",
@@ -3276,202 +2994,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "*Becca Pitts is the owner of Burien Best Care Home, bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs [Your Best Season](https://yourbestseason.com), a senior transitions education platform, and [Your Next Step Home](https://yournextstephome.com), helping Washington families navigate real estate transitions.*"
-      },
-      {
-        "type": "h3",
-        "text": "JSON-LD FAQPage Schema Suggestion"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What time do residents wake up at a Burien adult family home?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"There is no set wake-up time. Washington State licensing emphasizes resident choice, and residents wake when they wake, typically between 6:30 and 8:30am.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How many hours a day does a resident actually have staff attention?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"In a 1:3 ratio home, a resident has access to a caregiver nearly continuously through the waking day.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What do residents do if they don't want to participate in activities?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"A small home does not require participation to be part of the household. Residents who prefer to read, nap, or sit quietly are still part of the rhythm of the home.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What happens in the evenings at an adult family home?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Dinner is typically between 5 and 6pm, followed by a quiet evening of television, music, reading, or family visits. There is always a caregiver on site overnight.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Can family visit any time at a Burien adult family home?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Burien Best Care Home welcomes family visits throughout the day, with light coordination around personal care times.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       }
     ]
   },
@@ -4119,6 +3641,60 @@ export const posts: Post[] = [
   },
   {
     "slug": "first-weeks-after-placement-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does it take a parent to adjust to an adult family home?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most families experience a three to six month adjustment period, with the hardest stretch usually falling in the first two to four weeks. A small home with consistent caregivers, like a six-bed adult family home, often compresses that timeline because staff learn the resident's preferences in days rather than months."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is it normal for a parent to ask to go home after moving into care?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Asking to go home is one of the most common experiences in the first weeks of residential care, particularly for parents living with dementia. It does not usually mean the placement is wrong. It often means your parent is using the word home to name a feeling of safety that is still being rebuilt in the new space."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why do I feel more guilty after placement, not less?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Because placement did not cause the guilt, it revealed the grief. Once the daily caregiving load is handed off, the grief you were too busy to feel often surfaces all at once. This is well documented in caregiver research and is a normal, painful part of the transition."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often should I visit during the first week?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most families find short daily visits, around thirty to forty-five minutes, helpful for the first three to five days, then a shift to every other day through the end of the first month."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I take my parent back to the old house for a visit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Usually not in the first month, especially if your parent is living with dementia. Re-entering the former home can reset the transition. Short outings to local places are often a gentler middle path."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are signs an adult family home is the right fit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Caregivers know specific details about your parent, hygiene and dress are consistent, meals are eaten, communication with family is clear and same-day, and unannounced visits reveal a clean, active, warm home."
+                }
+            }
+        ]
+    },
     "title": "The First Weeks After You Move Your Parent Into Care: What Nobody Warns Burien Families About (And Why the Hard Part Isn't What You Think)",
     "description": "The first weeks after moving a parent into care are the hardest. A Burien adult family home owner on what to expect, the guilt and second-guessing, and how families settle in.",
     "date": "2026-03-27",
@@ -4453,238 +4029,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "*Becca Pitts is the owner of Burien Best Care Home, bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs Your Best Season (yourbestseason.com), a senior transitions education platform, and Your Next Step Home (yournextstephome.com), helping Washington families navigate real estate transitions.*"
-      },
-      {
-        "type": "h2",
-        "text": "SEO and Technical Notes (for internal reference)"
-      },
-      {
-        "type": "p",
-        "text": "**JSON-LD FAQPage schema suggestion** (to be added to page head):"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How long does it take a parent to adjust to an adult family home?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Most families experience a three to six month adjustment period, with the hardest stretch usually falling in the first two to four weeks. A small home with consistent caregivers, like a six-bed adult family home, often compresses that timeline because staff learn the resident's preferences in days rather than months.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Is it normal for a parent to ask to go home after moving into care?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Asking to go home is one of the most common experiences in the first weeks of residential care, particularly for parents living with dementia. It does not usually mean the placement is wrong. It often means your parent is using the word home to name a feeling of safety that is still being rebuilt in the new space.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Why do I feel more guilty after placement, not less?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Because placement did not cause the guilt, it revealed the grief. Once the daily caregiving load is handed off, the grief you were too busy to feel often surfaces all at once. This is well documented in caregiver research and is a normal, painful part of the transition.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How often should I visit during the first week?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Most families find short daily visits, around thirty to forty-five minutes, helpful for the first three to five days, then a shift to every other day through the end of the first month.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Should I take my parent back to the old house for a visit?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Usually not in the first month, especially if your parent is living with dementia. Re-entering the former home can reset the transition. Short outings to local places are often a gentler middle path.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What are signs an adult family home is the right fit?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Caregivers know specific details about your parent, hygiene and dress are consistent, meals are eaten, communication with family is clear and same-day, and unannounced visits reveal a clean, active, warm home.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       },
       {
         "type": "p",
@@ -5361,6 +4705,52 @@ export const posts: Post[] = [
   },
   {
     "slug": "sole-caregiver-siblings-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I know if I am actually burned out or just tired?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Exhaustion lifts with rest. Burnout does not. If a full night of sleep, a good meal, and a day off still leave you depleted and dreading the next caregiving task, you are past tired and into caregiver burnout, which is a recognized clinical condition."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What do I do when my siblings will not help with an aging parent?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ask for specific help in writing with a dollar amount or calendar date attached. Stop protecting them from the full truth. Recognize that you cannot negotiate with a sibling in denial, and that waiting for fairness is a strategy that costs you your health."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When is it time to move my parent to an adult family home in Burien?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "When you have not slept through the night in weeks, when the home is no longer safe, when you are starting to resent the person you love, when your doctor has flagged your health, or when your parent has had a fall, wandered, or had a medication error. These are data points, not moral failings."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Medicaid cover adult family homes in Washington?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Washington state Medicaid covers adult family home care for eligible residents. Contact Community Living Connections at 1-855-567-0252 to learn whether your parent qualifies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is respite care available in Burien WA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Respite care in Burien is a short-term stay in an adult family home that allows family caregivers to rest, travel, or handle their own health needs. Burien Best Care Home offers respite care, and it is often the first step families take before a permanent transition."
+                }
+            }
+        ]
+    },
     "title": "When You're the Only One: A Letter to the Sole Family Caregiver in Burien (And What to Do When Your Siblings Won't Help)",
     "description": "You are the one doing everything while your siblings stay distant. A Burien adult family home owner on sole-caregiver burnout, family resentment, and getting real help before you break.",
     "date": "2026-03-06",
@@ -5603,207 +4993,49 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "*Medicaid accepted. Private care suites. Six residents. One family.*"
-      },
-      {
-        "type": "h3",
-        "text": "Schema Suggestion (JSON-LD FAQPage)"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How do I know if I am actually burned out or just tired?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Exhaustion lifts with rest. Burnout does not. If a full night of sleep, a good meal, and a day off still leave you depleted and dreading the next caregiving task, you are past tired and into caregiver burnout, which is a recognized clinical condition.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What do I do when my siblings will not help with an aging parent?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Ask for specific help in writing with a dollar amount or calendar date attached. Stop protecting them from the full truth. Recognize that you cannot negotiate with a sibling in denial, and that waiting for fairness is a strategy that costs you your health.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"When is it time to move my parent to an adult family home in Burien?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"When you have not slept through the night in weeks, when the home is no longer safe, when you are starting to resent the person you love, when your doctor has flagged your health, or when your parent has had a fall, wandered, or had a medication error. These are data points, not moral failings.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Does Medicaid cover adult family homes in Washington?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Washington state Medicaid covers adult family home care for eligible residents. Contact Community Living Connections at 1-855-567-0252 to learn whether your parent qualifies.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Is respite care available in Burien WA?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Yes. Respite care in Burien is a short-term stay in an adult family home that allows family caregivers to rest, travel, or handle their own health needs. Burien Best Care Home offers respite care, and it is often the first step families take before a permanent transition.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       }
     ]
   },
   {
     "slug": "sundowning-breaking-point-dementia-burien",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is sundowning a normal part of dementia or a sign something is wrong?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sundowning is a well-documented pattern in dementia and is considered part of the disease progression, not a separate problem. However, a sudden dramatic increase in sundowning behavior can sometimes indicate an infection (especially a UTI), medication side effects, or pain."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What time does sundowning usually start?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sundowning typically begins between 4pm and 7pm, often triggered as natural daylight fades. In Burien and the greater Seattle area, the long dark months from November through February tend to shift sundowning earlier in the day."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does memory care stop sundowning?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Memory care does not cure sundowning, but structured memory care environments with trained staff, consistent routines, and appropriate light management can significantly reduce the severity and duration of sundowning episodes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does memory care in an adult family home cost in Burien, WA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Adult family home memory care in Burien and King County typically ranges from $6,000 to $9,000 per month for private pay. Medicaid contracts often cover a lower rate, averaging around $87 per day statewide. Burien Best Care Home accepts Medicaid."
+                }
+            }
+        ]
+    },
     "title": "The 5 O'Clock Shadow: Why Sundowning Is the Hidden Reason Dementia Families Reach Their Breaking Point",
     "description": "If 5pm has become the hardest hour of your day caring for a parent with dementia, you are not failing. You are running into the limit of what home care was designed to handle. A Burien memory care owner explains what sundowning actually is, why it breaks even the strongest families, and what genuinely helps.",
     "date": "2026-02-27",
@@ -6094,170 +5326,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "*Becca Pitts is the owner of Burien Best Care Home, bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs Your Best Season (yourbestseason.com), a senior transitions education platform, and Your Next Step Home (yournextstephome.com), helping Washington families navigate real estate transitions.*"
-      },
-      {
-        "type": "p",
-        "text": "**Schema Suggestion (FAQPage JSON-LD):**"
-      },
-      {
-        "type": "p",
-        "text": "```json"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"FAQPage\","
-      },
-      {
-        "type": "p",
-        "text": "\"mainEntity\": ["
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Is sundowning a normal part of dementia or a sign something is wrong?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Sundowning is a well-documented pattern in dementia and is considered part of the disease progression, not a separate problem. However, a sudden dramatic increase in sundowning behavior can sometimes indicate an infection (especially a UTI), medication side effects, or pain.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"What time does sundowning usually start?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Sundowning typically begins between 4pm and 7pm, often triggered as natural daylight fades. In Burien and the greater Seattle area, the long dark months from November through February tend to shift sundowning earlier in the day.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"Does memory care stop sundowning?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Memory care does not cure sundowning, but structured memory care environments with trained staff, consistent routines, and appropriate light management can significantly reduce the severity and duration of sundowning episodes.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "},"
-      },
-      {
-        "type": "p",
-        "text": "{"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Question\","
-      },
-      {
-        "type": "p",
-        "text": "\"name\": \"How much does memory care in an adult family home cost in Burien, WA?\","
-      },
-      {
-        "type": "p",
-        "text": "\"acceptedAnswer\": {"
-      },
-      {
-        "type": "p",
-        "text": "\"@type\": \"Answer\","
-      },
-      {
-        "type": "p",
-        "text": "\"text\": \"Adult family home memory care in Burien and King County typically ranges from $6,000 to $9,000 per month for private pay. Medicaid contracts often cover a lower rate, averaging around $87 per day statewide. Burien Best Care Home accepts Medicaid.\""
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "]"
-      },
-      {
-        "type": "p",
-        "text": "}"
-      },
-      {
-        "type": "p",
-        "text": "```"
       }
     ]
   }

@@ -220,6 +220,15 @@ export default async function BlogPost({ params }: PageProps) {
         }}
       />
 
+      {/* JSON-LD: FAQPage. Sourced from post.faqSchema so the markup functions
+          as structured data instead of rendering as visible body copy. */}
+      {post.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(post.faqSchema) }}
+        />
+      )}
+
       <article className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
