@@ -2,7 +2,7 @@
 
 > Current state of the project. First file any Claude session reads after running `git fetch && git log --since="2 weeks ago" --oneline`. Update at the start of every working session. Stale items get removed, not archived (history lives in `SESSION_LOG.md` and the git log).
 
-**Last updated:** 2026-06-16 (after UTF-8 build fix + YouTube blog series shipped)
+**Last updated:** 2026-10-23 (content accuracy pass: credential claim, embargoed site, brand name, schema bug)
 **Production:** `burienbestcarehome.site` - auto-deploys on push to `master`. Build is GREEN as of commit e27941b.
 **Note:** `.com` domain is owned but NOT live yet. Site stays on `.site` until canonical switch is intentional.
 **Email:** `info@burienbestcarehome.com` (Workspace Group), `becca@burienbestcarehome.com` (primary user). DNS fully propagated; DKIM active.
@@ -11,7 +11,23 @@
 
 ## In flight
 
-- 7 YouTube "Your Best Season" blog articles queued for publishing (June 23 - July 14, 2x/week cadence). Content is committed in `posts-youtube-series.ts`; dates are future-dated so they will appear as each publish date arrives.
+- **Content accuracy pass is committed but NOT pushed.** Four commits
+  (`80baec5`, `5848ef4`, `4df6956`, `6808e71`) fix the 20-year credential
+  attribution, remove all `yourbestseason.com` references, rename Your Next Step
+  Home to Your Next Step Team, and move the raw FAQ JSON-LD into real script
+  tags. The session that made them had no GitHub write credentials, so they were
+  delivered as `burien-content-accuracy-2026-10-23.patch`. Vercel has NOT
+  deployed them. Needs Brett to apply and push, then a live spot-check of a blog
+  post, the Footer and the contact page.
+- **Becca's individual senior care figure is still outstanding.** No number is
+  stated anywhere for Becca alone on purpose. She will send it separately. Until
+  then, the only figure on the site is the combined "over 20 years" for Becca
+  and Daniela together.
+- **First-person 20-year claims in blog body copy are unresolved.** Roughly 20
+  narrative sentences ("I have spent twenty years in senior care") still
+  attribute the combined figure to Becca alone. Needs an editorial decision; see
+  the 2026-10-23 entry in SESSION_LOG.md.
+- 7 YouTube blog articles queued for publishing (June 23 - July 14, 2x/week cadence). Content is committed in `posts-youtube-series.ts`; dates are future-dated so they will appear as each publish date arrives. The "Your Best Season" brand name has been stripped from these posts until that site launches.
 - Family Guide PDF created but needs to be committed to `nextjs-site/public/family-guide.pdf`.
 - Assessment page rename from `/assessment` to `/is-it-time` - plan exists, not yet executed.
 
@@ -23,6 +39,14 @@ In rough priority order. Verified against actual code in HEAD.
 2. **Google Group members.** Add `daniela@afhmanagement.com` (owner) and `abelina@afhmanagement.com` (member) to the `info@burienbestcarehome.com` Group.
 3. **Family Guide PDF.** Asset created; needs to be added to repo at `/public/family-guide.pdf`. Button on contact page + assessment results card already wired to that path.
 4. **Accessibility audit.** No end-to-end WCAG AA pass yet.
+5. **Internal SEO notes are rendering as live body copy** in the
+   `signs-its-time-residential-care-burien` post ("External cross-links used",
+   "Local SEO geographic signals", internal-link audit). Same class of
+   content-generation artifact as the FAQ JSON-LD bug. Needs removal.
+6. **`burien-canonical-and-ga4.patch` has not landed.** No GA4 tag and no
+   consent banner exist in `nextjs-site/src`. Note that `layout.tsx` already
+   sets `metadataBase` to `burienbestcarehome.com`, which contradicts the
+   `.site`-stays-canonical decision above. Resolve as part of that patch.
 5. **CTA functional QA.** Click-through testing of every button and form on every page.
 
 ## Recently shipped

@@ -1,5 +1,104 @@
 # Session Log
 
+## Session: October 23, 2026 - Content accuracy pass (credential claim, embargoed site, brand name, schema bug)
+
+### Why
+A read of the live content against this repo's own CLAUDE.md surfaced four
+classes of violation. One is a factual accuracy problem on a DSHS-licensed
+adult family home, so this was not optional cleanup.
+
+### 1. Credential claim (PRIORITY, factual accuracy)
+All 18 blog author bios attributed "over 20 years of dedicated senior care
+experience" to Becca Pitts alone and did not mention Daniela Torkelson.
+
+Becca's correction, in her own words: "Combined, Daniela and Becca Pitts have
+20 years of senior care. Becca has nowhere near that... Daniela has almost all
+of the senior care experience."
+
+Every bio now credits both co-owners and names Daniela as provider and resident
+manager. No individual senior care figure is stated for Becca; that number is
+still being confirmed and will be supplied separately. Becca's real credential
+(16 years in real estate, SRES designation) carries the second half of the bio,
+so the positioning is a care professional and a real estate professional
+co-owning the home rather than one person claiming the whole number.
+
+Count: 18 bios (15 in `posts.ts`, 3 in `posts-youtube-series.ts`).
+
+### 2. Embargoed site removed
+`yourbestseason.com` has still not launched. All 44 URL references and 40 brand
+name mentions are gone from live content: Footer link, contact page resources
+card, assessment result paragraph, 20 in-body blog references, 2 related-reading
+list items, and the "Your Best Season" name on the YouTube series posts.
+Sentences that existed only to point at the site were cut, not placeholdered.
+Removing the contact page card left a 3-column grid with 2 cards, so the grid
+is now `md:grid-cols-2` with reveal delays re-staggered.
+
+### 3. Brand name corrected
+`Your Next Step Home` -> `Your Next Step Team`, and all links repointed from
+`yournextstephome.com` to `www.yournextstepteam.com`. 40 URL references and 29
+name mentions. The old domain redirects, so the links worked, but the displayed
+brand and the canonical destination were both wrong.
+
+### 4. Raw JSON-LD rendering bug
+Seven blog posts (not five) shipped their FAQPage structured data as a fenced
+code block split across individual paragraph blocks, so readers saw raw JSON as
+article text. Six carried valid markup, which is now reconstructed into a new
+optional `Post.faqSchema` field and emitted by the article route as a real
+`application/ld+json` script tag. The seventh
+(`bathing-refusal-dementia-burien`) had no markup at all, only a prose note
+asking a developer to implement schema; that note was deleted.
+
+### Commits
+- `80baec5` - FIX: raw "Schema Suggestion" JSON-LD rendered as visible blog body copy
+- `5848ef4` - Content: credit both co-owners for the 20 years of senior care experience
+- `4df6956` - Content: Your Next Step Home -> Your Next Step Team, repoint to .team domain
+- `6808e71` - Content: remove all references to the unlaunched yourbestseason.com
+
+### Verification
+`npx tsc --noEmit` clean. Content layer bundled and loaded in node: 24 posts,
+6 valid FAQPage schemas, 18 rewritten bios reachable, 0 remaining violations.
+Full `next build` could not complete in the sandbox because Google Fonts is not
+reachable from it (`next/font` fails to fetch DM Serif Display and Inter). That
+failure is environmental and predates these changes; the content parse errors
+that the build originally reported are resolved.
+
+### NOT pushed
+The sandbox had no GitHub write credentials, so these four commits were not
+pushed and Vercel has not deployed them. Delivered as
+`burien-content-accuracy-2026-10-23.patch` for Brett to apply.
+
+### Flagged, not changed
+- **First-person 20-year claims in blog body copy.** Separate from the bios,
+  roughly 20 narrative sentences in Becca's voice still say things like "I have
+  spent twenty years in senior care" and "I have run an adult family home in
+  Burien for two decades". These attribute the combined figure to Becca alone
+  and so carry the same inaccuracy, but rewriting first-person narrative voice
+  is a larger editorial change than was approved and in places needs Becca's
+  individual figure. Needs a decision.
+- **Internal SEO notes shipped as live body copy** in
+  `signs-its-time-residential-care-burien`: an "External cross-links used",
+  "Local SEO geographic signals" and internal-link audit section renders to
+  readers. Same class of content-generation artifact as problem 4, but outside
+  the scope given. Only the `yourbestseason.com` line was removed from it.
+- **Canonical URL.** `layout.tsx` already sets `metadataBase` to
+  `burienbestcarehome.com` while CLAUDE.md and STATUS.md both say the site stays
+  on `.site` until the switch is deliberate. Left alone; it overlaps the pending
+  canonical patch.
+
+### Pending patch check
+`burien-canonical-and-ga4.patch` has NOT landed. No GA4 tag, no gtag call and no
+consent banner component exist anywhere in `nextjs-site/src`, and the commit log
+since 2026-10-15 contains only gallery work. These four commits touch
+`posts.ts`, `posts-youtube-series.ts`, `Footer.tsx`, `contact/page.tsx`,
+`AssessmentForm.tsx` and `blog/[slug]/page.tsx`. If the pending patch's 15 files
+include `layout.tsx`, `sitemap.ts` or `robots.ts` only, it will apply cleanly
+either way; if it also adds canonical metadata to `contact/page.tsx` or
+`blog/[slug]/page.tsx`, those two will conflict. Apply the canonical/GA4 patch
+first and rebase this one on top, since this patch rewrites large regions of
+`posts.ts`.
+
+---
+
 ## Session: June 16, 2026 - YouTube Blog Series + Build Fix
 
 ### What Was Built
