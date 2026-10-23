@@ -22,7 +22,9 @@ still being confirmed and will be supplied separately. Becca's real credential
 so the positioning is a care professional and a real estate professional
 co-owning the home rather than one person claiming the whole number.
 
-Count: 18 bios (15 in `posts.ts`, 3 in `posts-youtube-series.ts`).
+Count: 18 bios (15 in `posts.ts`, 3 in `posts-youtube-series.ts`). A later
+commit in this same session amended all 18 again to name Daniela as the DSHS
+licensee of record; see the licensee record check below.
 
 ### 2. Embargoed site removed
 `yourbestseason.com` has still not launched. All 44 URL references and 40 brand
@@ -48,11 +50,56 @@ optional `Post.faqSchema` field and emitted by the article route as a real
 (`bathing-refusal-dementia-burien`) had no markup at all, only a prose note
 asking a developer to implement schema; that note was deleted.
 
+### DSHS licensee record check (2026-10-23)
+
+Pulled from the Washington DSHS Adult Family Home licensee record and applied
+or flagged as noted.
+
+**Applied.** Licensee of record is Torkelson, Daniela C. All 18 author bios now
+name her as "the home's licensee of record with Washington State DSHS and its
+resident manager" (commit `304ceae`). Becca's role is unchanged and not
+inflated.
+
+**Confirmed already correct, no action needed.** Site address matches DSHS
+exactly: 927 SW 132nd St, Burien, WA 98146, in `Footer.tsx`,
+`contact/page.tsx` and the homepage LocalBusiness JSON-LD. The bad Eventbrite
+variant ("South", 98168) does not appear in this repo. License number 751283,
+which some aggregators attach to this business, returns no facilities in the
+DSHS database and appears nowhere in the repo. Do not add it.
+
+**Flagged, NOT acted on, needs Becca and Daniela.**
+
+1. *Singular vs plural name.* DSHS licenses "Burien Best Care Home**s**",
+   plural. The site uses the singular 150 times across 18 files, plus the
+   domain, the Workspace email domain, the OG/Twitter metadata, the
+   LocalBusiness JSON-LD `name`, and the repo name itself. The mismatch matters
+   for a licensed facility, but this is a brand decision and Daniela is the
+   licensee. Not touched.
+
+2. *Phone number.* The site publishes (253) 678-7089 in 11 places across 5
+   files (`Footer.tsx`, `contact/page.tsx`, `page.tsx`, `ContactForm.tsx`,
+   `AssessmentForm.tsx`), as both display text and `tel:` hrefs. DSHS lists the
+   facility number as (206) 566-6961. The published number is also Becca's
+   personal real estate cell, so changing it affects inbound lead routing.
+   Not touched.
+
+3. *Clean compliance record.* DSHS shows "This facility has none" under Reports
+   and Inspection Letters. That appears nowhere on the site. Draft line and
+   suggested placement are in the handoff; needs approval before publishing,
+   and should be re-checked against the state record before it goes live since
+   the record can change.
+
+4. *Real estate tenure inconsistency.* `about/page.tsx` says Becca has "15
+   years as a licensed real estate broker"; the figure she gave for this pass
+   is 16. The rewritten bios use 16, so the site currently states both. Needs
+   her to confirm which is right. Not resolved here.
+
 ### Commits
 - `80baec5` - FIX: raw "Schema Suggestion" JSON-LD rendered as visible blog body copy
 - `5848ef4` - Content: credit both co-owners for the 20 years of senior care experience
 - `4df6956` - Content: Your Next Step Home -> Your Next Step Team, repoint to .team domain
 - `6808e71` - Content: remove all references to the unlaunched yourbestseason.com
+- `304ceae` - Content: name Daniela as DSHS licensee of record in the author bios
 
 ### Verification
 `npx tsc --noEmit` clean. Content layer bundled and loaded in node: 24 posts,

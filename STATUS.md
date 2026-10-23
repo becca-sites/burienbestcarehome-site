@@ -12,13 +12,21 @@
 ## In flight
 
 - **Content accuracy pass is committed but NOT pushed.** Four commits
-  (`80baec5`, `5848ef4`, `4df6956`, `6808e71`) fix the 20-year credential
+  (`80baec5`, `5848ef4`, `4df6956`, `6808e71`, `304ceae`) fix the 20-year credential
   attribution, remove all `yourbestseason.com` references, rename Your Next Step
   Home to Your Next Step Team, and move the raw FAQ JSON-LD into real script
   tags. The session that made them had no GitHub write credentials, so they were
   delivered as `burien-content-accuracy-2026-10-23.patch`. Vercel has NOT
   deployed them. Needs Brett to apply and push, then a live spot-check of a blog
   post, the Footer and the contact page.
+- **DSHS licensee record raised four open questions.** Singular vs plural
+  facility name (DSHS licenses the PLURAL "Burien Best Care Homes"; the site
+  uses the singular 150 times), the published phone number ((253) 678-7089 in
+  11 places vs the DSHS facility number (206) 566-6961), whether to publish the
+  clean DSHS compliance record, and whether Becca's real estate tenure is 15
+  years (about page) or 16 (the new bios). All four need Becca and Daniela. See
+  the 2026-10-23 entry in SESSION_LOG.md. Address and the absence of the bogus
+  751283 license number both check out and need no action.
 - **Becca's individual senior care figure is still outstanding.** No number is
   stated anywhere for Becca alone on purpose. She will send it separately. Until
   then, the only figure on the site is the combined "over 20 years" for Becca
