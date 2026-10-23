@@ -309,13 +309,13 @@ export default function Contact() {
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
                 </div>
                 <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-3 leading-tight">
-                  Your Next Step Home
+                  Your Next Step Team
                 </h3>
                 <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
                   As a Seniors Real Estate Specialist (SRES), Becca helps families sell a home to make adult family home care financially&nbsp;possible.
                 </p>
                 <a
-                  href="https://www.yournextstephome.com"
+                  href="https://www.yournextstepteam.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center min-h-12 px-6 py-3 border-2 bg-[color:var(--color-sunshine)] border-[color:var(--color-sunshine)] text-[color:var(--color-ink)] font-semibold rounded-lg hover:bg-[color:var(--color-sunshine-deep)] hover:border-[color:var(--color-sunshine-deep)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-terracotta-deep/40"

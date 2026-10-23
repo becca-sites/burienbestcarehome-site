@@ -592,7 +592,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are beginning to think about the family home itself, whether because your parent can no longer safely live there or because care costs are approaching the five-year Medicaid look-back, our partners at [Your Next Step Home](https://yournextstephome.com) guide Washington families through real estate transitions during senior care crises without pressure or rush."
+        "text": "If you are beginning to think about the family home itself, whether because your parent can no longer safely live there or because care costs are approaching the five-year Medicaid look-back, our partners at [Your Next Step Team](https://www.yournextstepteam.com) guide Washington families through real estate transitions during senior care crises without pressure or rush."
       },
       {
         "type": "h2",
@@ -928,7 +928,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For broader context on senior transitions, our sister site [Your Best Season](https://yourbestseason.com) has additional resources for families navigating this stage. When the time comes to think about the family home, [Your Next Step Home](https://yournextstephome.com) helps Washington families through that piece of the puzzle without pressure."
+        "text": "For broader context on senior transitions, our sister site [Your Best Season](https://yourbestseason.com) has additional resources for families navigating this stage. When the time comes to think about the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families through that piece of the puzzle without pressure."
       },
       {
         "type": "h2",
@@ -1253,7 +1253,7 @@ export const posts: Post[] = [
           "**If you are three weeks into placement and working out your rhythm:** [How Often Should I Visit My Parent in an Adult Family Home?](blog-2026-04-18-visiting-parent-adult-family-home-burien.md)",
           "**If she is still in sundowning at home:** [When Sundowning Becomes the Breaking Point](blog-2026-04-10-sundowning-breaking-point-dementia-burien.md)",
           "**For the broader conversation about aging and identity:** Your Best Season, Becca's senior transitions education platform at [yourbestseason.com](https://yourbestseason.com)",
-          "**If the family home conversation is on the horizon:** Your Next Step Home, for Washington families navigating real estate transitions at [yournextstephome.com](https://yournextstephome.com)"
+          "**If the family home conversation is on the horizon:** Your Next Step Team, for Washington families navigating real estate transitions at [www.yournextstepteam.com](https://www.yournextstepteam.com)"
         ]
       },
       {
@@ -1966,7 +1966,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If your mother does not yet qualify for Medicaid, she has three realistic funding bridges: her long-term care insurance (check the policy today), her assets spending down temporarily while the Medicaid application is submitted, or a short private-pay window funded by a family loan or the sale of [her house](https://yournextstephome.com). Washington's Medicaid application typically takes four to eight weeks. Most adult family homes in Burien that accept Medicaid will hold the bed through the application period as long as the family signs a private-pay agreement for the bridge."
+        "text": "If your mother does not yet qualify for Medicaid, she has three realistic funding bridges: her long-term care insurance (check the policy today), her assets spending down temporarily while the Medicaid application is submitted, or a short private-pay window funded by a family loan or the sale of [her house](https://www.yournextstepteam.com). Washington's Medicaid application typically takes four to eight weeks. Most adult family homes in Burien that accept Medicaid will hold the bed through the application period as long as the family signs a private-pay agreement for the bridge."
       },
       {
         "type": "p",
@@ -2315,7 +2315,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "When you are ready, the order of operations usually goes: get your parent settled and stable first, then deal with the mail, then deal with the medications and paperwork, then eventually the house. Families I talk to in Burien often sell the family home six to twelve months after placement, not six days after. There is no prize for doing it faster. When the time comes, we work with [Your Next Step Home](https://yournextstephome.com) to help families navigate that transition with the same care, because selling your parent's house is its own kind of grief."
+        "text": "When you are ready, the order of operations usually goes: get your parent settled and stable first, then deal with the mail, then deal with the medications and paperwork, then eventually the house. Families I talk to in Burien often sell the family home six to twelve months after placement, not six days after. There is no prize for doing it faster. When the time comes, we work with [Your Next Step Team](https://www.yournextstepteam.com) to help families navigate that transition with the same care, because selling your parent's house is its own kind of grief."
       },
       {
         "type": "h2",
@@ -2600,7 +2600,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For Washington families managing long-distance eldercare, we have written a separate piece on the first weeks after a parent moves in ([see our guide here](/blog/first-weeks-after-placement-burien)). The companion resource for broader senior transition questions is [yourbestseason.com](https://yourbestseason.com), and if the move involves a home sale back in Seattle, Tacoma, or elsewhere in King County, [yournextstephome.com](https://yournextstephome.com) is the team we refer families to."
+        "text": "For Washington families managing long-distance eldercare, we have written a separate piece on the first weeks after a parent moves in ([see our guide here](/blog/first-weeks-after-placement-burien)). The companion resource for broader senior transition questions is [yourbestseason.com](https://yourbestseason.com), and if the move involves a home sale back in Seattle, Tacoma, or elsewhere in King County, [www.yournextstepteam.com](https://www.yournextstepteam.com) is the team we refer families to."
       },
       {
         "type": "h2",
@@ -2925,7 +2925,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "We also accept Medicaid, we serve short-term and respite care families, and we partner with the same King County discharge planners, geriatric care managers, and social workers who are sending families our way every week. If the real estate piece of the family's transition is looming, we work closely with [Your Next Step Home](https://yournextstephome.com) on the home sale side, and for families still doing the upstream education work of figuring out what this next chapter even looks like, [Your Best Season](https://yourbestseason.com) is where we send them for the long view."
+        "text": "We also accept Medicaid, we serve short-term and respite care families, and we partner with the same King County discharge planners, geriatric care managers, and social workers who are sending families our way every week. If the real estate piece of the family's transition is looming, we work closely with [Your Next Step Team](https://www.yournextstepteam.com) on the home sale side, and for families still doing the upstream education work of figuring out what this next chapter even looks like, [Your Best Season](https://yourbestseason.com) is where we send them for the long view."
       },
       {
         "type": "h2",
@@ -3276,7 +3276,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you want to think more broadly about the season of life you are in (yours, not just your parent's), [yourbestseason.com](https://yourbestseason.com) is a senior transitions education platform we built for exactly this kind of thinking. And if you are also wrestling with what to do about the family home itself, what comes out of it, what gets sold, what gets passed down, [yournextstephome.com](https://yournextstephome.com) walks Washington families through that part with the same care."
+        "text": "If you want to think more broadly about the season of life you are in (yours, not just your parent's), [yourbestseason.com](https://yourbestseason.com) is a senior transitions education platform we built for exactly this kind of thinking. And if you are also wrestling with what to do about the family home itself, what comes out of it, what gets sold, what gets passed down, [www.yournextstepteam.com](https://www.yournextstepteam.com) walks Washington families through that part with the same care."
       },
       {
         "type": "p",
@@ -3559,7 +3559,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are in the earlier part of the decision and your parent is still at home, [Your Best Season](https://yourbestseason.com) has more on navigating the broader senior transition. If the move is going to involve selling or transitioning the family home, [Your Next Step Home](https://yournextstephome.com) is built specifically for Washington families walking through that piece."
+        "text": "If you are in the earlier part of the decision and your parent is still at home, [Your Best Season](https://yourbestseason.com) has more on navigating the broader senior transition. If the move is going to involve selling or transitioning the family home, [Your Next Step Team](https://www.yournextstepteam.com) is built specifically for Washington families walking through that piece."
       },
       {
         "type": "h2",
@@ -3928,7 +3928,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Move slowly. There is no prize for clearing the house in a weekend. If the decision is to sell, my team at [yournextstephome.com](https://yournextstephome.com) works specifically with Burien and King County families going through exactly this season, and our work is paced to the emotional reality, not to a transaction timeline. No pressure. No rush. Just a real conversation when you are ready."
+        "text": "Move slowly. There is no prize for clearing the house in a weekend. If the decision is to sell, my team at [www.yournextstepteam.com](https://www.yournextstepteam.com) works specifically with Burien and King County families going through exactly this season, and our work is paced to the emotional reality, not to a transaction timeline. No pressure. No rush. Just a real conversation when you are ready."
       },
       {
         "type": "h2",
@@ -4054,7 +4054,7 @@ export const posts: Post[] = [
         "type": "ul",
         "items": [
           "yourbestseason.com (senior transitions education, twice)",
-          "yournextstephome.com (family home real estate)",
+          "www.yournextstepteam.com (family home real estate)",
           "Community Living Connections 855-567-0252"
         ]
       },
@@ -4236,7 +4236,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If the family does decide to sell the home, whether to fund care, to reduce the burden of maintaining an empty property, or simply because it's the right time, that's a transition I understand deeply. At [Your Next Step Home](https://yournextstephome.com), we work specifically with Washington families navigating real estate transitions during the senior care journey. It's a different kind of real estate transaction, and it deserves someone who understands what the house means, not just what it's worth."
+        "text": "If the family does decide to sell the home, whether to fund care, to reduce the burden of maintaining an empty property, or simply because it's the right time, that's a transition I understand deeply. At [Your Next Step Team](https://www.yournextstepteam.com), we work specifically with Washington families navigating real estate transitions during the senior care journey. It's a different kind of real estate transaction, and it deserves someone who understands what the house means, not just what it's worth."
       },
       {
         "type": "h2",
@@ -4587,7 +4587,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For families going through this in King County, the [Your Best Season](https://yourbestseason.com) platform offers education about senior transitions that can help you feel less alone in the in-between. And if there comes a point where you're also thinking about what happens with the family home, [Your Next Step Home](https://yournextstephome.com) helps Washington families navigate that piece without adding more overwhelm."
+        "text": "For families going through this in King County, the [Your Best Season](https://yourbestseason.com) platform offers education about senior transitions that can help you feel less alone in the in-between. And if there comes a point where you're also thinking about what happens with the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families navigate that piece without adding more overwhelm."
       },
       {
         "type": "h2",
@@ -4920,7 +4920,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "And if you want a longer conversation about how senior transitions work, including the ones that involve selling the family home or figuring out what comes next for your parent's belongings, my sister site [yourbestseason.com](https://yourbestseason.com) walks through the whole arc with honesty. When the time comes to think about the house itself, [yournextstephome.com](https://yournextstephome.com) helps Washington families move through real estate decisions without pressure."
+        "text": "And if you want a longer conversation about how senior transitions work, including the ones that involve selling the family home or figuring out what comes next for your parent's belongings, my sister site [yourbestseason.com](https://yourbestseason.com) walks through the whole arc with honesty. When the time comes to think about the house itself, [www.yournextstepteam.com](https://www.yournextstepteam.com) helps Washington families move through real estate decisions without pressure."
       },
       {
         "type": "p",
@@ -5265,7 +5265,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://www.burienbestcarehome.com), or give us a call. If you would rather read a little more first, our families also find [Your Next Step Home](https://yournextstephome.com) helpful when it is time to navigate selling the family home to fund care, and [Your Best Season](https://yourbestseason.com) for the broader emotional side of senior transitions."
+        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://burienbestcarehome.com), or give us a call. If you would rather read a little more first, our families also find [Your Next Step Team](https://www.yournextstepteam.com) helpful when it is time to navigate selling the family home to fund care, and [Your Best Season](https://yourbestseason.com) for the broader emotional side of senior transitions."
       },
       {
         "type": "p",
