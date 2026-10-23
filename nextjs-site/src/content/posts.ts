@@ -676,7 +676,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*About the Author: Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
+        "text": "*About the Author: Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
       },
       {
         "type": "p",
@@ -948,7 +948,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -1257,7 +1257,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
       },
       {
         "type": "p",
@@ -1774,7 +1774,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
       }
     ]
   },
@@ -2057,7 +2057,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com). Her writing is rooted in one question: \"Would this have helped me when I was going through it with my own parents?\""
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com). Her writing is rooted in one question: \"Would this have helped me when I was going through it with my own parents?\""
       },
       {
         "type": "p",
@@ -2410,7 +2410,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of [Burien Best Care Home](https://burienbestcarehome.com) alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of [Burien Best Care Home](https://burienbestcarehome.com) alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
       },
       {
         "type": "h2",
@@ -2687,7 +2687,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -2988,7 +2988,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
       }
     ]
   },
@@ -3339,7 +3339,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -3626,7 +3626,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -4019,7 +4019,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
       },
       {
         "type": "p",
@@ -4374,7 +4374,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -4685,7 +4685,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -4966,7 +4966,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
+        "text": "Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com)."
       },
       {
         "type": "p",
@@ -5315,7 +5315,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's provider and resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
       }
     ]
   }
