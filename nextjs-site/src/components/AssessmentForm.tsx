@@ -946,20 +946,8 @@ function ResultsCard({ result, firstName }: { result: ScoreResult; firstName: st
             <h2 className="font-serif text-xl sm:text-2xl text-forest mb-3 leading-tight">
               Where to go from here
             </h2>
-            <p className="text-ink-soft leading-relaxed mb-3">
-              If you would like a friendly second opinion, Becca is happy to talk through your situation and point you toward the right kind of help. Even if we are not the right fit today, we can help you find one that is.
-            </p>
             <p className="text-ink-soft leading-relaxed">
-              In the meantime, our Your Best Season resources at{' '}
-              <a
-                href="https://www.yourbestseason.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-forest font-semibold underline decoration-2 underline-offset-4 decoration-[color:var(--color-sunshine)]/60 hover:decoration-[color:var(--color-sunshine-deep)]"
-              >
-                yourbestseason.com
-              </a>{' '}
-              cover home care, planning ahead, and the questions families ask most.
+              If you would like a friendly second opinion, Becca is happy to talk through your situation and point you toward the right kind of help. Even if we are not the right fit today, we can help you find one that is.
             </p>
           </div>
         )}

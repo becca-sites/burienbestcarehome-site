@@ -1,5 +1,5 @@
-// YouTube "Your Best Season" video series blog posts
-// These posts correspond to videos from Becca Pitts' Your Best Season playlist
+// YouTube video series blog posts
+// These posts correspond to videos from Becca Pitts' YouTube playlist
 // Import and spread into the main posts array
 
 import type { Post } from './posts'
@@ -778,7 +778,7 @@ export const youtubeSeriesPosts: Post[] = [
     },
     {
       "type": "p",
-      "text": "I recently sat down with the team at Para Home Services for my Your Best Season series to talk about what senior home maintenance really looks like, and what families in Burien and South King County should be thinking about. Watch the full conversation in the embedded video above. Below, I want to walk you through what we covered and what I have learned from years of working with families navigating this exact question."
+      "text": "I recently sat down with the team at Para Home Services for my video series to talk about what senior home maintenance really looks like, and what families in Burien and South King County should be thinking about. Watch the full conversation in the embedded video above. Below, I want to walk you through what we covered and what I have learned from years of working with families navigating this exact question."
     },
     {
       "type": "h2",
@@ -957,7 +957,7 @@ export const youtubeSeriesPosts: Post[] = [
     },
     {
       "type": "p",
-      "text": "I recently sat down with a representative from The Neptune Society for my Your Best Season series to talk about prepaid cremation, what it means, how it works, and why so many families are choosing to plan ahead. Watch the full conversation in the embedded video above. Below, I want to share what I have learned and what Washington State families should know."
+      "text": "I recently sat down with a representative from The Neptune Society for my video series to talk about prepaid cremation, what it means, how it works, and why so many families are choosing to plan ahead. Watch the full conversation in the embedded video above. Below, I want to share what I have learned and what Washington State families should know."
     },
     {
       "type": "h2",
@@ -1117,7 +1117,7 @@ export const youtubeSeriesPosts: Post[] = [
     },
     {
       "type": "p",
-      "text": "I sat down for my Your Best Season series to have a straight, jargon-free conversation about reverse mortgages: how they actually work, who they are designed for, and what the common misconceptions get wrong. Watch the full conversation in the embedded video above. Below, I am going to walk through the most important questions families ask."
+      "text": "I sat down for my video series to have a straight, jargon-free conversation about reverse mortgages: how they actually work, who they are designed for, and what the common misconceptions get wrong. Watch the full conversation in the embedded video above. Below, I am going to walk through the most important questions families ask."
     },
     {
       "type": "h2",
@@ -1325,7 +1325,7 @@ export const youtubeSeriesPosts: Post[] = [
     },
     {
       "type": "p",
-      "text": "That is why senior move managers exist. I recently sat down for my Your Best Season series to talk about how these specialized professionals help families navigate the physical and emotional process of a senior transition. Watch the full conversation in the embedded video above. Here is what every family should know."
+      "text": "That is why senior move managers exist. I recently sat down for my video series to talk about how these specialized professionals help families navigate the physical and emotional process of a senior transition. Watch the full conversation in the embedded video above. Here is what every family should know."
     },
     {
       "type": "h2",

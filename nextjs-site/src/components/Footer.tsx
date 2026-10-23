@@ -109,17 +109,6 @@ export default function Footer() {
             <ul className="flex flex-wrap gap-3">
               <li>
                 <a
-                  href="https://yourbestseason.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center min-h-12 px-5 py-2.5 rounded-lg border border-cream/30 text-cream/95 text-sm font-medium hover:bg-cream/10 hover:border-cream/50 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-offset-2 focus-visible:ring-offset-forest"
-                >
-                  Your Best Season
-                  <span className="sr-only"> (opens in a new tab)</span>
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://www.yournextstepteam.com"
                   target="_blank"
                   rel="noopener noreferrer"

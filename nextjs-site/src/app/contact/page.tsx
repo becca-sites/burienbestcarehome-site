@@ -280,30 +280,8 @@ export default function Contact() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
             <ScrollReveal delay={0}>
-              <GlassCard variant="solid" className="p-8 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
-                </div>
-                <h3 className="font-serif text-2xl text-[color:var(--color-ink)] mb-3 leading-tight">
-                  Your Best Season
-                </h3>
-                <p className="text-ink-soft mb-6 flex-grow leading-relaxed">
-                  Information and resources to help you navigate senior care decisions with confidence and&nbsp;clarity.
-                </p>
-                <a
-                  href="https://www.yourbestseason.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center min-h-12 px-6 py-3 border-2 bg-[color:var(--color-sunshine)] border-[color:var(--color-sunshine)] text-[color:var(--color-ink)] font-semibold rounded-lg hover:bg-[color:var(--color-sunshine-deep)] hover:border-[color:var(--color-sunshine-deep)] transition-colors duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-terracotta-deep/40"
-                >
-                  Visit Website &rarr;
-                </a>
-              </GlassCard>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.1}>
               <GlassCard variant="solid" className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />
@@ -325,7 +303,7 @@ export default function Contact() {
               </GlassCard>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.2}>
+            <ScrollReveal delay={0.1}>
               <GlassCard variant="solid" className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
                   <span aria-hidden="true" className="inline-block w-10 h-1 bg-[color:var(--color-sunshine)] rounded-full" />

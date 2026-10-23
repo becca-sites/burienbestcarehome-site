@@ -539,10 +539,6 @@ export const posts: Post[] = [
         "text": "The question to ask yourself is not \"Is my mother dying?\" The question is, \"Is the pattern of her decline consistent with a disease that kills people within six months if it keeps progressing?\" If the answer is yes or maybe, you are the right audience for a hospice consult. Most families I have worked with in Burien wish they had called sooner."
       },
       {
-        "type": "p",
-        "text": "For more on navigating this kind of transition, our sister education site [Your Best Season](https://yourbestseason.com) covers the emotional and practical landscape of late-stage dementia caregiving for Washington families."
-      },
-      {
         "type": "h2",
         "text": "Why Is It Easier for My Parent to Eat in a Small Adult Family Home?"
       },
@@ -928,7 +924,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For broader context on senior transitions, our sister site [Your Best Season](https://yourbestseason.com) has additional resources for families navigating this stage. When the time comes to think about the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families through that piece of the puzzle without pressure."
+        "text": "When the time comes to think about the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families through that piece of the puzzle without pressure."
       },
       {
         "type": "h2",
@@ -1252,7 +1248,6 @@ export const posts: Post[] = [
           "**If you are researching homes in Burien:** [A Day in the Life at a Burien Adult Family Home](blog-2026-04-17-day-in-the-life-adult-family-home-burien.md)",
           "**If you are three weeks into placement and working out your rhythm:** [How Often Should I Visit My Parent in an Adult Family Home?](blog-2026-04-18-visiting-parent-adult-family-home-burien.md)",
           "**If she is still in sundowning at home:** [When Sundowning Becomes the Breaking Point](blog-2026-04-10-sundowning-breaking-point-dementia-burien.md)",
-          "**For the broader conversation about aging and identity:** Your Best Season, Becca's senior transitions education platform at [yourbestseason.com](https://yourbestseason.com)",
           "**If the family home conversation is on the horizon:** Your Next Step Team, for Washington families navigating real estate transitions at [www.yournextstepteam.com](https://www.yournextstepteam.com)"
         ]
       },
@@ -2303,7 +2298,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If your parent is cognitively declining and genuinely cannot make a safe decision, that is a different conversation, and it usually involves a geriatric care manager or an elder law attorney. [Your Best Season](https://yourbestseason.com) has resources on that transition if you want to read further on the softer, slower version of this conversation."
+        "text": "If your parent is cognitively declining and genuinely cannot make a safe decision, that is a different conversation, and it usually involves a geriatric care manager or an elder law attorney."
       },
       {
         "type": "h2",
@@ -2600,7 +2595,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For Washington families managing long-distance eldercare, we have written a separate piece on the first weeks after a parent moves in ([see our guide here](/blog/first-weeks-after-placement-burien)). The companion resource for broader senior transition questions is [yourbestseason.com](https://yourbestseason.com), and if the move involves a home sale back in Seattle, Tacoma, or elsewhere in King County, [www.yournextstepteam.com](https://www.yournextstepteam.com) is the team we refer families to."
+        "text": "For Washington families managing long-distance eldercare, we have written a separate piece on the first weeks after a parent moves in ([see our guide here](/blog/first-weeks-after-placement-burien)). If the move involves a home sale back in Seattle, Tacoma, or elsewhere in King County, [www.yournextstepteam.com](https://www.yournextstepteam.com) is the team we refer families to."
       },
       {
         "type": "h2",
@@ -2925,7 +2920,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "We also accept Medicaid, we serve short-term and respite care families, and we partner with the same King County discharge planners, geriatric care managers, and social workers who are sending families our way every week. If the real estate piece of the family's transition is looming, we work closely with [Your Next Step Team](https://www.yournextstepteam.com) on the home sale side, and for families still doing the upstream education work of figuring out what this next chapter even looks like, [Your Best Season](https://yourbestseason.com) is where we send them for the long view."
+        "text": "We also accept Medicaid, we serve short-term and respite care families, and we partner with the same King County discharge planners, geriatric care managers, and social workers who are sending families our way every week. If the real estate piece of the family's transition is looming, we work closely with [Your Next Step Team](https://www.yournextstepteam.com) on the home sale side."
       },
       {
         "type": "h2",
@@ -3276,7 +3271,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you want to think more broadly about the season of life you are in (yours, not just your parent's), [yourbestseason.com](https://yourbestseason.com) is a senior transitions education platform we built for exactly this kind of thinking. And if you are also wrestling with what to do about the family home itself, what comes out of it, what gets sold, what gets passed down, [www.yournextstepteam.com](https://www.yournextstepteam.com) walks Washington families through that part with the same care."
+        "text": "If you are also wrestling with what to do about the family home itself, what comes out of it, what gets sold, what gets passed down, [www.yournextstepteam.com](https://www.yournextstepteam.com) walks Washington families through that part with the same care."
       },
       {
         "type": "p",
@@ -3559,7 +3554,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are in the earlier part of the decision and your parent is still at home, [Your Best Season](https://yourbestseason.com) has more on navigating the broader senior transition. If the move is going to involve selling or transitioning the family home, [Your Next Step Team](https://www.yournextstepteam.com) is built specifically for Washington families walking through that piece."
+        "text": "If the move is going to involve selling or transitioning the family home, [Your Next Step Team](https://www.yournextstepteam.com) is built specifically for Washington families walking through that piece."
       },
       {
         "type": "h2",
@@ -3807,10 +3802,6 @@ export const posts: Post[] = [
         "text": "If any of that is living in your body right now, I want you to hear me. You are not broken. You are grieving. You are grieving the version of your parent who did not need help. You are grieving the years you spent being the one who knew where her glasses were. You are grieving the fantasy that you could do this forever without breaking. And you are grieving it out loud now because you finally have the bandwidth to feel it."
       },
       {
-        "type": "p",
-        "text": "For more on this specific grief, my team and I write about the emotional geography of senior transitions at [yourbestseason.com](https://yourbestseason.com). If this piece lands with you, you will find company there."
-      },
-      {
         "type": "h2",
         "text": "How Often Should I Visit My Parent the First Week?"
       },
@@ -4016,7 +4007,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are earlier in the journey and you are gathering information quietly at night because you think you might be close to this decision, we invite you to start with a tour. Seeing a small home, meeting the caregivers, and walking through the rooms changes how families imagine this next season. For broader education on senior transitions across Washington state, our sister site [yourbestseason.com](https://yourbestseason.com) exists for exactly that."
+        "text": "If you are earlier in the journey and you are gathering information quietly at night because you think you might be close to this decision, we invite you to start with a tour. Seeing a small home, meeting the caregivers, and walking through the rooms changes how families imagine this next season."
       },
       {
         "type": "p",
@@ -4053,7 +4044,6 @@ export const posts: Post[] = [
       {
         "type": "ul",
         "items": [
-          "yourbestseason.com (senior transitions education, twice)",
           "www.yournextstepteam.com (family home real estate)",
           "Community Living Connections 855-567-0252"
         ]
@@ -4328,7 +4318,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "**Step 5: Talk to your family.** Not just about the money, but about what matters. What does good care look like for your parent? What does your parent value most? What would bring your family peace? For help navigating the broader senior transition, including the emotional, logistical, and educational aspects, [Your Best Season](https://yourbestseason.com) offers resources designed specifically for families at this stage."
+        "text": "**Step 5: Talk to your family.** Not just about the money, but about what matters. What does good care look like for your parent? What does your parent value most? What would bring your family peace?"
       },
       {
         "type": "h2",
@@ -4587,7 +4577,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "For families going through this in King County, the [Your Best Season](https://yourbestseason.com) platform offers education about senior transitions that can help you feel less alone in the in-between. And if there comes a point where you're also thinking about what happens with the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families navigate that piece without adding more overwhelm."
+        "text": "If there comes a point where you're also thinking about what happens with the family home, [Your Next Step Team](https://www.yournextstepteam.com) helps Washington families navigate that piece without adding more overwhelm."
       },
       {
         "type": "h2",
@@ -4920,7 +4910,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "And if you want a longer conversation about how senior transitions work, including the ones that involve selling the family home or figuring out what comes next for your parent's belongings, my sister site [yourbestseason.com](https://yourbestseason.com) walks through the whole arc with honesty. When the time comes to think about the house itself, [www.yournextstepteam.com](https://www.yournextstepteam.com) helps Washington families move through real estate decisions without pressure."
+        "text": "And if you want a longer conversation about how senior transitions work, including the ones that involve selling the family home or figuring out what comes next for your parent's belongings, my team walks families through the whole arc with honesty. When the time comes to think about the house itself, [www.yournextstepteam.com](https://www.yournextstepteam.com) helps Washington families move through real estate decisions without pressure."
       },
       {
         "type": "p",
@@ -5185,7 +5175,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "We wrote about this gentler framing in our piece Am I Abandoning My Parent by Choosing Care? A Burien Memory Care Owner's Honest Answer, and our friends at [Your Best Season](https://yourbestseason.com) have a beautiful framework for the emotional grief side of senior transitions that I recommend to every family who walks through our door."
+        "text": "We wrote about this gentler framing in our piece Am I Abandoning My Parent by Choosing Care? A Burien Memory Care Owner's Honest Answer."
       },
       {
         "type": "h2",
@@ -5265,7 +5255,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://burienbestcarehome.com), or give us a call. If you would rather read a little more first, our families also find [Your Next Step Team](https://www.yournextstepteam.com) helpful when it is time to navigate selling the family home to fund care, and [Your Best Season](https://yourbestseason.com) for the broader emotional side of senior transitions."
+        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://burienbestcarehome.com), or give us a call. Our families also find [Your Next Step Team](https://www.yournextstepteam.com) helpful when it is time to navigate selling the family home to fund care."
       },
       {
         "type": "p",
