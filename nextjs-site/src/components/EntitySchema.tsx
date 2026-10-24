@@ -85,7 +85,6 @@ const schema = {
       owner: [{ '@id': PERSON_ID }, { '@id': DANIELA_ID }],
       employee: [{ '@id': PERSON_ID }, { '@id': DANIELA_ID }],
       knowsLanguage: ['en-US'],
-      sameAs: ['https://www.facebook.com/burienbestcarehome'],
     },
     {
       '@type': 'Person',
