@@ -8,7 +8,7 @@ import GlassCard from '@/components/GlassCard'
 import ScheduleVisitButton from '@/components/ScheduleVisitButton'
 import { CARE_HOME_ID, authorRef } from '@/lib/entity'
 
-const SITE_URL = 'https://burienbestcarehome.com'
+const SITE_URL = 'https://www.burienbestcarehome.com'
 
 interface PageProps {
   params: Promise<{ slug: string }>

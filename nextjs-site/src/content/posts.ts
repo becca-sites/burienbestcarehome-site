@@ -664,7 +664,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "You can reach me directly through [burienbestcarehome.com](https://burienbestcarehome.com) or by calling the home. If it is not the right fit, I will help you find the home that is. That is what this neighborhood does for its own."
+        "text": "You can reach me directly through [burienbestcarehome.com](https://www.burienbestcarehome.com) or by calling the home. If it is not the right fit, I will help you find the home that is. That is what this neighborhood does for its own."
       },
       {
         "type": "p",
@@ -940,7 +940,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "[Schedule a visit to Burien Best Care Home](https://burienbestcarehome.com) or call us directly. We answer the phone."
+        "text": "[Schedule a visit to Burien Best Care Home](https://www.burienbestcarehome.com) or call us directly. We answer the phone."
       },
       {
         "type": "h2",
@@ -1270,7 +1270,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Burien Best Care Home is a licensed six-bed adult family home in Burien serving King County families with long-term residential care, memory and dementia care, short-term and respite care, and adult day care. We accept Medicaid. To schedule a tour or ask a question about whether our home might be the right fit for your parent, visit [burienbestcarehome.com](https://burienbestcarehome.com) or call anytime.*"
+        "text": "*Burien Best Care Home is a licensed six-bed adult family home in Burien serving King County families with long-term residential care, memory and dementia care, short-term and respite care, and adult day care. We accept Medicaid. To schedule a tour or ask a question about whether our home might be the right fit for your parent, visit [burienbestcarehome.com](https://www.burienbestcarehome.com) or call anytime.*"
       }
     ]
   },
@@ -2431,7 +2431,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "A lot of families in Burien end up using what I call the \"respite doorway.\" Rather than framing the adult family home as a permanent move, you frame it as *\"Mom, the hospital says you need three weeks of extra help before you go home. Let's try this place and see how it goes.\"* Many [respite stays](https://burienbestcarehome.com/services/respite-care) turn into permanent ones not because the family pressures the parent, but because the parent arrives exhausted, gets rested and fed and supervised for two weeks, and decides on their own that this feels safer than being alone. I have watched it happen many times."
+        "text": "A lot of families in Burien end up using what I call the \"respite doorway.\" Rather than framing the adult family home as a permanent move, you frame it as *\"Mom, the hospital says you need three weeks of extra help before you go home. Let's try this place and see how it goes.\"* Many [respite stays](https://www.burienbestcarehome.com/services/respite-care) turn into permanent ones not because the family pressures the parent, but because the parent arrives exhausted, gets rested and fed and supervised for two weeks, and decides on their own that this feels safer than being alone. I have watched it happen many times."
       },
       {
         "type": "p",
@@ -2459,7 +2459,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are reading this in real time and you need to talk to someone today, you can [contact us here](https://burienbestcarehome.com/contact) or call the home directly. Even if we do not have availability for your parent this week, we can tell you in a ten minute conversation which Burien homes are likely to and which questions to ask them."
+        "text": "If you are reading this in real time and you need to talk to someone today, you can [contact us here](https://www.burienbestcarehome.com/contact) or call the home directly. Even if we do not have availability for your parent this week, we can tell you in a ten minute conversation which Burien homes are likely to and which questions to ask them."
       },
       {
         "type": "h2",
@@ -2539,7 +2539,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are there right now, you can [schedule a tour](https://burienbestcarehome.com/contact) or call us directly. Even if we are not the right home for your parent this week, I will personally help you figure out who is."
+        "text": "If you are there right now, you can [schedule a tour](https://www.burienbestcarehome.com/contact) or call us directly. Even if we are not the right home for your parent this week, I will personally help you figure out who is."
       },
       {
         "type": "h2",
@@ -2547,7 +2547,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is the owner of [Burien Best Care Home](https://burienbestcarehome.com), bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs [Your Best Season](https://yourbestseason.com), a senior transitions education platform, and [Your Next Step Home](https://yournextstephome.com), helping Washington families navigate real estate transitions.*"
+        "text": "*Becca Pitts is the owner of [Burien Best Care Home](https://www.burienbestcarehome.com), bringing over 20 years of dedicated senior care experience to Burien, WA. She also runs [Your Best Season](https://yourbestseason.com), a senior transitions education platform, and [Your Next Step Home](https://yournextstephome.com), helping Washington families navigate real estate transitions.*"
       },
       {
         "type": "h2",
@@ -3024,7 +3024,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Burien Best Care Home is a licensed adult family home serving Burien, Normandy Park, White Center, Seahurst, Three Tree Point, and surrounding King County communities. If you would like to visit the home or talk about a parent's care, you can reach us through [burienbestcarehome.com](https://burienbestcarehome.com).*"
+        "text": "*Burien Best Care Home is a licensed adult family home serving Burien, Normandy Park, White Center, Seahurst, Three Tree Point, and surrounding King County communities. If you would like to visit the home or talk about a parent's care, you can reach us through [burienbestcarehome.com](https://www.burienbestcarehome.com).*"
       }
     ]
   },
@@ -3271,7 +3271,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "Schedule a visit at [burienbestcarehome.com](https://burienbestcarehome.com). No clipboard. No pressure. Just a house, at the hour of the day that actually tells you the truth."
+        "text": "Schedule a visit at [burienbestcarehome.com](https://www.burienbestcarehome.com). No clipboard. No pressure. Just a house, at the hour of the day that actually tells you the truth."
       },
       {
         "type": "p",
@@ -3826,7 +3826,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you would like to visit our home in Burien, no commitment, no clipboard, just a real conversation, you can reach us at [burienbestcarehome.com](https://burienbestcarehome.com)."
+        "text": "If you would like to visit our home in Burien, no commitment, no clipboard, just a real conversation, you can reach us at [burienbestcarehome.com](https://www.burienbestcarehome.com)."
       }
     ]
   },
@@ -4436,7 +4436,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "If you are in the middle of these first weeks right now and you want to talk to someone who has walked this road with many families, we are here. You can reach Burien Best Care Home directly through [burienbestcarehome.com](https://burienbestcarehome.com) or by phone for a real conversation. No clipboard. No pressure. Just someone who understands what this stretch actually feels like."
+        "text": "If you are in the middle of these first weeks right now and you want to talk to someone who has walked this road with many families, we are here. You can reach Burien Best Care Home directly through [burienbestcarehome.com](https://www.burienbestcarehome.com) or by phone for a real conversation. No clipboard. No pressure. Just someone who understands what this stretch actually feels like."
       },
       {
         "type": "p",
@@ -4980,7 +4980,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "**Step 4: Tour adult family homes in your area.** Don't just visit one. Visit several. See the difference between a 6-bed home and a 60-bed facility for yourself. Ask about staffing ratios, ask about Medicaid acceptance, ask about what happens when your parent's care needs increase. At [Burien Best Care Home](https://burienbestcarehome.com), we welcome families to visit with no pressure and no clipboard. Just a cup of coffee and honest answers."
+        "text": "**Step 4: Tour adult family homes in your area.** Don't just visit one. Visit several. See the difference between a 6-bed home and a 60-bed facility for yourself. Ask about staffing ratios, ask about Medicaid acceptance, ask about what happens when your parent's care needs increase. At [Burien Best Care Home](https://www.burienbestcarehome.com), we welcome families to visit with no pressure and no clipboard. Just a cup of coffee and honest answers."
       },
       {
         "type": "p",
@@ -5044,7 +5044,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*If your family is navigating the financial side of senior care and you don't know where to start, you're welcome to visit Burien Best Care Home. No pressure. No sales pitch. Just a real conversation about what's possible. [Contact us](https://burienbestcarehome.com/contact) or call to schedule a time.*"
+        "text": "*If your family is navigating the financial side of senior care and you don't know where to start, you're welcome to visit Burien Best Care Home. No pressure. No sales pitch. Just a real conversation about what's possible. [Contact us](https://www.burienbestcarehome.com/contact) or call to schedule a time.*"
       }
     ]
   },
@@ -5355,7 +5355,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*If you're in the middle of this conversation with your parent and you're not sure what comes next, you're welcome to visit Burien Best Care Home. No clipboard. No pressure. Just a cup of coffee and an honest conversation about what's possible. Call us or [schedule a visit](https://burienbestcarehome.com/contact).*"
+        "text": "*If you're in the middle of this conversation with your parent and you're not sure what comes next, you're welcome to visit Burien Best Care Home. No clipboard. No pressure. Just a cup of coffee and an honest conversation about what's possible. Call us or [schedule a visit](https://www.burienbestcarehome.com/contact).*"
       }
     ]
   },
@@ -6033,7 +6033,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://burienbestcarehome.com), or give us a call. If you would rather read a little more first, our families also find [Your Next Step Home](https://yournextstephome.com) helpful when it is time to navigate selling the family home to fund care, and [Your Best Season](https://yourbestseason.com) for the broader emotional side of senior transitions."
+        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://www.burienbestcarehome.com), or give us a call. If you would rather read a little more first, our families also find [Your Next Step Home](https://yournextstephome.com) helpful when it is time to navigate selling the family home to fund care, and [Your Best Season](https://yourbestseason.com) for the broader emotional side of senior transitions."
       },
       {
         "type": "p",

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Contact Us | Schedule a Visit',
     description:
       'Schedule a visit at Burien Best Care Home. Meet our team, see our home, and discover if we are right for your family.',
-    url: 'https://burienbestcarehome.com/contact',
+    url: 'https://www.burienbestcarehome.com/contact',
     type: 'website',
   },
   twitter: {
@@ -397,13 +397,13 @@ export default function Contact() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://burienbestcarehome.com',
+                item: 'https://www.burienbestcarehome.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Contact Us',
-                item: 'https://burienbestcarehome.com/contact',
+                item: 'https://www.burienbestcarehome.com/contact',
               },
             ],
           }),

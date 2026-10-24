@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
 
-const SITE_URL = 'https://burienbestcarehome.com'
+const SITE_URL = 'https://www.burienbestcarehome.com'
 
 export default function robots(): MetadataRoute.Robots {
   const isProduction = process.env.VERCEL_ENV === 'production'

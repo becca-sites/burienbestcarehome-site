@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Is It Time? A Free Care Evaluation',
     description:
       'A free, compassionate evaluation to help families decide if it is time to place a parent or spouse in care.',
-    url: 'https://burienbestcarehome.com/is-it-time',
+    url: 'https://www.burienbestcarehome.com/is-it-time',
     type: 'website',
   },
   twitter: {
@@ -89,13 +89,13 @@ export default function AssessmentPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://burienbestcarehome.com',
+                item: 'https://www.burienbestcarehome.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Is It Time? Evaluation',
-                item: 'https://burienbestcarehome.com/is-it-time',
+                item: 'https://www.burienbestcarehome.com/is-it-time',
               },
             ],
           }),

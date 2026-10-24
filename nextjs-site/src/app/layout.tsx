@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Burien Best Care Home' }],
   creator: 'Burien Best Care Home',
   publisher: 'Burien Best Care Home',
-  metadataBase: new URL('https://burienbestcarehome.com'),
+  metadataBase: new URL('https://www.burienbestcarehome.com'),
   alternates: {
     canonical: '/',
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: 'Burien Best Care Home | Adult Family Home & Memory Care in Burien, WA',
     description:
       'Burien Best Care Home provides compassionate memory care and daily living assistance for seniors. Licensed adult family home in King County, WA with 24/7 care, home-style meals, and family-centered care.',
-    url: 'https://burienbestcarehome.com',
+    url: 'https://www.burienbestcarehome.com',
     siteName: 'Burien Best Care Home',
     locale: 'en_US',
     type: 'website',

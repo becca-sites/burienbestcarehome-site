@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       'Care that sees your parent as a person. Personalized services designed for outcomes, not one-size-fits-all.',
     type: 'website',
-    url: 'https://burienbestcarehome.com/services',
+    url: 'https://www.burienbestcarehome.com/services',
   },
   twitter: {
     card: 'summary_large_image',
@@ -348,7 +348,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Specialized dementia and Alzheimer’s care in a small, home-like adult family home with consistent caregivers and personalized routines.',
-                url: 'https://burienbestcarehome.com/services#memory-care',
+                url: 'https://www.burienbestcarehome.com/services#memory-care',
               },
               {
                 '@type': 'Service',
@@ -357,7 +357,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Dignity-first help with bathing, dressing, meals, medications, and mobility so seniors can keep their independence.',
-                url: 'https://burienbestcarehome.com/services#daily-living',
+                url: 'https://www.burienbestcarehome.com/services#daily-living',
               },
               {
                 '@type': 'Service',
@@ -366,7 +366,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Specialized Parkinson\'s disease care with fall prevention, precise medication timing, mobility support, and adaptive daily living assistance in a small adult family home.',
-                url: 'https://burienbestcarehome.com/services#parkinsons-care',
+                url: 'https://www.burienbestcarehome.com/services#parkinsons-care',
               },
               {
                 '@type': 'Service',
@@ -375,7 +375,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Short-term stays from a weekend to several weeks so family caregivers can rest while their parent receives full personalized care.',
-                url: 'https://burienbestcarehome.com/services#respite-care',
+                url: 'https://www.burienbestcarehome.com/services#respite-care',
               },
               {
                 '@type': 'Service',
@@ -384,7 +384,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: '24/7 recovery support with medication coordination, mobility assistance, and ongoing monitoring after a hospital stay.',
-                url: 'https://burienbestcarehome.com/services#recovery',
+                url: 'https://www.burienbestcarehome.com/services#recovery',
               },
               {
                 '@type': 'Service',
@@ -393,7 +393,7 @@ export default function ServicesPage() {
                 provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Compassionate coordination with hospice providers, following comfort care directives and supporting families through end-of-life care in a peaceful home setting.',
-                url: 'https://burienbestcarehome.com/services#hospice-care',
+                url: 'https://www.burienbestcarehome.com/services#hospice-care',
               },
             ],
           }),
@@ -413,13 +413,13 @@ export default function ServicesPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://burienbestcarehome.com/',
+                item: 'https://www.burienbestcarehome.com/',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Services',
-                item: 'https://burienbestcarehome.com/services',
+                item: 'https://www.burienbestcarehome.com/services',
               },
             ],
           }),
