@@ -463,3 +463,37 @@ Even after the sectional blobs were repositioned, the body-level fixed radial ke
 - Domain split is intentional: website on `.site`, email on `.com`. Don't flip the website canonical to `.com` without explicit approval.
 - Cold-outreach future move: when GoHighLevel arrives, configure it on a subdomain (e.g., `mail.burienbestcarehome.com`) to isolate marketing-automation reputation from primary `info@` reputation.
 - Address publish: Becca leaning yes for map-pack SEO; pending final confirmation.
+
+## October 24, 2026: Pending patches applied (canonical, GA4 consent, content accuracy)
+
+### Shipped
+
+- **Canonical host fix** (from session 1a6c2b16): every canonical, og:url,
+  JSON-LD URL, and sitemap entry now points at `https://www.burienbestcarehome.com`.
+  The apex 308-redirects to www, so every advertised canonical used to be a
+  redirect. /gallery also got its own canonical (it was inheriting the
+  homepage's).
+- **GA4 (G-3CLNH9QM7S) behind opt-in consent, plus Vercel Web Analytics.**
+  Corrected from the original patch: gtag.js now loads only after a visitor
+  clicks "That's fine." The patch loaded it for everyone with consent denied,
+  and Consent Mode still sends cookieless pings carrying the page URL, which
+  under MHMDA is the health inference itself. The banner's /privacy link was
+  dropped because that page does not exist.
+- **Content accuracy pass** (from session 4c791121, 7 commits): author bios
+  credit the 20 years to Becca and Daniela together and name Daniela as DSHS
+  licensee of record; all Your Next Step Home and yourbestseason.com references
+  removed or repointed to Your Next Step Team; raw FAQ schema text turned into
+  real JSON-LD. Six more visible schema notes and one SEO-notes block were
+  also removed.
+
+### Open, needs Becca and Daniela
+
+- Licensed name: DSHS lists "Burien Best Care Homes" (plural); the site uses
+  the singular throughout. Not changed.
+- Phone: DSHS lists (206) 566-6961; the site shows (253) 678-7089. Not changed.
+- About 9 first-person "twenty years in senior care" claims remain in blog
+  body copy, written as Becca alone.
+- No privacy notice or MHMDA consumer health data policy page exists.
+- About page says 15 years licensed; the bios say 16.
+- posts.ts is generated from blog/ markdown, but these fixes were made in
+  posts.ts only. Carry them back before regenerating.
