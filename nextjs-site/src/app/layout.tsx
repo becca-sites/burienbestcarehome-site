@@ -4,7 +4,14 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
 import EntitySchema from '@/components/EntitySchema'
+import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
+import { ConsentBanner } from '@/components/ConsentBanner'
 import './globals.css'
+
+// GA4 for www.burienbestcarehome.com. Loading is gated on opt-in consent --
+// see components/ConsentBanner.tsx for why that is not optional on this site.
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID ?? 'G-3CLNH9QM7S'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -111,6 +118,24 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
       <body className="text-ink min-h-screen font-sans antialiased">
         <EntitySchema />
+        {/* Consent Mode v2 defaults, all denied. gtag.js itself is not loaded
+            here: ConsentBanner loads it only after the visitor opts in, so a
+            visitor who never says yes sends Google nothing at all, not even
+            the cookieless pings Consent Mode sends while denied. */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              analytics_storage: 'denied',
+              functionality_storage: 'granted',
+              security_storage: 'granted'
+            });
+          `}
+        </Script>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
@@ -120,6 +145,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ConsentBanner ga4Id={GA4_ID} />
+        <Analytics />
       </body>
     </html>
   )
