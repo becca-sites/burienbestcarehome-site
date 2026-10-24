@@ -635,10 +635,6 @@ export const posts: Post[] = [
         "text": "The only way to know is a full medical workup. Get a urinalysis, a medication review, a dental check, a thyroid panel, and a basic metabolic panel. About one-third of sudden eating refusal in older adults has a reversible cause. Dementia patients deserve the same medical workup as anyone else before we accept that eating refusal is the disease."
       },
       {
-        "type": "p",
-        "text": "**Suggested schema:** Wrap these six questions and answers in JSON-LD FAQPage structured data to support featured snippets and AI Overview citation."
-      },
-      {
         "type": "h2",
         "text": "A Closing Word From Becca"
       },
@@ -1232,10 +1228,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "A: Yes, several. The Alzheimer's Association Washington State chapter runs a free 24/7 helpline at 1-800-272-3900 and moderates both in-person and online support groups for King County caregivers. Community Living Connections at 1-844-348-5464 can connect you to additional King County resources. For grief counseling specific to dementia, there are therapists in the Burien, Normandy Park, and Des Moines area who specialize in anticipatory and ambiguous grief. We are happy to share our informal referral list if you call."
-      },
-      {
-        "type": "p",
-        "text": "*For SEO and AI discoverability, this FAQ section should be marked up with JSON-LD FAQPage schema in the site's head or body using the schema.org FAQPage specification. Each question-answer pair becomes a separate Question and Answer entity, allowing Google and AI search surfaces to cite individual Q&As directly.*"
       },
       {
         "type": "h2",
@@ -2048,10 +2040,6 @@ export const posts: Post[] = [
         "text": "The packet is free and available at medicareadvocacy.org under \"Self-Help Packet for Skilled Nursing Facility Appeals.\" It includes sample appeal letters, a checklist for the DENC review, and plain-English guidance on the *Jimmo* settlement. If you are inside the 48-hour NOMNC window right now, this is the single most useful document you can have open on your laptop tonight."
       },
       {
-        "type": "p",
-        "text": "*Suggested JSON-LD schema for this FAQ block: FAQPage schema with six Question/Answer pairs mapped to the H3 headings above.*"
-      },
-      {
         "type": "h2",
         "text": "About the Author"
       },
@@ -2410,7 +2398,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "*Becca Pitts is co-owner of [Burien Best Care Home](https://burienbestcarehome.com) alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
+        "text": "*Becca Pitts is co-owner of [Burien Best Care Home](https://www.burienbestcarehome.com) alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through [Your Next Step Team](https://www.yournextstepteam.com).*"
       },
       {
         "type": "h2",
@@ -2680,10 +2668,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "Yes. Consistent video calls are genuinely valuable, especially on a predictable schedule. A twenty-minute video call that happens every Wednesday at 4pm is often more emotionally meaningful than an unpredictable in-person visit. In a small home the caregiver will help your parent manage the device, which removes the most common long-distance barrier."
-      },
-      {
-        "type": "p",
-        "text": "*Suggested JSON-LD schema: FAQPage with the six Q&A pairs above, plus Article schema with author Becca Pitts, datePublished 2026-04-18, and about Burien Best Care Home.*"
       },
       {
         "type": "p",
@@ -3617,10 +3601,6 @@ export const posts: Post[] = [
         "text": "Most good operators allow unannounced visits, within reason. Ask directly. \"Can I stop by next week without calling first?\" If the answer is yes with a smile, that tells you something. If the answer is a long pause, that also tells you something."
       },
       {
-        "type": "p",
-        "text": "*Schema suggestion: Apply FAQPage JSON-LD schema to this section to improve AEO/GEO visibility for question-based queries.*"
-      },
-      {
         "type": "h2",
         "text": "About the Author"
       },
@@ -4021,50 +4001,6 @@ export const posts: Post[] = [
         "type": "p",
         "text": "*Becca Pitts is co-owner of Burien Best Care Home alongside Daniela Torkelson, the home's licensee of record with Washington State DSHS and its resident manager. Together, Becca and Daniela bring over 20 years of senior care experience, with Daniela holding the depth of that frontline care background. Becca brings 16 years in real estate and the Seniors Real Estate Specialist (SRES) designation, helping Washington families navigate the housing side of a care decision through Your Next Step Team (www.yournextstepteam.com).*"
       },
-      {
-        "type": "p",
-        "text": "**Internal link targets:**"
-      },
-      {
-        "type": "ul",
-        "items": [
-          "/contact (tour scheduling)",
-          "/services/memory-dementia-care",
-          "/services/respite-care",
-          "/blog/sundowning-breaking-point-dementia-burien (published 2026-04-10)",
-          "/blog/sole-caregiver-siblings-burien (published 2026-04-11)",
-          "/blog/parent-wont-talk-about-care-burien (published 2026-04-12)",
-          "/blog/paying-for-senior-care-burien (published 2026-04-13)"
-        ]
-      },
-      {
-        "type": "p",
-        "text": "**External cross-links used:**"
-      },
-      {
-        "type": "ul",
-        "items": [
-          "www.yournextstepteam.com (family home real estate)",
-          "Community Living Connections 855-567-0252"
-        ]
-      },
-      {
-        "type": "p",
-        "text": "**Local SEO geographic signals:**"
-      },
-      {
-        "type": "ul",
-        "items": [
-          "Burien (multiple)",
-          "White Center",
-          "Normandy Park",
-          "King County",
-          "Seahurst Park",
-          "West Seattle",
-          "Puget Sound",
-          "Washington state / WA"
-        ]
-      }
     ]
   },
   {
@@ -4363,10 +4299,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "Contact Community Living Connections at 855-567-0252, or use the DSHS Adult Family Home Locator online. You can also contact individual homes directly. Burien has 21 licensed adult family homes."
-      },
-      {
-        "type": "p",
-        "text": "*Suggested JSON-LD FAQPage Schema: Implement FAQPage structured data using the five Q&A pairs above for enhanced search visibility and AI answer engine optimization.*"
       },
       {
         "type": "p",
@@ -4674,10 +4606,6 @@ export const posts: Post[] = [
       {
         "type": "p",
         "text": "Key signals include falls or safety incidents, medication mismanagement, isolation and depression, inability to manage daily activities like bathing and meals, caregiver burnout, and wandering or confusion. If you're asking this question, that itself may be a signal. Trust what you're seeing."
-      },
-      {
-        "type": "p",
-        "text": "*Suggested JSON-LD FAQPage schema: Include the five FAQ pairs above as a FAQPage structured data block on the published page for AEO/GEO visibility.*"
       },
       {
         "type": "p",
@@ -5255,7 +5183,7 @@ export const posts: Post[] = [
       },
       {
         "type": "p",
-        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://burienbestcarehome.com), or give us a call. Our families also find [Your Next Step Team](https://www.yournextstepteam.com) helpful when it is time to navigate selling the family home to fund care."
+        "text": "You can schedule a tour of Burien Best Care Home by visiting [burienbestcarehome.com](https://www.burienbestcarehome.com), or give us a call. Our families also find [Your Next Step Team](https://www.yournextstepteam.com) helpful when it is time to navigate selling the family home to fund care."
       },
       {
         "type": "p",
