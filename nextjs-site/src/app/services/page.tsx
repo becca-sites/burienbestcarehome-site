@@ -4,6 +4,7 @@ import Script from 'next/script'
 import ScrollReveal from '@/components/ScrollReveal'
 import GlassCard from '@/components/GlassCard'
 import ScheduleVisitButton from '@/components/ScheduleVisitButton'
+import { CARE_HOME_ID } from '@/lib/entity'
 
 export const metadata: Metadata = {
   title: 'Our Services | Memory Care & Senior Care in Burien, WA',
@@ -344,7 +345,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Memory Care',
                 serviceType: 'Memory Care',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Specialized dementia and Alzheimer’s care in a small, home-like adult family home with consistent caregivers and personalized routines.',
                 url: 'https://burienbestcarehome.com/services#memory-care',
@@ -353,7 +354,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Daily Living Assistance',
                 serviceType: 'Personal Care',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Dignity-first help with bathing, dressing, meals, medications, and mobility so seniors can keep their independence.',
                 url: 'https://burienbestcarehome.com/services#daily-living',
@@ -362,7 +363,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Parkinson\'s Disease Care',
                 serviceType: 'Parkinson\'s Disease Care',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Specialized Parkinson\'s disease care with fall prevention, precise medication timing, mobility support, and adaptive daily living assistance in a small adult family home.',
                 url: 'https://burienbestcarehome.com/services#parkinsons-care',
@@ -371,7 +372,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Respite Care',
                 serviceType: 'Respite Care',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Short-term stays from a weekend to several weeks so family caregivers can rest while their parent receives full personalized care.',
                 url: 'https://burienbestcarehome.com/services#respite-care',
@@ -380,7 +381,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Post-Hospital Recovery',
                 serviceType: 'Post-Acute Care',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: '24/7 recovery support with medication coordination, mobility assistance, and ongoing monitoring after a hospital stay.',
                 url: 'https://burienbestcarehome.com/services#recovery',
@@ -389,7 +390,7 @@ export default function ServicesPage() {
                 '@type': 'Service',
                 name: 'Hospice Coordination',
                 serviceType: 'Hospice Support',
-                provider: { '@type': 'AssistedLivingFacility', name: 'Burien Best Care Home', url: 'https://burienbestcarehome.com' },
+                provider: { '@id': CARE_HOME_ID },
                 areaServed: { '@type': 'AdministrativeArea', name: 'King County, Washington' },
                 description: 'Compassionate coordination with hospice providers, following comfort care directives and supporting families through end-of-life care in a peaceful home setting.',
                 url: 'https://burienbestcarehome.com/services#hospice-care',

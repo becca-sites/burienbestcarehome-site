@@ -3,6 +3,7 @@ import { DM_Serif_Display, Inter } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
+import EntitySchema from '@/components/EntitySchema'
 import './globals.css'
 
 const inter = Inter({
@@ -109,6 +110,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
       <body className="text-ink min-h-screen font-sans antialiased">
+        <EntitySchema />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

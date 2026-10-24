@@ -6,6 +6,7 @@ import { getAllPosts, getPostBySlug, type Block } from '@/content/posts'
 import ScrollReveal from '@/components/ScrollReveal'
 import GlassCard from '@/components/GlassCard'
 import ScheduleVisitButton from '@/components/ScheduleVisitButton'
+import { CARE_HOME_ID, authorRef } from '@/lib/entity'
 
 const SITE_URL = 'https://burienbestcarehome.com'
 
@@ -196,12 +197,8 @@ export default async function BlogPost({ params }: PageProps) {
             datePublished: post.date,
             dateModified: post.date,
             image: post.heroImage ? [post.heroImage] : undefined,
-            author: { '@type': 'Person', name: post.author },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Burien Best Care Home',
-              url: SITE_URL,
-            },
+            author: authorRef(post.author),
+            publisher: { '@id': CARE_HOME_ID },
             mainEntityOfPage: { '@type': 'WebPage', '@id': url },
             keywords: post.tags.join(', '),
             url,

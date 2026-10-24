@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAllPosts } from '@/content/posts'
+import { CARE_HOME_ID, authorRef } from '@/lib/entity'
 import ScrollReveal from '@/components/ScrollReveal'
 import GlassCard from '@/components/GlassCard'
 
@@ -47,17 +48,13 @@ export default function BlogIndex() {
             url: `${SITE_URL}/blog`,
             description:
               'Thoughtful writing for families navigating senior care in King County.',
-            publisher: {
-              '@type': 'Organization',
-              name: 'Burien Best Care Home',
-              url: SITE_URL,
-            },
+            publisher: { '@id': CARE_HOME_ID },
             blogPost: posts.map((p) => ({
               '@type': 'BlogPosting',
               headline: p.title,
               datePublished: p.date,
               url: `${SITE_URL}/blog/${p.slug}`,
-              author: { '@type': 'Person', name: p.author },
+              author: authorRef(p.author),
             })),
           }),
         }}
