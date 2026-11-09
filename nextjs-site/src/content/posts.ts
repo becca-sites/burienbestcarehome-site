@@ -1,4 +1,5 @@
 import { youtubeSeriesPosts } from './posts-youtube-series'
+import { weeklyPosts } from './posts-weekly'
 // Blog post registry
 // Each post is a plain TypeScript object. Body is an array of paragraph-level
 // blocks: { type: 'p' | 'h2' | 'h3' | 'ul' | 'quote', text | items }.
@@ -34,6 +35,7 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+    ...weeklyPosts,
     ...youtubeSeriesPosts,
   {
     "slug": "adult-family-home-vs-assisted-living-burien",

@@ -497,3 +497,11 @@ Even after the sectional blobs were repositioned, the body-level fixed radial ke
 - About page says 15 years licensed; the bios say 16.
 - posts.ts is generated from blog/ markdown, but these fixes were made in
   posts.ts only. Carry them back before regenerating.
+
+## 2026-11-09: Weekly blog posts now publish to the live site
+
+- Published the four weekly posts that had only been emailed for review, backdated to the Mondays they were written: Oct 19 (dad refuses help), Oct 26 (live-in caregiver burnout), Nov 2 (selling Mom's house), Nov 9 (paperwork).
+- Fixes applied before publishing: Oct 19 bio/cross-link corrections from Becca's follow-up email; removed "six-bed"/"six residents" (site says up to 8), "private care suites", the unverified "about 21 homes in Burien" figure, the $462 Medicaid penalty rate, first-person "twenty years" claim, and "no pressure / no pitch" lines; Medicaid wording matched to the site ("work with families using Medicaid COPES"); placeholder links pointed at real /blog slugs, /services and /contact.
+- New pipeline: markdown in `blog/` with `publish: true` front matter -> `node nextjs-site/scripts/build-weekly-posts.mjs` -> `src/content/posts-weekly.ts` (spread into `posts.ts`). The `date` line controls where a post sorts, so backdating is just editing that line. FAQ sections become FAQPage JSON-LD automatically. The script refuses files with em dashes.
+- Becca removed the review step: the "Burien blog writer" scheduled task now commits and pushes each new post itself and emails her an FYI.
+- Not published: `blog-2026-10-15-sensory-wall-memory-care-burien.md` (exists only in Becca's local folder; includes a "ten years" claim that needs checking).
