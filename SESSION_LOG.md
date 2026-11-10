@@ -505,3 +505,9 @@ Even after the sectional blobs were repositioned, the body-level fixed radial ke
 - New pipeline: markdown in `blog/` with `publish: true` front matter -> `node nextjs-site/scripts/build-weekly-posts.mjs` -> `src/content/posts-weekly.ts` (spread into `posts.ts`). The `date` line controls where a post sorts, so backdating is just editing that line. FAQ sections become FAQPage JSON-LD automatically. The script refuses files with em dashes.
 - Becca removed the review step: the "Burien blog writer" scheduled task now commits and pushes each new post itself and emails her an FYI.
 - Not published: `blog-2026-10-15-sensory-wall-memory-care-burien.md` (exists only in Becca's local folder; includes a "ten years" claim that needs checking).
+
+## 2026-11-09 (later): Sensory wall post published
+
+- Published `blog-2026-10-15-sensory-wall-memory-care-burien.md`, dated Oct 15. Hero is the real hallway photo (`/images/gallery/home/home-hallway-art-gallery.webp`).
+- Becca's edits: "ten years of walking that hallway" -> "watching residents walk that hallway"; kept "I built it" (she built the stations); resident/staff/family anecdotes made general; 1:3 ratio claim softened to "our team is small and so is our house"; "I see every day" / "I will walk it with you" -> "we".
+- Also: forum quote paraphrased, unverified journal citation generalized, byline/bio removed (site adds them).
